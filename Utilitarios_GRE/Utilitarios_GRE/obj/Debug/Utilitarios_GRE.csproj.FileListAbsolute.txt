@@ -1,0 +1,13 @@
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Utilitarios_GRE.exe.config
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Utilitarios_GRE.exe
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Utilitarios_GRE.pdb
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Utilitarios_GRE.csproj.AssemblyReference.cache
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Interop.SAPbobsCOM.dll
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Interop.SAPbouiCOM.dll
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Utilitarios_GRE.csproj.ResolveComReference.cache
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Utilitarios_GRE.Form1.resources
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Utilitarios_GRE.Properties.Resources.resources
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Utilitarios_GRE.csproj.GenerateResource.cache
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Utilitarios_GRE.csproj.CoreCompileInputs.cache
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Utilitarios_GRE.exe
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\obj\Debug\Utilitarios_GRE.pdb
