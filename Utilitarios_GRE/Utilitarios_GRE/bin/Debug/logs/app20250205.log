@@ -1,0 +1,40 @@
+2025-02-05 16:50:00.353 -05:00 [INF] Aplicación iniciada.
+2025-02-05 16:50:00.406 -05:00 [WRN] Esto es una advertencia.
+2025-02-05 16:50:00.406 -05:00 [ERR] Se ha producido un error.
+2025-02-05 16:54:40.254 -05:00 [INF] Aplicación iniciada.
+2025-02-05 16:54:40.273 -05:00 [WRN] Esto es una advertencia.
+2025-02-05 16:54:40.273 -05:00 [ERR] Se ha producido un error.
+2025-02-05 16:54:51.056 -05:00 [INF] Conectando a la BD SBO_ComercialMendoza
+2025-02-05 16:56:03.039 -05:00 [INF] Aplicación iniciada.
+2025-02-05 16:56:03.073 -05:00 [WRN] Esto es una advertencia.
+2025-02-05 16:56:03.073 -05:00 [ERR] Se ha producido un error.
+2025-02-05 16:56:07.833 -05:00 [INF] Conectando a la BD SBO_ComercialMendoza
+2025-02-05 16:56:14.403 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 16:56:15.453 -05:00 [INF] Conectando a la BD SBO_INDUZINC
+2025-02-05 16:56:22.693 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 16:56:48.703 -05:00 [INF] Conectando a la BD SBO_Mega_Estructuras
+2025-02-05 16:56:50.733 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 16:56:54.095 -05:00 [INF] Conectando a la BD SBO_Postes_y_Estructuras
+2025-02-05 16:56:56.444 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 16:56:56.468 -05:00 [INF] Conectando a la BD SBO_RumiImport
+2025-02-05 16:57:00.596 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 16:57:00.606 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-05 16:57:02.301 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 18:02:47.575 -05:00 [INF] Aplicación iniciada.
+2025-02-05 18:02:47.607 -05:00 [WRN] Esto es una advertencia.
+2025-02-05 18:02:47.607 -05:00 [ERR] Se ha producido un error.
+2025-02-05 18:03:36.422 -05:00 [INF] Aplicación iniciada.
+2025-02-05 18:03:36.442 -05:00 [WRN] Esto es una advertencia.
+2025-02-05 18:03:36.442 -05:00 [ERR] Se ha producido un error.
+2025-02-05 18:03:37.799 -05:00 [INF] Conectando a la BD SBO_ComercialMendoza
+2025-02-05 18:03:41.952 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 18:03:42.002 -05:00 [INF] Conectando a la BD SBO_INDUZINC
+2025-02-05 18:03:43.816 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 18:03:43.822 -05:00 [INF] Conectando a la BD SBO_Mega_Estructuras
+2025-02-05 18:03:45.662 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 18:03:45.676 -05:00 [INF] Conectando a la BD SBO_Postes_y_Estructuras
+2025-02-05 18:03:47.252 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 18:03:47.264 -05:00 [INF] Conectando a la BD SBO_RumiImport
+2025-02-05 18:03:49.084 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-05 18:03:49.092 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-05 18:03:50.789 -05:00 [INF] Conectado satisfactoriamente 
