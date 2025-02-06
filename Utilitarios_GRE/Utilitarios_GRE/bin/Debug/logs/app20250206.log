@@ -1,0 +1,142 @@
+2025-02-06 08:25:52.597 -05:00 [INF] Aplicación iniciada.
+2025-02-06 08:25:54.026 -05:00 [INF] Conectando a la BD SBO_ComercialMendoza
+2025-02-06 08:25:56.670 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:25:56.710 -05:00 [INF] Conectando a la BD SBO_INDUZINC
+2025-02-06 08:25:58.511 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:25:58.524 -05:00 [INF] Conectando a la BD SBO_Mega_Estructuras
+2025-02-06 08:26:00.386 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:26:00.399 -05:00 [INF] Conectando a la BD SBO_Postes_y_Estructuras
+2025-02-06 08:26:02.047 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:26:02.063 -05:00 [INF] Conectando a la BD SBO_RumiImport
+2025-02-06 08:26:03.949 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:26:03.965 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-06 08:26:05.677 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:26:25.627 -05:00 [INF] Conectando a la BD SBO_ComercialMendoza
+2025-02-06 08:26:36.178 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:26:36.203 -05:00 [INF] Conectando a la BD SBO_INDUZINC
+2025-02-06 08:29:40.830 -05:00 [INF] Aplicación iniciada.
+2025-02-06 08:29:42.894 -05:00 [ERR] No se encontró el archivo de configuración Config.xml
+2025-02-06 08:34:23.252 -05:00 [INF] Aplicación iniciada.
+2025-02-06 08:34:25.130 -05:00 [ERR] No se encontró el archivo de configuración Config.xml en la ruta C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Config1.xml
+2025-02-06 08:46:23.699 -05:00 [INF] Aplicación iniciada.
+2025-02-06 08:47:03.009 -05:00 [ERR] No se encontró el archivo de configuración Config.xml en la ruta C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Config1.xml
+2025-02-06 08:47:53.101 -05:00 [INF] Aplicación iniciada.
+2025-02-06 08:47:58.578 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 08:47:58.589 -05:00 [INF] Conectando a la BD SBO_ComercialMendoza
+2025-02-06 08:48:01.550 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:48:01.595 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 08:48:01.595 -05:00 [INF] Conectando a la BD SBO_INDUZINC
+2025-02-06 08:48:04.239 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:48:04.284 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 08:48:04.289 -05:00 [INF] Conectando a la BD SBO_Mega_Estructuras
+2025-02-06 08:48:06.959 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:48:07.008 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 08:48:07.008 -05:00 [INF] Conectando a la BD SBO_Postes_y_Estructuras
+2025-02-06 08:48:09.604 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:48:09.639 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 08:48:09.639 -05:00 [INF] Conectando a la BD SBO_RumiImport
+2025-02-06 08:48:12.405 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 08:48:12.440 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 08:48:12.440 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-06 08:48:15.198 -05:00 [INF] Conectado satisfactoriamente 
+2025-02-06 09:38:35.990 -05:00 [INF] Aplicación iniciada.
+2025-02-06 09:38:49.780 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 09:38:49.785 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-06 09:38:52.067 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF
+2025-02-06 09:41:30.594 -05:00 [INF] Aplicación iniciada.
+2025-02-06 09:41:33.364 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 09:41:33.366 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-06 09:41:35.561 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF
+2025-02-06 09:42:48.680 -05:00 [INF] Aplicación iniciada.
+2025-02-06 09:44:09.479 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 09:44:09.481 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-06 09:44:11.447 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF
+2025-02-06 09:44:52.568 -05:00 [INF] Desconectando de la BD SBO_SF
+2025-02-06 09:44:52.607 -05:00 [INF] Conectando a la BD SBO_ComercialMendoza
+2025-02-06 09:44:55.011 -05:00 [INF] Conectado satisfactoriamente a BD SBO_ComercialMendoza
+2025-02-06 09:50:47.401 -05:00 [INF] Aplicación iniciada.
+2025-02-06 09:50:48.819 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 09:50:48.821 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-06 09:50:50.901 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF
+2025-02-06 09:51:41.080 -05:00 [INF] Desconectando de la BD SBO_SF
+2025-02-06 09:51:41.097 -05:00 [INF] Conectando a la BD SBO_ComercialMendoza
+2025-02-06 09:51:43.378 -05:00 [INF] Conectado satisfactoriamente a BD SBO_ComercialMendoza
+2025-02-06 10:01:45.365 -05:00 [INF] Aplicación iniciada.
+2025-02-06 10:02:15.313 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 10:02:15.315 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-06 10:02:17.915 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF
+2025-02-06 10:02:28.035 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003452.xml
+2025-02-06 10:02:28.035 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003453.xml
+2025-02-06 10:02:28.045 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003454.xml
+2025-02-06 10:02:28.045 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003455.xml
+2025-02-06 10:02:28.051 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003456.xml
+2025-02-06 10:02:28.055 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003457.xml
+2025-02-06 10:02:28.055 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003458.xml
+2025-02-06 10:02:28.055 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003459.xml
+2025-02-06 10:02:28.055 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003460.xml
+2025-02-06 10:02:28.067 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003402.xml
+2025-02-06 10:02:28.067 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003404.xml
+2025-02-06 10:02:28.067 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003405.xml
+2025-02-06 10:02:28.075 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003406.xml
+2025-02-06 10:02:28.075 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003407.xml
+2025-02-06 10:02:28.075 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003408.xml
+2025-02-06 10:02:28.082 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003409.xml
+2025-02-06 10:02:28.085 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003410.xml
+2025-02-06 10:02:28.085 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003411.xml
+2025-02-06 10:02:28.085 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003412.xml
+2025-02-06 10:02:28.085 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003414.xml
+2025-02-06 10:02:29.795 -05:00 [INF] ✅ Proceso completado.
+2025-02-06 10:04:54.419 -05:00 [INF] Aplicación iniciada.
+2025-02-06 10:04:58.665 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 10:04:58.665 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-06 10:05:00.816 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF
+2025-02-06 10:05:03.584 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 10:05:03.584 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 10:05:03.588 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003452.xml
+2025-02-06 10:05:03.588 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003453.xml
+2025-02-06 10:05:03.588 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003454.xml
+2025-02-06 10:05:03.594 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003455.xml
+2025-02-06 10:05:03.597 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003456.xml
+2025-02-06 10:05:03.597 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003457.xml
+2025-02-06 10:05:03.597 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003458.xml
+2025-02-06 10:05:03.604 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003459.xml
+2025-02-06 10:05:03.604 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003460.xml
+2025-02-06 10:05:03.604 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003402.xml
+2025-02-06 10:05:03.604 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003404.xml
+2025-02-06 10:05:03.604 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003405.xml
+2025-02-06 10:05:03.614 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003406.xml
+2025-02-06 10:05:03.614 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003407.xml
+2025-02-06 10:05:03.614 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003408.xml
+2025-02-06 10:05:03.620 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003409.xml
+2025-02-06 10:05:03.620 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003410.xml
+2025-02-06 10:05:03.624 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003411.xml
+2025-02-06 10:05:03.624 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003412.xml
+2025-02-06 10:05:03.633 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003414.xml
+2025-02-06 10:05:05.516 -05:00 [INF] ✅ Proceso completado.
+2025-02-06 10:10:06.370 -05:00 [INF] Aplicación iniciada.
+2025-02-06 10:10:13.292 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 10:10:13.294 -05:00 [INF] Conectando a la BD SBO_SF
+2025-02-06 10:10:15.258 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF
+2025-02-06 10:10:17.781 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 10:10:17.781 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 10:10:17.789 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003452.xml
+2025-02-06 10:10:17.793 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003453.xml
+2025-02-06 10:10:17.796 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003454.xml
+2025-02-06 10:10:17.796 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003455.xml
+2025-02-06 10:10:17.796 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003456.xml
+2025-02-06 10:10:17.796 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003457.xml
+2025-02-06 10:10:17.796 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003458.xml
+2025-02-06 10:10:17.796 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003459.xml
+2025-02-06 10:10:17.812 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003460.xml
+2025-02-06 10:10:17.812 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003402.xml
+2025-02-06 10:10:17.812 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003404.xml
+2025-02-06 10:10:17.812 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003405.xml
+2025-02-06 10:10:17.812 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003406.xml
+2025-02-06 10:10:17.812 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003407.xml
+2025-02-06 10:10:17.812 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003408.xml
+2025-02-06 10:10:17.828 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003409.xml
+2025-02-06 10:10:17.828 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003410.xml
+2025-02-06 10:10:17.828 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003411.xml
+2025-02-06 10:10:17.828 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003412.xml
+2025-02-06 10:10:17.828 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003414.xml
+2025-02-06 10:10:18.669 -05:00 [INF] ✅ Proceso completado.

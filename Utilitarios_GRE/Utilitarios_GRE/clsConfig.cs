@@ -40,6 +40,13 @@ namespace Utilitarios_GRE
         public string DbName { get; set; }
         public string SAPuser { get; set; }
         public string SAPpassword { get; set; }
+
+        public string PathFirma { get; set; }
+        public string PathCdr { get; set; }
+        public string PathProcesadoFirma { get; set; }
+        public string PathProcesadoCdr { get; set; }
+
+
     }
 
 

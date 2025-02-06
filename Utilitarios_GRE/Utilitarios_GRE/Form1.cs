@@ -21,7 +21,7 @@ namespace Utilitarios_GRE
         static bool AbortarEnError = false;
         static bool CerrarAlFinalizar = false;
         public static clsConfig ConfiguracionGeneral;
-        
+
 
         public Form1()
         {
@@ -31,31 +31,31 @@ namespace Utilitarios_GRE
            .CreateLogger();
 
             Log.Information("Aplicación iniciada.");
-            
+
             conectarBDApi();
-            
+
             InitializeComponent();
         }
 
         public void conectarBDApi()
-        { 
-            
+        {
+
         }
 
         private void SetApplication()
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
 
 
-            Console.WriteLine("Iniciando conexión");
+
+            Log.Information("Iniciando conexión");
             //InitializeCompany();
             if (oCompany.Connect() == 0)
-                Console.WriteLine("Conectado a " + oCompany.CompanyName);
+                Log.Information("Conectado a " + oCompany.CompanyName);
             else
             {
                 string errorout = oCompany.GetLastErrorDescription().ToString();
@@ -104,7 +104,7 @@ namespace Utilitarios_GRE
                 string ruta = AppDomain.CurrentDomain.BaseDirectory + "Config.xml";
                 if (!File.Exists(ruta))
                 {
-                    Console.WriteLine("No se encontró el archivo de configuración, ejecute la utilidad SN_Server_Config");
+                    Log.Error("No se encontró el archivo de configuración Config.xml en la ruta " + ruta.ToString());
                     Environment.Exit(0);
                 }
                 clsConfig config = new clsConfig();
@@ -118,6 +118,7 @@ namespace Utilitarios_GRE
             }
             catch (Exception ex)
             {
+                Log.Error(ex, ex.ToString());
                 Console.WriteLine(ex.Message);
                 return false;
             }
@@ -130,30 +131,37 @@ namespace Utilitarios_GRE
 
             if (Conexion.ConfiguracionGeneral.Sociedades.Length == 0)
             {
-                //logger.Error("No se encontraron BD en el archivo de configuración, por favor revise");
+                Log.Error("No se encontraron BD en el archivo de configuración, por favor revise");
                 return;
             }
 
+            Log.Information("BD encontradas en archivo son " + Conexion.ConfiguracionGeneral.Sociedades.Length.ToString());
+
             foreach (SociedadBD sociedad in Conexion.ConfiguracionGeneral.Sociedades)
             {
+
                 string msj;
                 Conexion.InitializeCompany(sociedad);
                 //logger.Info("Procesando socios");
-                Log.Information("Conectando a la BD " + sociedad.DbName);
+                Log.Information("Conectando a la BD " + sociedad.DbName + " con DI API");
                 Conexion.oCompany.Connect();
                 if (Conexion.oCompany.Connected == false)
                 {
                     int rpta = 0;
                     Conexion.oCompany.GetLastError(out rpta, out msj);
-                    //logger.Error(msj);
+                    Log.Error(rpta.ToString() + " -- " + msj.ToString());
                 }
                 else
                 {
-                    Log.Information("Conectado satisfactoriamente ");
+                    Log.Information("Conectado satisfactoriamente a BD " + sociedad.DbName + " con DI API");
                     //logger.Info("Conectado satisfactoriamente");
                     Conexion.InicializarVarGlob();
                     ////Util.FileMGMT.CreateFolder(AppDomain.CurrentDomain.BaseDirectory + "tmp");
+
                     //Procesar procesar = new Procesar(sociedad.DbName);
+                    procesarXML(sociedad.PathFirma, sociedad.PathProcesadoFirma);
+
+
                     ////// procesos por cada BD
                     ////logger.Info("Iniciando el Proceso");
                     //procesar.IniciarProceso();
@@ -161,7 +169,7 @@ namespace Utilitarios_GRE
                     //logger.Info("Finalizando el Proceso");
 
                     Conexion.oCompany.Disconnect();
-                    //logger.Info("Desconectando de la BD " + sociedad.DbName);
+                    Log.Information("Desconectando de la BD " + sociedad.DbName);
                     //procesar.Dispose();
                     //procesar = null;
                     GC.Collect();
@@ -170,6 +178,56 @@ namespace Utilitarios_GRE
                 Conexion.DestroyCompany();
             }
 
+        }
+
+
+        public void procesarXML(string origenT, string destinoT)
+        {
+
+
+            string rutaOrigen = @origenT;
+            string rutaDestino = @destinoT;
+
+            try
+            {
+                // 📌 Asegurar que la carpeta destino existe
+                if (!Directory.Exists(rutaDestino))
+                {
+                    Directory.CreateDirectory(rutaDestino);
+                    Log.Information($"Carpeta creada: {rutaDestino}");
+                }
+
+                // 📌 Obtener todos los archivos XML en la carpeta origen
+                string[] archivos = Directory.GetFiles(rutaOrigen, "*.xml");
+
+                Log.Information($"Carpeta Origen: {rutaOrigen}");
+                Log.Information($"Carpeta Destino: {rutaDestino}");
+
+                foreach (string archivo in archivos)
+                {
+                    string nombreArchivo = Path.GetFileName(archivo); // Obtener solo el nombre
+                    string destino = Path.Combine(rutaDestino, nombreArchivo); // Ruta completa en destino
+
+                    // 📌 Verificar si el archivo ya existe en la carpeta destino
+                    if (File.Exists(destino))
+                    {
+                        File.Delete(destino); // Eliminar el archivo para poder moverlo
+                        Log.Information($"Archivo existente eliminado: {nombreArchivo}");
+                        
+                    }
+
+                    // 📌 Mover el archivo
+                    File.Move(archivo, destino);
+                    Log.Information($"Archivo movido: {nombreArchivo}");
+                    //Console.WriteLine($"Archivo movido: {nombreArchivo}");
+                }
+
+                Log.Information("✅ Proceso completado.");
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"❌ Error: {ex.Message}");
+            }
 
 
         }
