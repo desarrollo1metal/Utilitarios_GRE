@@ -140,3 +140,383 @@
 2025-02-06 10:10:17.828 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003412.xml
 2025-02-06 10:10:17.828 -05:00 [INF] Archivo movido: 20565975812-09-T002-0003414.xml
 2025-02-06 10:10:18.669 -05:00 [INF] ✅ Proceso completado.
+2025-02-06 10:36:50.880 -05:00 [INF] Aplicación iniciada.
+2025-02-06 10:50:23.515 -05:00 [INF] Aplicación iniciada.
+2025-02-06 10:50:25.245 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 10:50:25.246 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 10:50:27.296 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 10:50:37.262 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 10:50:37.262 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 10:55:00.805 -05:00 [INF] Aplicación iniciada.
+2025-02-06 10:55:21.475 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 10:55:21.475 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 10:55:23.632 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 10:55:23.635 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 10:55:23.635 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 10:55:25.655 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 11:10:51.587 -05:00 [INF] Aplicación iniciada.
+2025-02-06 11:10:52.787 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 11:10:52.792 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 11:10:54.933 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 11:10:54.935 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 11:10:54.935 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 11:11:01.237 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 11:13:40.181 -05:00 [INF] Aplicación iniciada.
+2025-02-06 11:13:42.071 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 11:13:42.071 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 11:13:44.178 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 11:13:44.187 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 11:13:44.187 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 11:13:44.187 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 12:50:58.773 -05:00 [INF] Aplicación iniciada.
+2025-02-06 12:51:09.454 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 12:51:09.454 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 12:51:14.441 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 12:51:14.449 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 12:51:14.449 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 12:51:14.449 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 14:51:42.434 -05:00 [INF] Aplicación iniciada.
+2025-02-06 14:51:44.214 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 14:51:44.224 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 14:51:46.874 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 14:51:46.881 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 14:51:46.881 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 14:51:46.881 -05:00 [INF] Inicio de mover xml 
+2025-02-06 14:51:46.894 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 14:52:18.476 -05:00 [INF] Aplicación iniciada.
+2025-02-06 14:52:21.886 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 14:52:21.888 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 14:52:24.061 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 14:52:24.064 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 14:52:24.064 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 14:52:24.064 -05:00 [INF] Inicio de mover xml 
+2025-02-06 14:52:24.070 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 14:52:34.779 -05:00 [ERR] System.Runtime.InteropServices.COMException (0xFFFFFF96): You are not connected to a company
+   en SAPbobsCOM.ICompany.GetBusinessObject(BoObjectTypes Object)
+   en Utilitarios_GRE.Form1.procesarXMLAdjuntoSAP(String namefile) en C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\Form1.cs:línea 274
+   en Utilitarios_GRE.Form1.procesarXML(String origenT, String destinoT) en C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\Form1.cs:línea 218
+System.Runtime.InteropServices.COMException (0xFFFFFF96): You are not connected to a company
+   en SAPbobsCOM.ICompany.GetBusinessObject(BoObjectTypes Object)
+   en Utilitarios_GRE.Form1.procesarXMLAdjuntoSAP(String namefile) en C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\Form1.cs:línea 274
+   en Utilitarios_GRE.Form1.procesarXML(String origenT, String destinoT) en C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\Form1.cs:línea 218
+2025-02-06 14:52:34.779 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003453.xml
+2025-02-06 14:54:16.644 -05:00 [INF] Aplicación iniciada.
+2025-02-06 14:54:18.690 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 14:54:18.691 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 14:54:23.740 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 14:54:23.742 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 14:54:23.742 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 14:54:23.742 -05:00 [INF] Inicio de mover xml 
+2025-02-06 14:54:23.747 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 14:55:26.857 -05:00 [INF] Aplicación iniciada.
+2025-02-06 14:55:28.344 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 14:55:28.346 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 14:55:34.850 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 14:55:34.853 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 14:55:34.853 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 14:55:34.853 -05:00 [INF] Inicio de mover xml 
+2025-02-06 14:55:34.858 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 14:56:45.006 -05:00 [INF] Aplicación iniciada.
+2025-02-06 14:56:51.138 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 14:56:51.140 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 14:57:00.339 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 14:57:00.344 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 14:57:00.344 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 14:57:00.344 -05:00 [INF] Inicio de mover xml 
+2025-02-06 14:57:00.356 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 14:57:14.664 -05:00 [INF] Aplicación iniciada.
+2025-02-06 14:57:19.560 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 14:57:19.562 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 14:57:21.709 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 14:57:21.712 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 14:57:21.712 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 14:57:21.712 -05:00 [INF] Inicio de mover xml 
+2025-02-06 14:57:21.716 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 14:59:54.192 -05:00 [INF] Aplicación iniciada.
+2025-02-06 14:59:57.085 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 14:59:57.085 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 14:59:59.276 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 14:59:59.278 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 14:59:59.278 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 14:59:59.278 -05:00 [INF] Inicio de mover xml 
+2025-02-06 14:59:59.283 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 14:59:59.384 -05:00 [ERR] ❌ Error al adjuntar XML: El archivo fuente no existe  , 'C:\AdjuntosSAP\\Factura_123.xml.xml'
+2025-02-06 15:01:33.411 -05:00 [INF] Aplicación iniciada.
+2025-02-06 15:01:36.621 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 15:01:36.621 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 15:01:39.698 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 15:01:39.704 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 15:01:39.704 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 15:01:39.704 -05:00 [INF] Inicio de mover xml 
+2025-02-06 15:01:39.711 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 15:01:39.861 -05:00 [ERR] ❌ Error al adjuntar XML: El archivo fuente no existe  , 'C:\AdjuntosSAP\\Factura_123.xml.xml'
+2025-02-06 15:08:04.649 -05:00 [INF] Aplicación iniciada.
+2025-02-06 15:08:08.439 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 15:08:08.444 -05:00 [INF] Conectando a la BD SBO_SF con DI API
+2025-02-06 15:08:10.539 -05:00 [INF] Conectado satisfactoriamente a BD SBO_SF con DI API
+2025-02-06 15:08:10.546 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 15:08:10.546 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 15:08:10.546 -05:00 [INF] Inicio de mover xml 
+2025-02-06 15:08:10.551 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 15:08:10.669 -05:00 [ERR] ❌ Error al adjuntar XML: El archivo fuente no existe  , 'C:\AdjuntosSAP\\Factura_123.xml.xml'
+2025-02-06 15:10:25.990 -05:00 [INF] Aplicación iniciada.
+2025-02-06 15:10:27.354 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 15:10:27.359 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:10:29.946 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:10:29.951 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 15:10:29.951 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 15:10:29.951 -05:00 [INF] Inicio de mover xml 
+2025-02-06 15:10:29.960 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 15:10:30.078 -05:00 [ERR] ❌ Error al adjuntar XML: El archivo fuente no existe  , 'C:\AdjuntosSAP\\Factura_123.xml.xml'
+2025-02-06 15:12:17.898 -05:00 [INF] Aplicación iniciada.
+2025-02-06 15:12:20.324 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 15:12:20.324 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:12:22.448 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:12:22.450 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 15:12:22.450 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 15:12:22.450 -05:00 [INF] Inicio de mover xml 
+2025-02-06 15:12:22.454 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 15:12:22.566 -05:00 [ERR] ❌ Error al adjuntar XML: El archivo fuente no existe  , 'C:\AdjuntosSAP\\Factura_123.xml.xml'
+2025-02-06 15:15:38.205 -05:00 [INF] Aplicación iniciada.
+2025-02-06 15:15:39.942 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 15:15:40.223 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:15:42.552 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:15:42.556 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 15:15:42.556 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 15:15:42.556 -05:00 [INF] Inicio de mover xml 
+2025-02-06 15:15:42.557 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 15:18:27.419 -05:00 [INF] Aplicación iniciada.
+2025-02-06 15:18:40.282 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 15:18:40.534 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:18:42.728 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:18:42.731 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 15:18:42.731 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 15:18:42.731 -05:00 [INF] Inicio de mover xml 
+2025-02-06 15:18:42.735 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 15:19:02.518 -05:00 [ERR] ❌ Error al adjuntar XML: El archivo fuente no existe  , 'C:\AdjuntosSAP\\Factura_123.xml.xml'
+2025-02-06 15:19:54.689 -05:00 [INF] Aplicación iniciada.
+2025-02-06 15:19:59.150 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 15:19:59.410 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:20:01.734 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 15:20:01.740 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 15:20:01.740 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 15:20:01.740 -05:00 [INF] Inicio de mover xml 
+2025-02-06 15:20:01.740 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 15:20:13.208 -05:00 [INF] ✅ XML adjunto agregado con AbsEntry: 18707
+2025-02-06 15:20:37.938 -05:00 [INF] ✅ Adjunto XML asociado correctamente a la Entrega.
+2025-02-06 16:29:52.217 -05:00 [INF] Aplicación iniciada.
+2025-02-06 16:30:00.913 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 16:30:01.222 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:30:05.494 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:30:05.519 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 16:30:05.519 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 16:30:05.519 -05:00 [INF] Inicio de mover xml 
+2025-02-06 16:31:31.252 -05:00 [INF] Aplicación iniciada.
+2025-02-06 16:31:34.090 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 16:31:34.360 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:31:36.689 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:31:36.689 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 16:31:36.689 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 16:31:36.689 -05:00 [INF] Inicio de mover xml 
+2025-02-06 16:31:38.805 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 16:32:59.483 -05:00 [INF] Aplicación iniciada.
+2025-02-06 16:33:08.870 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 16:33:09.123 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:33:11.224 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:33:11.224 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 16:33:11.224 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 16:33:11.224 -05:00 [INF] Inicio de mover xml 
+2025-02-06 16:33:16.787 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 16:36:23.264 -05:00 [INF] Aplicación iniciada.
+2025-02-06 16:36:32.676 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 16:36:32.936 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:36:34.919 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:36:34.921 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 16:36:34.921 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 16:36:34.921 -05:00 [INF] Inicio de mover xml 
+2025-02-06 16:36:39.332 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 16:36:59.805 -05:00 [INF] ✅ Adjunto XML asociado correctamente a la Entrega.
+2025-02-06 16:59:06.247 -05:00 [INF] Aplicación iniciada.
+2025-02-06 16:59:08.957 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 16:59:09.266 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:59:11.805 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 16:59:11.805 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 16:59:11.805 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 16:59:11.805 -05:00 [INF] Inicio de mover xml 
+2025-02-06 16:59:11.821 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 16:59:40.904 -05:00 [INF] ✅ Adjunto XML asociado correctamente a la Entrega.
+2025-02-06 17:02:12.919 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:02:16.893 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:02:17.163 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:02:19.413 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:02:19.417 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:02:19.417 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:02:19.417 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:02:30.766 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003452.xml
+2025-02-06 17:02:43.140 -05:00 [INF] ✅ Adjunto XML asociado correctamente a la Entrega.
+2025-02-06 17:02:59.884 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003452.xml
+2025-02-06 17:31:01.947 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:31:03.499 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:31:03.765 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:31:05.797 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:31:05.799 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:31:05.799 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:31:05.799 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:31:54.494 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:31:55.715 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:31:56.009 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:31:57.996 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:31:57.996 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:31:57.996 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:31:57.996 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:32:11.666 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003453.xml
+2025-02-06 17:33:17.837 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:33:19.196 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:33:19.487 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:33:21.643 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:33:21.643 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:33:21.643 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:33:21.643 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:33:24.814 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003453.xml
+2025-02-06 17:34:52.750 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:34:54.327 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:34:54.591 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:34:57.211 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:34:57.211 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:34:57.211 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:34:57.211 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:34:57.226 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003453.xml
+2025-02-06 17:35:57.661 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:35:58.955 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:35:59.244 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:36:01.308 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:36:01.308 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:36:01.308 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:36:01.308 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:36:01.308 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003453.xml
+2025-02-06 17:36:38.815 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:36:41.926 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:36:42.175 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:36:44.171 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:36:44.174 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:36:44.174 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:36:44.174 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:36:44.179 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003453.xml
+2025-02-06 17:37:00.149 -05:00 [INF] ✅ Adjunto XML asociado correctamente a la Entrega.
+2025-02-06 17:38:34.083 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:38:39.303 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:38:39.562 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:38:41.673 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:38:41.689 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:38:41.689 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:38:41.689 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:38:41.689 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003453.xml
+2025-02-06 17:38:42.755 -05:00 [INF] ✅ Adjunto XML asociado correctamente a la Entrega.
+2025-02-06 17:39:57.236 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:39:58.605 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:39:58.888 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:40:01.620 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:40:01.620 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:40:01.620 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:40:01.620 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:40:01.620 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003453.xml
+2025-02-06 17:40:02.682 -05:00 [INF] ✅ Adjunto XML asociado correctamente a la Entrega.
+2025-02-06 17:40:08.614 -05:00 [INF] Archivo movido: 20565975812-09-T001-0003453.xml
+2025-02-06 17:58:06.592 -05:00 [INF] Aplicación iniciada.
+2025-02-06 17:58:08.807 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 17:58:09.063 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:58:11.084 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 17:58:11.084 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 17:58:11.084 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 17:58:11.084 -05:00 [INF] Inicio de mover xml 
+2025-02-06 17:58:11.100 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003454.xml
+2025-02-06 17:58:11.236 -05:00 [INF] Buscando socios
+2025-02-06 18:00:41.949 -05:00 [INF] Aplicación iniciada.
+2025-02-06 18:00:43.996 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 18:00:44.383 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 18:00:46.914 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 18:00:46.918 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 18:00:46.918 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 18:00:46.918 -05:00 [INF] Inicio de mover xml 
+2025-02-06 18:00:46.918 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003454.xml
+2025-02-06 18:00:47.086 -05:00 [INF] Buscando socios
+2025-02-06 18:07:45.513 -05:00 [INF] Aplicación iniciada.
+2025-02-06 18:07:47.275 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 18:07:47.565 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 18:07:49.711 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 18:07:49.722 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 18:07:49.722 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 18:07:49.722 -05:00 [INF] Inicio de mover xml 
+2025-02-06 18:07:49.730 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003440.xml
+2025-02-06 18:07:49.839 -05:00 [INF] Buscando socios
+2025-02-06 18:12:08.198 -05:00 [INF] Aplicación iniciada.
+2025-02-06 18:12:09.594 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 18:12:09.867 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 18:12:11.886 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 18:12:11.895 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 18:12:11.895 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 18:12:11.895 -05:00 [INF] Inicio de mover xml 
+2025-02-06 18:12:11.895 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003432.xml
+2025-02-06 18:12:12.012 -05:00 [INF] Buscando socios
+2025-02-06 18:13:35.855 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:14:44.888 -05:00 [INF] Aplicación iniciada.
+2025-02-06 18:14:46.177 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-06 18:14:46.452 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-06 18:14:48.439 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-06 18:14:48.442 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-06 18:14:48.442 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-06 18:14:48.442 -05:00 [INF] Inicio de mover xml 
+2025-02-06 18:14:48.447 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003432.xml
+2025-02-06 18:14:48.573 -05:00 [INF] Buscando socios
+2025-02-06 18:15:06.848 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:15:46.728 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003433.xml
+2025-02-06 18:15:46.728 -05:00 [INF] Buscando socios
+2025-02-06 18:15:48.183 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:15:57.896 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003434.xml
+2025-02-06 18:15:57.911 -05:00 [INF] Buscando socios
+2025-02-06 18:16:04.953 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:16:06.091 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003436.xml
+2025-02-06 18:16:06.091 -05:00 [INF] Buscando socios
+2025-02-06 18:16:19.926 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:16:21.125 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003437.xml
+2025-02-06 18:16:21.125 -05:00 [INF] Buscando socios
+2025-02-06 18:16:35.528 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:16:37.600 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003439.xml
+2025-02-06 18:16:37.600 -05:00 [INF] Buscando socios
+2025-02-06 18:17:33.493 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:17:34.959 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003440.xml
+2025-02-06 18:17:34.959 -05:00 [INF] Buscando socios
+2025-02-06 18:19:15.913 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.156 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003441.xml
+2025-02-06 18:19:21.156 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.188 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.188 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003443.xml
+2025-02-06 18:19:21.188 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.204 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.204 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003444.xml
+2025-02-06 18:19:21.204 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.220 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.220 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003445.xml
+2025-02-06 18:19:21.220 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.236 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.236 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003446.xml
+2025-02-06 18:19:21.236 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.252 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.252 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003447.xml
+2025-02-06 18:19:21.252 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.286 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.286 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003448.xml
+2025-02-06 18:19:21.286 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.305 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.305 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003449.xml
+2025-02-06 18:19:21.305 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.313 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.313 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003450.xml
+2025-02-06 18:19:21.313 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.328 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.328 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003451.xml
+2025-02-06 18:19:21.328 -05:00 [INF] Buscando socios
+2025-02-06 18:19:21.360 -05:00 [ERR] No se encontraron Entrada
+2025-02-06 18:19:21.360 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003395.xml
+2025-02-06 18:19:21.360 -05:00 [INF] Buscando socios
+2025-02-06 18:19:55.950 -05:00 [INF] Se Encontrado el documento en SAP con DocEntry = 5909
