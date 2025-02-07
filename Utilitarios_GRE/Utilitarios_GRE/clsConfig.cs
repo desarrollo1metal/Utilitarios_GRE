@@ -11,19 +11,9 @@ namespace Utilitarios_GRE
 
         public Servidor ServidorSAP { get; set; }
         public SociedadBD[] Sociedades { get; set; }
-        public int NRUCenviar { get; set; } = 10;
-        public int IntentosConexion { get; set; } = 10;
-        public int IntentosCaptcha { get; set; } = 10;
-        public int TiempoEsperaSUNAT { get; set; } = 300;
-        public bool SociosInactivos { get; set; } = false;
-        public bool ActualizarDireccionEntrega { get; set; } = true;
-        public bool ActualizarRazonSocial { get; set; } = false;
-        public bool LogCompleto { get; set; } = true;
-        public bool CargaMasiva { get; set; } = true;
-        public bool ActualizarTC { get; set; } = true;
-        public string MetodoActualizacion { get; set; }
-        public string OrigenTC { get; set; }
-        public string TipoTC { get; set; }
+
+        public int TiempoEspera { get; set; } = 300;
+
     }
 
     public class Servidor
@@ -41,9 +31,14 @@ namespace Utilitarios_GRE
         public string SAPuser { get; set; }
         public string SAPpassword { get; set; }
 
-        public string PathFirma { get; set; }
-        public string PathCdr { get; set; }
+        public string PathFirmaOrigen { get; set; }
+        public string PathFirmaOrigenIp3 { get; set; }
+        public string PathFirmaError { get; set; }
         public string PathProcesadoFirma { get; set; }
+
+
+
+        public string PathCdrZip { get; set; }
         public string PathProcesadoCdr { get; set; }
 
 

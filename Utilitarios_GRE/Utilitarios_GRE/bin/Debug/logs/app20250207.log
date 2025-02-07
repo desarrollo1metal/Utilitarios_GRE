@@ -1,0 +1,265 @@
+2025-02-07 18:02:07.727 -05:00 [INF] Aplicación iniciada.
+2025-02-07 18:02:09.042 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-07 18:02:10.652 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-07 18:02:15.162 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-07 18:02:22.559 -05:00 [INF] -------------------------------------------------
+2025-02-07 18:02:22.559 -05:00 [INF] Inicio el proceso de la sociedad pp_05022025_SBO_SF
+2025-02-07 18:02:22.574 -05:00 [INF] Carpeta creada: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-07 18:02:22.574 -05:00 [INF] Carpeta error creada: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR
+2025-02-07 18:02:22.574 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-07 18:02:22.574 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-07 18:02:22.574 -05:00 [INF] Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-07 18:02:22.574 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001574.xml-----------------------
+2025-02-07 18:02:22.589 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001574.xml
+2025-02-07 18:02:22.759 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:23.024 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10080
+2025-02-07 18:02:23.754 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:23.756 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001574.xml 
+2025-02-07 18:02:23.756 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001574.xml
+2025-02-07 18:02:23.757 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001574.xml-----------------------
+2025-02-07 18:02:23.757 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001575.xml-----------------------
+2025-02-07 18:02:23.757 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001575.xml
+2025-02-07 18:02:23.757 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:23.786 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10081
+2025-02-07 18:02:24.035 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:24.038 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001575.xml 
+2025-02-07 18:02:24.038 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001575.xml
+2025-02-07 18:02:24.038 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001575.xml-----------------------
+2025-02-07 18:02:24.038 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001576.xml-----------------------
+2025-02-07 18:02:24.038 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001576.xml
+2025-02-07 18:02:24.038 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:24.073 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10082
+2025-02-07 18:02:24.313 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:24.315 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001576.xml 
+2025-02-07 18:02:24.315 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001576.xml
+2025-02-07 18:02:24.315 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001576.xml-----------------------
+2025-02-07 18:02:24.316 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001577.xml-----------------------
+2025-02-07 18:02:24.316 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001577.xml
+2025-02-07 18:02:24.316 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:24.339 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10083
+2025-02-07 18:02:24.628 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:24.629 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001577.xml 
+2025-02-07 18:02:24.629 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001577.xml
+2025-02-07 18:02:24.629 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001577.xml-----------------------
+2025-02-07 18:02:24.629 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001578.xml-----------------------
+2025-02-07 18:02:24.629 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001578.xml
+2025-02-07 18:02:24.629 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:24.670 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10084
+2025-02-07 18:02:25.045 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:25.047 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001578.xml 
+2025-02-07 18:02:25.047 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001578.xml
+2025-02-07 18:02:25.047 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001578.xml-----------------------
+2025-02-07 18:02:25.047 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001579.xml-----------------------
+2025-02-07 18:02:25.047 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001579.xml
+2025-02-07 18:02:25.047 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:25.079 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10085
+2025-02-07 18:02:25.460 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:25.464 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001579.xml 
+2025-02-07 18:02:25.464 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001579.xml
+2025-02-07 18:02:25.464 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001579.xml-----------------------
+2025-02-07 18:02:25.464 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001580.xml-----------------------
+2025-02-07 18:02:25.464 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001580.xml
+2025-02-07 18:02:25.464 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:25.495 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10086
+2025-02-07 18:02:25.804 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:25.808 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001580.xml 
+2025-02-07 18:02:25.808 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001580.xml
+2025-02-07 18:02:25.808 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001580.xml-----------------------
+2025-02-07 18:02:25.808 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001581.xml-----------------------
+2025-02-07 18:02:25.808 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001581.xml
+2025-02-07 18:02:25.808 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:25.835 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10087
+2025-02-07 18:02:26.306 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:26.309 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001581.xml 
+2025-02-07 18:02:26.309 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001581.xml
+2025-02-07 18:02:26.309 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001581.xml-----------------------
+2025-02-07 18:02:26.309 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001582.xml-----------------------
+2025-02-07 18:02:26.309 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001582.xml
+2025-02-07 18:02:26.309 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:26.339 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10088
+2025-02-07 18:02:26.680 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:26.690 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001582.xml 
+2025-02-07 18:02:26.690 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001582.xml
+2025-02-07 18:02:26.690 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001582.xml-----------------------
+2025-02-07 18:02:26.690 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001583.xml-----------------------
+2025-02-07 18:02:26.690 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001583.xml
+2025-02-07 18:02:26.690 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:26.723 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10089
+2025-02-07 18:02:27.147 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:27.149 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001583.xml 
+2025-02-07 18:02:27.149 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001583.xml
+2025-02-07 18:02:27.149 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001583.xml-----------------------
+2025-02-07 18:02:27.149 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001584.xml-----------------------
+2025-02-07 18:02:27.149 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001584.xml
+2025-02-07 18:02:27.149 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:27.179 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10091
+2025-02-07 18:02:27.494 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:27.498 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001584.xml 
+2025-02-07 18:02:27.498 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001584.xml
+2025-02-07 18:02:27.498 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001584.xml-----------------------
+2025-02-07 18:02:27.498 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001585.xml-----------------------
+2025-02-07 18:02:27.498 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001585.xml
+2025-02-07 18:02:27.498 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:27.529 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10092
+2025-02-07 18:02:27.974 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:27.977 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001585.xml 
+2025-02-07 18:02:27.977 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001585.xml
+2025-02-07 18:02:27.977 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001585.xml-----------------------
+2025-02-07 18:02:27.977 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001586.xml-----------------------
+2025-02-07 18:02:27.977 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001586.xml
+2025-02-07 18:02:27.977 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:28.029 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10101
+2025-02-07 18:02:28.560 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:28.564 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001586.xml 
+2025-02-07 18:02:28.564 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001586.xml
+2025-02-07 18:02:28.564 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001586.xml-----------------------
+2025-02-07 18:02:28.564 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0001587.xml-----------------------
+2025-02-07 18:02:28.564 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0001587.xml
+2025-02-07 18:02:28.564 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:28.612 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 10102
+2025-02-07 18:02:29.029 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI:Por favor introduzca un valor valido en el Campo [Orden de Venta cliente], recuerde que el proyecto debe estar activo.
+2025-02-07 18:02:29.040 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0001587.xml 
+2025-02-07 18:02:29.040 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0001587.xml
+2025-02-07 18:02:29.040 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0001587.xml-----------------------
+2025-02-07 18:02:29.040 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0002959.xml-----------------------
+2025-02-07 18:02:29.040 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0002959.xml
+2025-02-07 18:02:29.040 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:29.079 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13390
+2025-02-07 18:02:29.483 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:29.486 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0002959.xml 
+2025-02-07 18:02:29.486 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0002959.xml
+2025-02-07 18:02:29.486 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0002959.xml-----------------------
+2025-02-07 18:02:29.486 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003007.xml-----------------------
+2025-02-07 18:02:29.486 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003007.xml
+2025-02-07 18:02:29.486 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:29.542 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13504
+2025-02-07 18:02:29.859 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:29.859 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003007.xml 
+2025-02-07 18:02:29.859 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003007.xml
+2025-02-07 18:02:29.859 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003007.xml-----------------------
+2025-02-07 18:02:29.859 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003008.xml-----------------------
+2025-02-07 18:02:29.859 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003008.xml
+2025-02-07 18:02:29.859 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:29.907 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13507
+2025-02-07 18:02:30.294 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:30.299 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003008.xml 
+2025-02-07 18:02:30.299 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003008.xml
+2025-02-07 18:02:30.299 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003008.xml-----------------------
+2025-02-07 18:02:30.299 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003019.xml-----------------------
+2025-02-07 18:02:30.299 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003019.xml
+2025-02-07 18:02:30.299 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:30.341 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13539
+2025-02-07 18:02:30.664 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:30.667 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003019.xml 
+2025-02-07 18:02:30.667 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003019.xml
+2025-02-07 18:02:30.667 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003019.xml-----------------------
+2025-02-07 18:02:30.667 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003025.xml-----------------------
+2025-02-07 18:02:30.667 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003025.xml
+2025-02-07 18:02:30.667 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:30.695 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13551
+2025-02-07 18:02:31.029 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:31.029 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003025.xml 
+2025-02-07 18:02:31.029 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003025.xml
+2025-02-07 18:02:31.029 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003025.xml-----------------------
+2025-02-07 18:02:31.029 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003031.xml-----------------------
+2025-02-07 18:02:31.029 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003031.xml
+2025-02-07 18:02:31.029 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:31.071 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13580
+2025-02-07 18:02:31.359 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:31.369 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003031.xml 
+2025-02-07 18:02:31.369 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003031.xml
+2025-02-07 18:02:31.369 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003031.xml-----------------------
+2025-02-07 18:02:31.369 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003032.xml-----------------------
+2025-02-07 18:02:31.369 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003032.xml
+2025-02-07 18:02:31.369 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:31.399 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13588
+2025-02-07 18:02:31.773 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:31.775 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003032.xml 
+2025-02-07 18:02:31.776 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003032.xml
+2025-02-07 18:02:31.776 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003032.xml-----------------------
+2025-02-07 18:02:31.776 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003033.xml-----------------------
+2025-02-07 18:02:31.776 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003033.xml
+2025-02-07 18:02:31.776 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:31.809 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13589
+2025-02-07 18:02:32.139 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:32.139 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003033.xml 
+2025-02-07 18:02:32.139 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003033.xml
+2025-02-07 18:02:32.139 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003033.xml-----------------------
+2025-02-07 18:02:32.139 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003037.xml-----------------------
+2025-02-07 18:02:32.139 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003037.xml
+2025-02-07 18:02:32.139 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:32.241 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13593
+2025-02-07 18:02:32.691 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:32.698 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003037.xml 
+2025-02-07 18:02:32.698 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003037.xml
+2025-02-07 18:02:32.698 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003037.xml-----------------------
+2025-02-07 18:02:32.698 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003041.xml-----------------------
+2025-02-07 18:02:32.698 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003041.xml
+2025-02-07 18:02:32.698 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:32.738 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13608
+2025-02-07 18:02:33.022 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:33.029 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003041.xml 
+2025-02-07 18:02:33.029 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003041.xml
+2025-02-07 18:02:33.029 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003041.xml-----------------------
+2025-02-07 18:02:33.029 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003056.xml-----------------------
+2025-02-07 18:02:33.029 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003056.xml
+2025-02-07 18:02:33.029 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:33.071 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13650
+2025-02-07 18:02:33.549 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:33.557 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003056.xml 
+2025-02-07 18:02:33.557 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003056.xml
+2025-02-07 18:02:33.557 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003056.xml-----------------------
+2025-02-07 18:02:33.557 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003057.xml-----------------------
+2025-02-07 18:02:33.557 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003057.xml
+2025-02-07 18:02:33.557 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:33.599 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13651
+2025-02-07 18:02:33.981 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:33.985 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003057.xml 
+2025-02-07 18:02:33.985 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003057.xml
+2025-02-07 18:02:33.985 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003057.xml-----------------------
+2025-02-07 18:02:33.985 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003058.xml-----------------------
+2025-02-07 18:02:33.985 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003058.xml
+2025-02-07 18:02:33.985 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:34.019 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13652
+2025-02-07 18:02:34.279 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:34.279 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003058.xml 
+2025-02-07 18:02:34.279 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003058.xml
+2025-02-07 18:02:34.279 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003058.xml-----------------------
+2025-02-07 18:02:34.279 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003073.xml-----------------------
+2025-02-07 18:02:34.279 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003073.xml
+2025-02-07 18:02:34.279 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:34.344 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13689
+2025-02-07 18:02:34.722 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:34.729 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003073.xml 
+2025-02-07 18:02:34.729 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003073.xml
+2025-02-07 18:02:34.729 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003073.xml-----------------------
+2025-02-07 18:02:34.729 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003074.xml-----------------------
+2025-02-07 18:02:34.729 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003074.xml
+2025-02-07 18:02:34.729 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:34.781 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13691
+2025-02-07 18:02:35.199 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:35.204 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003074.xml 
+2025-02-07 18:02:35.204 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003074.xml
+2025-02-07 18:02:35.204 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003074.xml-----------------------
+2025-02-07 18:02:35.204 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003075.xml-----------------------
+2025-02-07 18:02:35.204 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003075.xml
+2025-02-07 18:02:35.204 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:35.243 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13700
+2025-02-07 18:02:35.589 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:35.590 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003075.xml 
+2025-02-07 18:02:35.590 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003075.xml
+2025-02-07 18:02:35.590 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003075.xml-----------------------
+2025-02-07 18:02:35.590 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003076.xml-----------------------
+2025-02-07 18:02:35.590 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003076.xml
+2025-02-07 18:02:35.590 -05:00 [INF] Buscando Entrada en SAP
+2025-02-07 18:02:35.645 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 13715
+2025-02-07 18:02:36.008 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-07 18:02:36.008 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003076.xml 
+2025-02-07 18:02:36.008 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003076.xml
+2025-02-07 18:02:36.008 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003076.xml-----------------------
+2025-02-07 18:02:36.008 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-07 18:02:36.008 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-07 18:02:36.008 -05:00 [INF] Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-07 18:02:36.008 -05:00 [INF] Finalizando el Proceso de la sociedad pp_05022025_SBO_SF
+2025-02-07 18:02:36.040 -05:00 [INF] Desconectando de la BD pp_05022025_SBO_SF
+2025-02-07 18:02:37.858 -05:00 [INF] -------------------------------------------------

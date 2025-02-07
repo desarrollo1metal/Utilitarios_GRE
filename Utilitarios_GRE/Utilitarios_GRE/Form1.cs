@@ -14,6 +14,7 @@ using System.Diagnostics;
 using System.IO;
 using Serilog.Core;
 using System.Collections;
+using System.Runtime.InteropServices;
 
 namespace Utilitarios_GRE
 {
@@ -52,51 +53,12 @@ namespace Utilitarios_GRE
         private void button1_Click(object sender, EventArgs e)
         {
 
-
-
-            //Log.Information("Iniciando conexión");
-            ////InitializeCompany();
-            //if (oCompany.Connect() == 0)
-            //    Log.Information("Conectado a " + oCompany.CompanyName);
-            //else
-            //{
-            //    string errorout = oCompany.GetLastErrorDescription().ToString();
-            //    Console.WriteLine(oCompany.GetLastErrorDescription());
-            //    Console.WriteLine("Presione enter para finalizar...");
-            //    Console.ReadLine();
-            //    Environment.Exit(0);
-            //}
         }
 
 
         static void InitializeCompany(SociedadBD sociedad)
         {
-            //oCompany = new Company();
-
-            ////oCompany = new Company();
-            //switch (ConfiguracionGeneral.ServidorSAP.DbType)
-            //{
-            //    case "2005": oCompany.DbServerType = BoDataServerTypes.dst_MSSQL2005; break;
-            //    case "2008": oCompany.DbServerType = BoDataServerTypes.dst_MSSQL2008; break;
-            //    case "2012": oCompany.DbServerType = BoDataServerTypes.dst_MSSQL2012; break;
-            //    case "2014": oCompany.DbServerType = BoDataServerTypes.dst_MSSQL2014; break;
-            //    case "2016": oCompany.DbServerType = BoDataServerTypes.dst_MSSQL2016; break;
-            //    case "2017": oCompany.DbServerType = BoDataServerTypes.dst_MSSQL2017; break;
-            //    case "2019": oCompany.DbServerType = BoDataServerTypes.dst_MSSQL2019; break;
-
-            //    case "HANA": oCompany.DbServerType = BoDataServerTypes.dst_HANADB; break;
-            //}
-            //oCompany.DbUserName = ConfiguracionGeneral.ServidorSAP.DbUserName;
-            //oCompany.DbPassword = ConfiguracionGeneral.ServidorSAP.DbPassword;
-            //oCompany.Server = ConfiguracionGeneral.ServidorSAP.Server;
-            //oCompany.CompanyDB = sociedad.DbName;
-            //oCompany.UserName = sociedad.SAPuser;
-            //oCompany.Password = sociedad.SAPpassword;
-            //oCompany.language = BoSuppLangs.ln_Spanish_La;
-            //oCompany.LicenseServer = ConfiguracionGeneral.ServidorSAP.LicenseServer;
-            //oCompany.UseTrusted = false;
-
-
+            
         }
 
         static bool LeerConfig()
@@ -156,19 +118,27 @@ namespace Utilitarios_GRE
                 else
                 {
                     Log.Information("Conectado satisfactoriamente a BD " + sociedad.DbName + " con DI API");
+                    Log.Information("-------------------------------------------------");
+                    Log.Information("Inicio el proceso de la sociedad " + sociedad.DbName);
                     //logger.Info("Conectado satisfactoriamente");
                     Conexion.InicializarVarGlob();
-                    ////Util.FileMGMT.CreateFolder(AppDomain.CurrentDomain.BaseDirectory + "tmp");
 
-                    //Procesar procesar = new Procesar(sociedad.DbName);
-                    procesarXML(sociedad.PathFirma, sociedad.PathProcesadoFirma);
+                    if (sociedad.PathFirmaOrigen != string.Empty)
+                    {
+                        procesarXML(sociedad.PathFirmaOrigen, sociedad.PathProcesadoFirma ,sociedad.PathFirmaError );
+                    }
 
-                    Log.Information("Finalizando el Proceso");
+                    if (sociedad.PathFirmaOrigenIp3 != string.Empty)
+                    {
+                        procesarXML(sociedad.PathFirmaOrigenIp3, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
+                    }
+                    
+                    Log.Information("Finalizando el Proceso de la sociedad " + sociedad.DbName);
 
                     Conexion.oCompany.Disconnect();
                     Log.Information("Desconectando de la BD " + sociedad.DbName);
-                    //procesar.Dispose();
-                    //procesar = null;
+
+                    Log.Information("-------------------------------------------------");
                     GC.Collect();
                     GC.WaitForPendingFinalizers();
                 }
@@ -178,9 +148,8 @@ namespace Utilitarios_GRE
         }
 
 
-        public void procesarXML(string origenT, string destinoT)
+        public void procesarXML(string origenT, string destinoT, string PathFirmaError )
         {
-
 
             string rutaOrigen = @origenT;
             string rutaDestino = @destinoT;
@@ -194,6 +163,13 @@ namespace Utilitarios_GRE
                     Log.Information($"Carpeta creada: {rutaDestino}");
                 }
 
+                // 📌 Asegurar que la carpeta destino de errores existe
+                if (!Directory.Exists(PathFirmaError))
+                {
+                    Directory.CreateDirectory(PathFirmaError);
+                    Log.Information($"Carpeta error creada: {PathFirmaError}");
+                }
+
                 // 📌 Obtener todos los archivos XML en la carpeta origen
                 string[] archivos = Directory.GetFiles(rutaOrigen, "*.xml");
 
@@ -201,35 +177,45 @@ namespace Utilitarios_GRE
                 Log.Information($"Carpeta Destino: {rutaDestino}");
 
 
-                Log.Information("Inicio de mover xml ");
+                Log.Information("Inicio de mover xml " + destinoT);
 
                 foreach (string archivo in archivos)
                 {
+                    string nombreArchivo = Path.GetFileName(archivo); // Obtener solo el nombre
 
                     try
                     {
-                        string nombreArchivo = Path.GetFileName(archivo); // Obtener solo el nombre
+                        
                         string destino = Path.Combine(rutaDestino, nombreArchivo); // Ruta completa en destino
 
+                        Log.Information("----------------------- Inicio " + nombreArchivo + "-----------------------");
                         //ini procesar en SAP , adjuntar
-                        if (procesarXMLAdjuntoSAP(archivo,nombreArchivo, origenT, destinoT))
+                        if (procesarXMLAdjuntoSAP(archivo, nombreArchivo, origenT, destinoT , PathFirmaError))
                         {
-                            
+
+                            Log.Information($"Termino exito de proceso , GRE  {nombreArchivo}");
+                        }
+                        else
+                        {
+                            Log.Error($"Termino con error de proceso , GRE  {nombreArchivo}");
                         }
                         //fin procesar en SAP , adjuntar
-
 
 
                     }
                     catch (Exception ex)
                     {
 
-                        Log.Error(ex,ex.ToString());
+                        Log.Error(ex, ex.ToString());
+                    }
+                    finally
+                    {
+                        Log.Information("----------------------- Fin " + nombreArchivo + "-----------------------");
                     }
 
                 }
 
-                Log.Information("✅ Proceso completado.");
+                //Log.Information("✅ Proceso completado  de BD " + );
             }
             catch (Exception ex)
             {
@@ -239,107 +225,201 @@ namespace Utilitarios_GRE
 
         }
 
-        private bool procesarXMLAdjuntoSAP(string archivot,string namefile ,string oringT ,string destinot) {
+        private bool procesarXMLAdjuntoSAP(string archivot,string namefile ,string oringT ,string destinot ,string PathFirmaErrort) {
 
             bool val = false;
-            string name = namefile;
-            string[] dato = namefile.Split('-');
+            
+            
 
-            string ruc = dato[0];
-            string tipoDoc = dato[1];
-            string serieDoc = dato[2];
-            string correlativo = dato[3];
-            string docentry = string.Empty;
-
-            Log.Information($"Ruc = { ruc } : tipoDoc = {tipoDoc} : serieDoc = {serieDoc} : correlativo = {correlativo}");
-
-            if (dato.Length == 4)
+            try
             {
+                string name = namefile;
+                string[] dato = namefile.Split('-');
 
-                //ini adjuntar SAP
-                Recordset oRecordSet = null;
-                oRecordSet = (Recordset)Conexion.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
-                Log.Information("Buscando socios");
-                string query = string.Empty;
+                string ruc = dato[0];
+                string tipoDoc = dato[1];
+                string serieDoc = dato[2];
+                string correlativo = dato[3];
+                string docentry = string.Empty;
+                string docTypeSerch = string.Empty;
 
-                query = $@"SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = '{serieDoc}' AND U_BPP_MDCD = '{correlativo.Replace(".xml","") }' AND CANCELED <> 'Y'";
+                Log.Information($"Ruc = {ruc} : tipoDoc = {tipoDoc} : serieDoc = {serieDoc} : correlativo = {correlativo}");
 
-                //logger.Debug(query);
-                oRecordSet.DoQuery(query);
-
-                if (oRecordSet.RecordCount > 0)
+                if (dato.Length == 4)
                 {
-                    
-                    while (!oRecordSet.EoF)
+                    string t1 = @destinot + "\\" + namefile;
+                    //ini adjuntar SAP
+                    Recordset oRecordSet = null;
+                    oRecordSet = (Recordset)Conexion.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
+                    Log.Information("Buscando Entrada en SAP");
+                    string query = string.Empty;
+
+                    query = $@"SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = '{serieDoc}' AND U_BPP_MDCD = '{correlativo.Replace(".xml", "")}' AND CANCELED <> 'Y'";
+
+                    //logger.Debug(query);
+                    oRecordSet.DoQuery(query);
+
+                    if (oRecordSet.RecordCount > 0)
                     {
-                        docentry = (oRecordSet.Fields.Item("DocEntry").Value.ToString());
-                        
-                        oRecordSet.MoveNext();
+                        while (!oRecordSet.EoF)
+                        {
+                            docentry = (oRecordSet.Fields.Item("DocEntry").Value.ToString());
+                            docTypeSerch = "ODLN";
+                            oRecordSet.MoveNext();
+                        }
+                        Log.Information("Se encontro el documento ODLN (Entrega) en SAP con DocEntry = " + docentry);
+                        val = true;
                     }
-                    Log.Information("Se Encontrado el documento en SAP con DocEntry = " + docentry);
-                    val true;
+                    else
+                    {
+
+
+                        query = string.Empty;
+                        query = $@"SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = '{serieDoc}' AND U_BPP_MDCD = '{correlativo.Replace(".xml", "")}' AND CANCELED <> 'Y'";
+
+                        oRecordSet.DoQuery(query);
+
+                        if (oRecordSet.RecordCount > 0)
+                        {
+                            while (!oRecordSet.EoF)
+                            {
+                                docentry = (oRecordSet.Fields.Item("DocEntry").Value.ToString());
+                                docTypeSerch = "OWTR";
+                                oRecordSet.MoveNext();
+                            }
+                            Log.Information("Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = " + docentry);
+                            val = true;
+                        }
+                        else
+                        {
+
+                            Log.Error("No se encontraron en (Entrada) ni (Transferencia de Stock)");
+                            val = false;
+                        }
+
+                    }
+
+                    switch (docTypeSerch)
+                    {
+                        case "ODLN":
+
+                            // 🔹 Obtener la Entrega de Mercancía (ODLN)
+                            Documents oDelivery = (Documents)Conexion.oCompany.GetBusinessObject(BoObjectTypes.oDeliveryNotes);
+                            if (!oDelivery.GetByKey(Convert.ToInt32(docentry.Trim())))
+                            {
+                                Log.Information("❌ No se encontró la Entrega de Mercancía.");
+                            }
+
+                            // 🔹 Asignar el adjunto a la entrega
+                            oDelivery.UserFields.Fields.Item("U_GMI_V1XML").Value = t1;
+
+                            // 🔹 Actualizar la Entrega con el adjunto
+                            int resultadoEntrega = oDelivery.Update();
+                            if (resultadoEntrega == 0)
+                            {
+                                Log.Information("✅ Se adjunto satisfactoriamente, XML a Entrega");
+                                val = true;
+                            }
+                            else
+                            {
+                                Log.Error($"❌ Error SAP [U]: {Conexion.oCompany.GetLastErrorDescription()}");
+                                val = false;
+                            }
+
+                            break;
+
+                        case "OWTR":
+
+                            // 🔹 Obtener la Entrega de Mercancía (ODLN)
+                            StockTransfer oTransferencia = null;
+
+                            oTransferencia = (StockTransfer)Conexion.oCompany.GetBusinessObject(BoObjectTypes.oStockTransfer);
+                            if (!oTransferencia.GetByKey(Convert.ToInt32(docentry.Trim())))
+                            {
+                                Log.Information("❌ No se encontró la Transferencia de Stock con DocEntry: " + docentry);
+                            }
+
+                            // 🔹 Asignar el adjunto a la Transferencia de Stock
+                            oTransferencia.UserFields.Fields.Item("U_GMI_V1XML").Value = t1;
+
+                            // 🔹 Actualizar la Entrega con el adjunto
+                            int resultadoEntrega1 = oTransferencia.Update();
+                            if (resultadoEntrega1 == 0)
+                            {
+                                Log.Information("✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock");
+                                val = true;
+                            }
+                            else
+                            {
+                                Log.Error($"❌ Error SAP [U] : {Conexion.oCompany.GetLastErrorDescription()}");
+                                val = false;
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+
+                    if (val)
+                    {
+                        //ini
+                        destinot = destinot + "\\" + namefile;
+                        // 📌 Verificar si el archivo ya existe en la carpeta destino
+                        if (File.Exists(destinot))
+                        {
+                            File.Delete(destinot); // Eliminar el archivo para poder moverlo
+                            Log.Information($"Archivo existente eliminado: {namefile}");
+                        }
+
+                        // 📌 Mover el archivo
+                        File.Move(archivot, destinot);
+                        Log.Information($"Archivo movido a  : {destinot} ");
+
+                        //destinot
+
+                        //fin 
+                    }
+
+                    if (!val)
+                    {
+                        //ini
+                        PathFirmaErrort = PathFirmaErrort + "\\" + namefile;
+                        // 📌 Verificar si el archivo ya existe en la carpeta destino
+                        if (File.Exists(PathFirmaErrort))
+                        {
+                            File.Delete(PathFirmaErrort); // Eliminar el archivo para poder moverlo
+                            Log.Information($"Archivo existente eliminado: {namefile}");
+                        }
+
+                        // 📌 Mover el archivo
+                        File.Move(archivot, PathFirmaErrort);
+                        Log.Information($"Archivo movido a  : {PathFirmaErrort} ");
+
+                        //destinot
+
+                        //fin 
+                    }
+
                 }
                 else
                 {
-                    Log.Error("No se encontraron Entrada");
-                    return val = false;
-                }
 
-
-                // 🔹 Obtener la Entrega de Mercancía (ODLN)
-                Documents oDelivery = (Documents)Conexion.oCompany.GetBusinessObject(BoObjectTypes.oDeliveryNotes);
-                if (!oDelivery.GetByKey(Convert.ToInt32(docentry.Trim() )))  //5924)) // 1234 = ID de la Entrega (DocEntry)
-                {
-                    Log.Information("❌ No se encontró la Entrega de Mercancía.");
-                   
-                }
-
-                // 🔹 Asignar el adjunto a la entrega
-                //oDelivery.AttachmentEntry = attachEntry;
-                //oDelivery.UserFields.Fields.Item("U_GMI_V1XML").Value = @"C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA\20565975812-09-T001-0003452.xml";
-                string t1 = @destinot + "\\" + namefile;
-                oDelivery.UserFields.Fields.Item("U_GMI_V1XML").Value = t1;
-
-                // 🔹 Actualizar la Entrega con el adjunto
-                int resultadoEntrega = oDelivery.Update();
-                if (resultadoEntrega == 0)
-                {
-                    Log.Information("✅ Adjunto XML asociado correctamente a la Entrega.");
-                    val = true;
-                }
-                else
-                {
-                    Log.Error($"❌ Error al actualizar la Entrega: {Conexion.oCompany.GetLastErrorDescription()}");
+                    Log.Error("Nombre del archivo incompleto");
                     val = false;
                 }
 
-                //fin fin SAP
-
-                //ini
-                destinot = destinot + "\\" + namefile;
-                // 📌 Verificar si el archivo ya existe en la carpeta destino
-                if (File.Exists(destinot))
-                {
-                    File.Delete(destinot); // Eliminar el archivo para poder moverlo
-                    Log.Information($"Archivo existente eliminado: {namefile}");
-                }
-
-                // 📌 Mover el archivo
-                File.Move(archivot, destinot);
-                Log.Information($"Archivo movido: {namefile}");
-                //Console.WriteLine($"Archivo movido: {nombreArchivo}");
-
-                //fin 
-
 
             }
-            else {
+            catch (Exception ex1)
+            {
 
-                Log.Error("Nombre del archivo incompleto");
-                val = false;
+                Log.Error(ex1, ex1.Message.ToString());
+                val=false; 
             }
 
             return val;
+
         }
+
     }
 }
