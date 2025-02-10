@@ -39,10 +39,14 @@ namespace Utilitarios_GRE
 
 
         public string PathCdrZip { get; set; }
-        public string PathProcesadoCdr { get; set; }
+        public string PathCdrZipIp3 { get; set; }
+        public string PathCdrProcesado { get; set; }
+        public string PathCdrError { get; set; }
+        
 
 
     }
 
 
 }
+

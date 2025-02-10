@@ -2,6 +2,7 @@ C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Config
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Utilitarios_GRE.exe.config
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Utilitarios_GRE.exe
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Utilitarios_GRE.pdb
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\DotNetZip.dll
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Serilog.dll
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Serilog.Sinks.Console.dll
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Serilog.Sinks.File.dll
@@ -12,6 +13,8 @@ C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\System
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\System.Threading.Channels.dll
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\DotNetZip.pdb
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\DotNetZip.xml
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Serilog.xml
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Serilog.Sinks.Console.xml
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\Utilitarios_GRE\bin\Debug\Serilog.Sinks.File.xml
