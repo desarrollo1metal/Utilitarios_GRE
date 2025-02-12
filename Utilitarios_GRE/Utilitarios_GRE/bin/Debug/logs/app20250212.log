@@ -1,0 +1,67 @@
+2025-02-12 08:23:41.648 -05:00 [INF] Aplicación iniciada.
+2025-02-12 08:23:55.825 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-12 08:23:56.255 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-12 08:24:09.027 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 08:24:09.027 -05:00 [INF] Objeto Liberado
+2025-02-12 08:24:09.616 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 08:24:09.616 -05:00 [INF] Objeto Liberado
+2025-02-12 08:24:10.150 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 08:24:10.150 -05:00 [INF] Objeto Liberado
+2025-02-12 08:24:10.151 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-12 08:24:12.262 -05:00 [INF] -------------------------------------------------
+2025-02-12 08:24:12.820 -05:00 [INF] Inicio el proceso de la sociedad pp_05022025_SBO_SF
+2025-02-12 08:24:30.137 -05:00 [INF] Sociedad.PathFirmaOrigen 
+2025-02-12 08:24:30.169 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-12 08:24:30.169 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 08:24:30.169 -05:00 [INF] Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 08:24:31.958 -05:00 [INF] Sociedad.PathFirmaOrigenIp3 
+2025-02-12 08:24:31.967 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-12 08:24:31.967 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 08:24:31.967 -05:00 [INF] Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 08:24:40.377 -05:00 [INF] Sociedad.PathCdrZip 1
+2025-02-12 08:25:09.150 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-12 08:25:09.587 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-12 08:25:09.824 -05:00 [INF] ----------------------- Inicio -----------------------
+2025-02-12 08:25:11.407 -05:00 [INF] Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-12 08:25:46.655 -05:00 [INF] Archivo 121e1d07-470a-441f-92df-a73e46bdf99c.zip movido exitosamente.
+2025-02-12 08:25:56.044 -05:00 [INF] Archivo 121e1d07-470a-441f-92df-a73e46bdf99c.zip extraído en: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO\121e1d07-470a-441f-92df-a73e46bdf99c
+2025-02-12 08:25:58.957 -05:00 [INF] Archivo R-20565975812-09-T002-0003353.xml extraído en: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO\121e1d07-470a-441f-92df-a73e46bdf99c
+2025-02-12 08:26:14.477 -05:00 [INF] Contenido de DocumentDescription en R-20565975812-09-T002-0003353.xml: https://e-factura.sunat.gob.pe/v1/contribuyente/gre/comprobantes/descargaqr?hashqr=hp0Df2Dn8OpTEJj8w2t6wLZdK+DhGbECfTcKRXCZpdQUPgV8cBRnNI9bJG6a7TmGK8b7/N6mm/RBqxSaEH7y+rjmWAHmuZ8xInkyCjH+QMU=
+2025-02-12 08:26:28.667 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003353
+2025-02-12 08:26:34.069 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 08:26:59.435 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003353' AND CANCELED <> 'Y'
+2025-02-12 08:27:38.124 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5851
+2025-02-12 08:27:54.307 -05:00 [INF] ✅ Se adjunto satisfactoriamente, CDR-XML a Entrega
+2025-02-12 08:27:54.307 -05:00 [INF]  ✅ Termino exitoso de proceso ,CDR-GRE  121e1d07-470a-441f-92df-a73e46bdf99c.zip
+2025-02-12 08:27:54.307 -05:00 [INF] ----------------------- Fin 121e1d07-470a-441f-92df-a73e46bdf99c.zip-----------------------
+2025-02-12 08:28:01.637 -05:00 [INF] Sociedad.PathCdrZip 3
+2025-02-12 08:39:41.363 -05:00 [INF] Aplicación iniciada.
+2025-02-12 08:39:47.293 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-12 08:39:47.574 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-12 08:39:50.783 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 08:39:50.783 -05:00 [INF] Objeto Liberado
+2025-02-12 08:39:51.391 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 08:39:51.391 -05:00 [INF] Objeto Liberado
+2025-02-12 08:39:52.069 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 08:39:52.069 -05:00 [INF] Objeto Liberado
+2025-02-12 08:39:52.073 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-12 08:40:09.344 -05:00 [INF] -------------------------------------------------
+2025-02-12 08:40:09.345 -05:00 [INF] Inicio el proceso de la sociedad pp_05022025_SBO_SF
+2025-02-12 08:40:11.257 -05:00 [INF] Sociedad.PathFirmaOrigen 
+2025-02-12 08:40:11.261 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-12 08:40:11.261 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 08:40:11.261 -05:00 [INF] Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 08:40:11.261 -05:00 [INF] ----------------------- Inicio 20565975812-09-T001-0003446.xml-----------------------
+2025-02-12 08:40:13.103 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003446.xml
+2025-02-12 08:40:13.109 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 08:40:16.361 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003446' AND CANCELED <> 'Y'
+2025-02-12 08:40:19.258 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003446' AND CANCELED <> 'Y'
+2025-02-12 08:40:29.929 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14529
+2025-02-12 08:40:44.033 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-12 08:40:45.973 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003446.xml 
+2025-02-12 08:40:45.973 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003446.xml
+2025-02-12 08:40:45.973 -05:00 [INF] ----------------------- Fin 20565975812-09-T001-0003446.xml-----------------------
+2025-02-12 08:40:49.035 -05:00 [INF] Sociedad.PathFirmaOrigenIp3 
+2025-02-12 08:40:49.035 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-12 08:40:49.035 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 08:40:49.035 -05:00 [INF] Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado

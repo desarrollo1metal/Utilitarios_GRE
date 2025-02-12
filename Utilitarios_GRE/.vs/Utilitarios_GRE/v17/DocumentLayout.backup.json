@@ -3,23 +3,27 @@
   "WorkspaceRootPath": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\utilitarios_gre\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|solutionrelative:utilitarios_gre\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\utilitarios_gre\\clsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|solutionrelative:utilitarios_gre\\clsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|c:\\ti_mimsa\\proj\\utilitario_gre\\utilitarios_gre\\utilitarios_gre\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|solutionrelative:utilitarios_gre\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|c:\\ti_mimsa\\proj\\utilitario_gre\\utilitarios_gre\\utilitarios_gre\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|solutionrelative:utilitarios_gre\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|c:\\ti_mimsa\\proj\\utilitario_gre\\utilitarios_gre\\utilitarios_gre\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\utilitarios_gre\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|solutionrelative:utilitarios_gre\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|c:\\ti_mimsa\\proj\\utilitario_gre\\utilitarios_gre\\utilitarios_gre\\clsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|solutionrelative:utilitarios_gre\\clsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|c:\\ti_mimsa\\proj\\utilitario_gre\\utilitarios_gre\\utilitarios_gre\\sapobjuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|solutionrelative:utilitarios_gre\\sapobjuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\utilitarios_gre\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|c:\\ti_mimsa\\proj\\utilitario_gre\\utilitarios_gre\\utilitarios_gre\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|solutionrelative:utilitarios_gre\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -30,8 +34,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsConfig.cs",
+              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\clsConfig.cs",
+              "RelativeDocumentMoniker": "Utilitarios_GRE\\clsConfig.cs",
+              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\clsConfig.cs",
+              "RelativeToolTip": "Utilitarios_GRE\\clsConfig.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwC8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T22:25:18.62Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Form1.cs",
+              "RelativeDocumentMoniker": "Utilitarios_GRE\\Form1.cs",
+              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Form1.cs",
+              "RelativeToolTip": "Utilitarios_GRE\\Form1.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowCsBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T21:36:00.413Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -66,20 +98,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "sapObjUser.cs",
+              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\sapObjUser.cs",
+              "RelativeDocumentMoniker": "Utilitarios_GRE\\sapObjUser.cs",
+              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\sapObjUser.cs",
+              "RelativeToolTip": "Utilitarios_GRE\\sapObjUser.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAArwGQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T22:41:08.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Form1.cs",
+              "RelativeDocumentMoniker": "Utilitarios_GRE\\Form1.cs",
+              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Utilitarios_GRE\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:39:04.039Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Config.xml",
               "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Config.xml",
               "RelativeDocumentMoniker": "Utilitarios_GRE\\Config.xml",
               "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Config.xml",
               "RelativeToolTip": "Utilitarios_GRE\\Config.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-02-10T22:38:33.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "App.config",
               "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\App.config",
               "RelativeDocumentMoniker": "Utilitarios_GRE\\App.config",
@@ -89,44 +146,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-02-10T22:38:30.976Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "clsConfig.cs",
-              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\clsConfig.cs",
-              "RelativeDocumentMoniker": "Utilitarios_GRE\\clsConfig.cs",
-              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\clsConfig.cs",
-              "RelativeToolTip": "Utilitarios_GRE\\clsConfig.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAIwCsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T22:25:18.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Form1.cs",
-              "RelativeDocumentMoniker": "Utilitarios_GRE\\Form1.cs",
-              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Form1.cs",
-              "RelativeToolTip": "Utilitarios_GRE\\Form1.cs",
-              "ViewState": "AgIAANMCAAAAAAAAAAAjwNECAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T21:36:00.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Form1.cs",
-              "RelativeDocumentMoniker": "Utilitarios_GRE\\Form1.cs",
-              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Utilitarios_GRE\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T14:39:04.039Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

@@ -31,9 +31,9 @@ namespace Utilitarios_GRE
         static bool CerrarAlFinalizar = false;
         public static clsConfig ConfiguracionGeneral;
 
-        public string udfxmlFile    = string.Empty;
-        public string udfcdr        = string.Empty;
-        public string udfpdfsunat   = string.Empty;
+        public string udfxmlFile = string.Empty;
+        public string udfcdr = string.Empty;
+        public string udfpdfsunat = string.Empty;
 
 
         public Form1()
@@ -45,14 +45,9 @@ namespace Utilitarios_GRE
 
             Log.Information("Aplicación iniciada.");
 
-            conectarBDApi();
+
 
             InitializeComponent();
-        }
-
-        public void conectarBDApi()
-        {
-
         }
 
         private void SetApplication()
@@ -68,7 +63,7 @@ namespace Utilitarios_GRE
 
         static void InitializeCompany(SociedadBD sociedad)
         {
-            
+
         }
 
         static bool LeerConfig()
@@ -101,11 +96,14 @@ namespace Utilitarios_GRE
         private void button2_Click(object sender, EventArgs e)
         {
 
-            udfxmlFile  = "U_GMI_V1XML";
-            udfcdr      = "U_GMI_V1CDR";
-            udfpdfsunat = "U_GRE_V1PDFS";
+            udfxmlFile = "U_GRE_XML";
+            udfcdr = "U_GRE_CDR";
+            udfpdfsunat = "U_GRE_SUNAT";
 
+           
             if (!LeerConfig()) return;
+
+
 
             if (Conexion.ConfiguracionGeneral.Sociedades.Length == 0)
             {
@@ -120,6 +118,8 @@ namespace Utilitarios_GRE
 
                 string msj;
                 Conexion.InitializeCompany(sociedad);
+
+                
                 //logger.Info("Procesando socios");
                 Log.Information("Conectando a la BD " + sociedad.DbName + " con DI API");
                 Conexion.oCompany.Connect();
@@ -131,21 +131,26 @@ namespace Utilitarios_GRE
                 }
                 else
                 {
+                    //crear campos
+                    CargarEstructura();
+
                     Log.Information("Conectado satisfactoriamente a BD " + sociedad.DbName + " con DI API");
                     Log.Information("-------------------------------------------------");
                     Log.Information("Inicio el proceso de la sociedad " + sociedad.DbName);
                     //logger.Info("Conectado satisfactoriamente");
                     Conexion.InicializarVarGlob();
-                    
+
 
                     //INI XML de Documento firmado
                     if (sociedad.PathFirmaOrigen != string.Empty)
                     {
-                        procesarXML(sociedad.PathFirmaOrigen, sociedad.PathProcesadoFirma ,sociedad.PathFirmaError );
+                        Log.Information("Sociedad.PathFirmaOrigen ");
+                        procesarXML(sociedad.PathFirmaOrigen, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
                     }
 
                     if (sociedad.PathFirmaOrigenIp3 != string.Empty)
                     {
+                        Log.Information("Sociedad.PathFirmaOrigenIp3 ");
                         procesarXML(sociedad.PathFirmaOrigenIp3, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
                     }
                     //FIN XML de Documento firmado
@@ -154,7 +159,14 @@ namespace Utilitarios_GRE
                     //INI CDR de respuesta
                     if (sociedad.PathCdrZip != string.Empty)
                     {
+                        Log.Information("Sociedad.PathCdrZip 1");
                         procesarCdr(sociedad.PathCdrZip, sociedad.PathCdrProcesado, sociedad.PathCdrError);
+                    }
+
+                    if (sociedad.PathCdrZipIp3 != string.Empty)
+                    {
+                        Log.Information("Sociedad.PathCdrZip 3");
+                        procesarCdr(sociedad.PathCdrZipIp3, sociedad.PathCdrProcesado, sociedad.PathCdrError);
                     }
 
 
@@ -176,8 +188,7 @@ namespace Utilitarios_GRE
 
         }
 
-
-        public void procesarXML(string origenT, string destinoT, string PathFirmaError )
+        public void procesarXML(string origenT, string destinoT, string PathFirmaError)
         {
 
             string rutaOrigen = @origenT;
@@ -214,12 +225,12 @@ namespace Utilitarios_GRE
 
                     try
                     {
-                        
+
                         string destino = Path.Combine(rutaDestino, nombreArchivo); // Ruta completa en destino
 
-                        Log.Information("----------------------- Inicio " + nombreArchivo + "-----------------------");
+                        Log.Information("----------------------- Inicio XML " + nombreArchivo + "-----------------------");
                         //ini procesar en SAP , adjuntar
-                        if (procesarXMLAdjuntoSAP(archivo, nombreArchivo, origenT, destinoT , PathFirmaError))
+                        if (procesarXMLAdjuntoSAP(archivo, nombreArchivo, origenT, destinoT, PathFirmaError))
                         {
 
                             Log.Information($"Termino exito de proceso , GRE  {nombreArchivo}");
@@ -239,7 +250,7 @@ namespace Utilitarios_GRE
                     }
                     finally
                     {
-                        Log.Information("----------------------- Fin " + nombreArchivo + "-----------------------");
+                        Log.Information("----------------------- Fin XML " + nombreArchivo + "-----------------------");
                     }
 
                 }
@@ -257,10 +268,11 @@ namespace Utilitarios_GRE
         public void procesarCdr(string origenT, string destinoT, string PathFirmaError)
         {
 
-            string rutaOrigen                   = @origenT;
-            string rutaDestino                  = @destinoT;
-            string fullFileNamecrd              = string.Empty;
-            string DocumentDescriptionpdfSunat  = string.Empty;
+            string rutaOrigen = @origenT;
+            string rutaDestino = @destinoT;
+            string fullFileNamecrd = string.Empty;
+            string DocumentDescriptionpdfSunat = string.Empty;
+            bool existos = true;
 
             try
             {
@@ -284,7 +296,7 @@ namespace Utilitarios_GRE
                 Log.Information($"Carpeta Origen: {rutaOrigen}");
                 Log.Information($"Carpeta Destino: {rutaDestino}");
 
-                Log.Information("----------------------- Inicio -----------------------");
+                
                 Log.Information("Inicio de mover xml " + destinoT);
 
 
@@ -293,114 +305,151 @@ namespace Utilitarios_GRE
 
                 try
                 {
-                    // Obtener todos los archivos ZIP en la ruta A
-                    string[] archivosZip = Directory.GetFiles(rutaA, "*.zip");
 
-                    foreach (string archivo in archivosZip)
+                    try
                     {
-                        string nombreArchivo = Path.GetFileName(archivo);
-                        string zipDestino = Path.Combine(rutaB, nombreArchivo);
+                        // Obtener todos los archivos ZIP en la carpeta de origen
+                        string[] archivosZip2 = Directory.GetFiles(rutaOrigen, "*.zip");
 
-                        if (File.Exists(zipDestino))
+                        foreach (string archivoZip2 in archivosZip2)
                         {
-                            Log.Information("Eliminado la carpeta con nombre " + zipDestino.ToString());
-                            File.Delete(zipDestino); // Eliminar la copia existente
-                        }
 
-                        string t1 = zipDestino.Replace(".zip", "");
-                        if (Directory.Exists(t1))
-                        {
-                            Log.Information("Eliminado el archivo .zip con nombre " + t1);
-                            Directory.Delete(t1, true); // Eliminar la copia existente
-                        }
+                            string nombreArchivo = Path.GetFileName(archivoZip2);
+                            string zipDestino = Path.Combine(rutaB, nombreArchivo);
 
-                        // Mover el archivo ZIP de A a B
-                        File.Move(archivo, zipDestino);
-                        Log.Information($"Archivo {nombreArchivo} movido exitosamente.");
+                            Log.Information("----------------------- Inicio " + nombreArchivo + "-----------------------");
 
-                        // Crear carpeta de extracción
-                        string carpetaExtraccion = Path.Combine(rutaB, Path.GetFileNameWithoutExtension(nombreArchivo));
-                        Directory.CreateDirectory(carpetaExtraccion);
 
-                        // Descomprimir el ZIP en la carpeta de extracción
-                        using (ZipFile zip = ZipFile.Read(zipDestino))
-                        {
-                            foreach (ZipEntry entry in zip)
+                            if (File.Exists(zipDestino))
                             {
-                                entry.Extract(carpetaExtraccion, ExtractExistingFileAction.OverwriteSilently);
-                                Log.Information($"Archivo {entry.FileName} extraído en: {carpetaExtraccion}");
+                                Log.Information("Eliminado la carpeta con nombre " + zipDestino.ToString());
+                                File.Delete(zipDestino); // Eliminar la copia existente
+                            }
 
-                                // Si el archivo extraído es un XML, leer su contenido y obtener el nodo DocumentDescription
-                                if (Path.GetExtension(entry.FileName).ToLower() == ".xml")
+                            string t1 = zipDestino.Replace(".zip", "");
+                            if (Directory.Exists(t1))
+                            {
+                                Log.Information("Eliminado el archivo .zip con nombre " + t1);
+                                Directory.Delete(t1, true); // Eliminar la copia existente
+                            }
+
+                            // Mover el archivo ZIP de A a B
+                            File.Move(archivoZip2, zipDestino);
+                            Log.Information($"Archivo {nombreArchivo} movido exitosamente.");
+
+                            // Crear carpeta de extracción
+                            string carpetaExtraccion = Path.Combine(rutaB, Path.GetFileNameWithoutExtension(nombreArchivo));
+                            Directory.CreateDirectory(carpetaExtraccion);
+
+                            using (ZipFile zip = ZipFile.Read(zipDestino))
+                            {
+                                zip.ExtractAll(carpetaExtraccion, ExtractExistingFileAction.OverwriteSilently);
+                                //Console.WriteLine($"Archivo ZIP {Path.GetFileName(archivoZip2)} descomprimido en: {carpetaExtraccion}");
+                                Log.Information($"Archivo {nombreArchivo} extraído en: {carpetaExtraccion}");
+
+                                foreach (ZipEntry entry in zip)
+                                {
+                                    entry.Extract(carpetaExtraccion, ExtractExistingFileAction.OverwriteSilently);
+                                    Log.Information($"Archivo {entry.FileName} extraído en: {carpetaExtraccion}");
+
+                                    // Si el archivo extraído es un XML, leer su contenido y obtener el nodo DocumentDescription
+                                    if (Path.GetExtension(entry.FileName).ToLower() == ".xml")
+                                    {
+
+                                        string xmlPath = Path.Combine(carpetaExtraccion, entry.FileName);
+
+                                        XmlDocument xmlDoc = new XmlDocument();
+                                        xmlDoc.Load(xmlPath);
+
+                                        // Crear un NamespaceManager para manejar los namespaces
+                                        XmlNamespaceManager nsmgr = new XmlNamespaceManager(xmlDoc.NameTable);
+                                        nsmgr.AddNamespace("cbc", "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2");
+                                        nsmgr.AddNamespace("cac", "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2");
+
+                                        // Seleccionar el nodo <cbc:DocumentDescription>
+                                        XmlNode documentDescriptionNode = xmlDoc.SelectSingleNode("//cbc:DocumentDescription", nsmgr);
+
+                                        if (documentDescriptionNode != null)
+                                        {
+                                            DocumentDescriptionpdfSunat = documentDescriptionNode.InnerText;
+                                            fullFileNamecrd = entry.FileName;
+
+                                            Log.Information($"Contenido de DocumentDescription en {entry.FileName}: {documentDescriptionNode.InnerText}");
+                                        }
+
+                                    }
+
+                                }
+
+
+                                //SAP UPDATE
+                                try
                                 {
 
-                                    string xmlPath = Path.Combine(carpetaExtraccion, entry.FileName);
-
-                                    XmlDocument xmlDoc = new XmlDocument();
-                                    xmlDoc.Load(xmlPath);
-
-                                    // Crear un NamespaceManager para manejar los namespaces
-                                    XmlNamespaceManager nsmgr = new XmlNamespaceManager(xmlDoc.NameTable);
-                                    nsmgr.AddNamespace("cbc", "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2");
-                                    nsmgr.AddNamespace("cac", "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2");
-
-                                    // Seleccionar el nodo <cbc:DocumentDescription>
-                                    XmlNode documentDescriptionNode = xmlDoc.SelectSingleNode("//cbc:DocumentDescription", nsmgr);
-
-
-                                    if (documentDescriptionNode != null)
+                                    //ini procesar en SAP , adjuntar
+                                    string valorFinal = destinoT + "\\" + nombreArchivo.Replace(".zip", "") + "\\" + fullFileNamecrd;
+                                    if (guardarxmlCdr(valorFinal, fullFileNamecrd.Replace(".xml", ""), DocumentDescriptionpdfSunat))
                                     {
-                                        DocumentDescriptionpdfSunat = documentDescriptionNode.InnerText;
-                                        fullFileNamecrd = entry.FileName;
-
-                                        Log.Information ($"Contenido de DocumentDescription en {entry.FileName}: {documentDescriptionNode.InnerText}");
-
-
-                                        try
-                                        {
-
-                                            //string destino = Path.Combine(rutaDestino, nombreArchivo); // Ruta completa en destino
-
-                                            Log.Information("----------------------- Inicio " + nombreArchivo + "-----------------------");
-
-                                            //ini procesar en SAP , adjuntar
-                                            //if (procesarCDRAdjuntoSAP(archivo, nombreArchivo, origenT, destinoT, PathFirmaError))
-                                            string valorFinal = destinoT + "\\" + nombreArchivo.Replace(".zip", "") + "\\" + fullFileNamecrd;
-                                            if (guardarxmlCdr(valorFinal, fullFileNamecrd.Replace(".xml", ""), DocumentDescriptionpdfSunat,zipDestino))
-                                            {
-                                                Log.Information($" ✅ Termino exitoso de proceso ,CDR-GRE  {nombreArchivo}");
-                                            }
-                                            else
-                                            {
-                                                Log.Error($" ❌ Termino con error de proceso , CDR-GRE  {nombreArchivo}");
-                                            }
-                                            //fin procesar en SAP , adjuntar
-
-
-                                        }
-                                        catch (Exception ex)
-                                        {
-
-                                            Log.Error(ex, ex.ToString());
-                                        }
-                                        finally
-                                        {
-                                            Log.Information("----------------------- Fin " + nombreArchivo + "-----------------------");
-                                        }
-
+                                        Log.Information($" ✅ Termino exitoso de proceso ,CDR-GRE  {nombreArchivo}");
                                     }
                                     else
                                     {
-                                        Log.Error ($"El nodo DocumentDescription no se encontró en {entry.FileName}");
+                                        Log.Error($" ❌ Termino con error de proceso , CDR-GRE  {nombreArchivo}");
+                                        existos = false;
                                     }
+                                    //fin procesar en SAP , adjuntar
+
                                 }
+                                catch (Exception ex)
+                                {
+
+                                    Log.Error(ex, ex.ToString());
+                                }
+                                finally
+                                {
+                                    
+                                }
+
+
+                            } // Aquí se libera el archivo ZIP automáticamente
+
+                            if (!existos)
+                            {
+                                string nuevoNombreArchivo1 = Path.Combine(PathFirmaError, Path.GetFileName(archivoZip2));
+
+                                if (File.Exists(nuevoNombreArchivo1))
+                                {
+                                    
+                                    File.Delete(nuevoNombreArchivo1); // Eliminar la copia existente
+                                    Log.Information("Archivo eliminado " + nuevoNombreArchivo1.ToString());
+                                }
+
+                                File.Move(zipDestino, nuevoNombreArchivo1);
+                                Log.Information($"Archivo ZIP  {Path.GetFileName(zipDestino)} movido a: {nuevoNombreArchivo1}");
+                                
+                                zipDestino = zipDestino.Replace(".zip", "");
+                                if (Directory.Exists(zipDestino))
+                                {
+                                    Directory.Delete(zipDestino, true);
+                                    Log.Information("Carpeta eliminada " + zipDestino.ToString());
+                                    //File.Delete(zipDestino); // Eliminar la copia existente
+                                }
+
                             }
+
+                            existos = true;
+
+
+                            Log.Information("----------------------- Fin " + nombreArchivo + "-----------------------");
                         }
+                    }
+                    catch (Exception ex)
+                    {
 
-
-
+                        Log.Error($"Error: {ex.Message}");
 
                     }
+
                 }
                 catch (Exception ex)
                 {
@@ -416,12 +465,12 @@ namespace Utilitarios_GRE
 
         }
 
-
-        private bool procesarXMLAdjuntoSAP(string archivot,string namefile ,string oringT ,string destinot ,string PathFirmaErrort) {
+        private bool procesarXMLAdjuntoSAP(string archivot, string namefile, string oringT, string destinot, string PathFirmaErrort)
+        {
 
             bool val = false;
-            
-            
+
+
 
             try
             {
@@ -447,6 +496,7 @@ namespace Utilitarios_GRE
                     string query = string.Empty;
 
                     query = $@"SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = '{serieDoc}' AND U_BPP_MDCD = '{correlativo.Replace(".xml", "")}' AND CANCELED <> 'Y'";
+                    Log.Information("Query " + query);
 
                     //logger.Debug(query);
                     oRecordSet.DoQuery(query);
@@ -468,7 +518,7 @@ namespace Utilitarios_GRE
 
                         query = string.Empty;
                         query = $@"SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = '{serieDoc}' AND U_BPP_MDCD = '{correlativo.Replace(".xml", "")}' AND CANCELED <> 'Y'";
-
+                        Log.Information("Query " + query);
                         oRecordSet.DoQuery(query);
 
                         if (oRecordSet.RecordCount > 0)
@@ -503,7 +553,7 @@ namespace Utilitarios_GRE
                             }
 
                             // 🔹 Asignar el adjunto a la entrega
-                            oDelivery.UserFields.Fields.Item("udfxmlFile").Value = t1;
+                            oDelivery.UserFields.Fields.Item(udfxmlFile).Value = t1;
 
                             // 🔹 Actualizar la Entrega con el adjunto
                             int resultadoEntrega = oDelivery.Update();
@@ -514,6 +564,7 @@ namespace Utilitarios_GRE
                             }
                             else
                             {
+                                string erro1 = Conexion.oCompany.GetLastErrorDescription();
                                 Log.Error($"❌ Error SAP [U]: {Conexion.oCompany.GetLastErrorDescription()}");
                                 val = false;
                             }
@@ -543,6 +594,7 @@ namespace Utilitarios_GRE
                             }
                             else
                             {
+                                string erro1 = Conexion.oCompany.GetLastErrorDescription();
                                 Log.Error($"❌ Error SAP [U] : {Conexion.oCompany.GetLastErrorDescription()}");
                                 val = false;
                             }
@@ -606,15 +658,14 @@ namespace Utilitarios_GRE
             {
 
                 Log.Error(ex1, ex1.Message.ToString());
-                val=false; 
+                val = false;
             }
 
             return val;
 
         }
 
-        
-        private bool guardarxmlCdr(string valorfinal, string namefile , string valorPdfSunatLink , string zipDestino)
+        private bool guardarxmlCdr(string valorfinal, string namefile, string valorPdfSunatLink)
         {
 
             bool val = false;
@@ -643,7 +694,7 @@ namespace Utilitarios_GRE
                     string query = string.Empty;
 
                     query = $@"SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = '{serieDoc}' AND U_BPP_MDCD = '{correlativo.Replace(".xml", "")}' AND CANCELED <> 'Y'";
-
+                    Log.Information("Query " + query);
                     //logger.Debug(query);
                     oRecordSet.DoQuery(query);
 
@@ -664,7 +715,7 @@ namespace Utilitarios_GRE
 
                         query = string.Empty;
                         query = $@"SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = '{serieDoc}' AND U_BPP_MDCD = '{correlativo.Replace(".xml", "")}' AND CANCELED <> 'Y'";
-
+                        Log.Information("Query " + query);
                         oRecordSet.DoQuery(query);
 
                         if (oRecordSet.RecordCount > 0)
@@ -714,28 +765,8 @@ namespace Utilitarios_GRE
                             }
                             else
                             {
+                                string erro1 = Conexion.oCompany.GetLastErrorDescription();
                                 Log.Error($"❌ Error SAP [U]: {Conexion.oCompany.GetLastErrorDescription()}");
-
-                                //// ini delete
-
-                                //if (File.Exists(zipDestino))
-                                //{
-                                //    Log.Information("Eliminado la carpeta con nombre " + zipDestino.ToString());
-                                //    File.Delete(zipDestino); // Eliminar la copia existente
-                                //}
-
-                                //string t2 = zipDestino.Replace(".zip", "");
-                                //if (Directory.Exists(t2))
-                                //{
-                                //    Log.Information("Eliminado el archivo .zip con nombre " + t2);
-                                //    Directory.Delete(t2, true); // Eliminar la copia existente
-                                //}
-
-                                //// Mover el archivo ZIP de A a B
-                                //File.Move(t1, zipDestino);
-                                //Log.Information($"Archivo {t1} movido exitosamente.");
-                                //// fin delete
-
                                 val = false;
                             }
 
@@ -766,27 +797,9 @@ namespace Utilitarios_GRE
                             }
                             else
                             {
+                                string erro1 = Conexion.oCompany.GetLastErrorDescription();
                                 Log.Error($"❌ Error SAP [U] : {Conexion.oCompany.GetLastErrorDescription()}");
 
-                                ////ini delete
-
-                                //if (File.Exists(zipDestino))
-                                //{
-                                //    Log.Information("Eliminado la carpeta con nombre " + zipDestino.ToString());
-                                //    File.Delete(zipDestino); // Eliminar la copia existente
-                                //}
-
-                                //string t2 = zipDestino.Replace(".zip", "");
-                                //if (Directory.Exists(t2))
-                                //{
-                                //    Log.Information("Eliminado el archivo .zip con nombre " + t2);
-                                //    Directory.Delete(t2, true); // Eliminar la copia existente
-                                //}
-
-                                //// Mover el archivo ZIP de A a B
-                                //File.Move(t1, zipDestino);
-                                //Log.Information($"Archivo {t1} movido exitosamente.");
-                                //// fin delete
 
                                 val = false;
                             }
@@ -796,45 +809,6 @@ namespace Utilitarios_GRE
                             break;
                     }
 
-                    ////if (val)
-                    ////{
-                    ////    //ini
-                    ////    destinot = destinot + "\\" + namefile;
-                    ////    // 📌 Verificar si el archivo ya existe en la carpeta destino
-                    ////    if (File.Exists(destinot))
-                    ////    {
-                    ////        File.Delete(destinot); // Eliminar el archivo para poder moverlo
-                    ////        Log.Information($"Archivo existente eliminado: {namefile}");
-                    ////    }
-
-                    ////    // 📌 Mover el archivo
-                    ////    File.Move(archivot, destinot);
-                    ////    Log.Information($"Archivo movido a  : {destinot} ");
-
-                    ////    //destinot
-
-                    ////    //fin 
-                    ////}
-
-                    ////if (!val)
-                    ////{
-                    ////    //ini
-                    ////    PathFirmaErrort = PathFirmaErrort + "\\" + namefile;
-                    ////    // 📌 Verificar si el archivo ya existe en la carpeta destino
-                    ////    if (File.Exists(PathFirmaErrort))
-                    ////    {
-                    ////        File.Delete(PathFirmaErrort); // Eliminar el archivo para poder moverlo
-                    ////        Log.Information($"Archivo existente eliminado: {namefile}");
-                    ////    }
-
-                    ////    // 📌 Mover el archivo
-                    ////    File.Move(archivot, PathFirmaErrort);
-                    ////    Log.Information($"Archivo movido a  : {PathFirmaErrort} ");
-
-                    ////    //destinot
-
-                    ////    //fin 
-                    ////}
 
                 }
                 else
@@ -857,6 +831,27 @@ namespace Utilitarios_GRE
 
         }
 
+        public static void CargarEstructura()
+        {
+            try
+            {
+
+                sapObjUser sapObj = new sapObjUser(Conexion.oCompany);
+
+                //sapObj.CreaCampoMD("ODLN", "PRV1", "GRE Correlativo1", SAPbobsCOM.BoFieldTypes.db_Alpha, SAPbobsCOM.BoFldSubTypes.st_None,8, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
+
+                sapObj.CreaCampoMD("ODLN", "GRE_XML", "GRE XML", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link ,256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
+                sapObj.CreaCampoMD("ODLN", "GRE_CDR", "GRE CDR", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link, 256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
+                sapObj.CreaCampoMD("ODLN", "GRE_SUNAT", "GRE PDF SUNAT", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link, 256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
+
+            }
+            catch
+            {
+
+
+            }
+
+        }
 
 
     }
