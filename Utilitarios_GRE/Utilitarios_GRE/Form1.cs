@@ -70,9 +70,9 @@ namespace Utilitarios_GRE
         private void button2_Click(object sender, EventArgs e)
         {
 
-            udfxmlFile = "U_GRE_XMLVX";
-            udfcdr = "U_GRE_CDRX";
-            udfpdfsunat = "U_GRE_SUNAXT";
+            udfxmlFile = "U_GREXMLVX";
+            udfcdr = "U_GRECDRX";
+            udfpdfsunat = "U_GRESUNAXT";
 
            
             if (!LeerConfig()) return;

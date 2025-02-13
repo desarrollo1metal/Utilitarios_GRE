@@ -16,25 +16,25 @@
         "Entry"
         {
         "MsmKey" = "8:_1F15B504883940C24114CEFCBA980D16"
-        "OwnerKey" = "8:_66512B2E88AF41E7A7F27AB25F161D8B"
+        "OwnerKey" = "8:_2220D9DE5417498B9E333FC72A06D970"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_3B253E801AF41938184D1179B95B3E7D"
-        "OwnerKey" = "8:_66512B2E88AF41E7A7F27AB25F161D8B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_66512B2E88AF41E7A7F27AB25F161D8B"
+        "MsmKey" = "8:_2220D9DE5417498B9E333FC72A06D970"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
+        "MsmKey" = "8:_3B253E801AF41938184D1179B95B3E7D"
+        "OwnerKey" = "8:_2220D9DE5417498B9E333FC72A06D970"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_915EB99607BA5FF2F7D8EFB6812435F0"
-        "OwnerKey" = "8:_66512B2E88AF41E7A7F27AB25F161D8B"
+        "OwnerKey" = "8:_2220D9DE5417498B9E333FC72A06D970"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,7 +46,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_66512B2E88AF41E7A7F27AB25F161D8B"
+        "OwnerKey" = "8:_2220D9DE5417498B9E333FC72A06D970"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -133,31 +133,31 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_986E58703DEE46FFAD4E55973D9F51BB"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_3B01FDCF73E645A2BCB3C339CDC5E5A2"
             {
             "Name" = "8:Resultado principal from WS_GRE_TOOL (Active)"
             "Condition" = "8:"
-            "Object" = "8:_66512B2E88AF41E7A7F27AB25F161D8B"
-            "FileType" = "3:2"
-            "InstallAction" = "3:4"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_6A5D8D49_BB5F_4934_A852_E46E7B71287E"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_BE407A1A875C4E19BC533C0A46536003"
-            {
-            "Name" = "8:Resultado principal from WS_GRE_TOOL (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_66512B2E88AF41E7A7F27AB25F161D8B"
+            "Object" = "8:_2220D9DE5417498B9E333FC72A06D970"
             "FileType" = "3:2"
             "InstallAction" = "3:1"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_BC17E140_5D5C_4025_9EB5_839927D050C8"
+            "Identifier" = "8:_74B17BEA_15A6_4BB8_80F4_BDCE87990591"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_92F14BF75DAE43DEAF4D4849892D6B9F"
+            {
+            "Name" = "8:Resultado principal from WS_GRE_TOOL (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_2220D9DE5417498B9E333FC72A06D970"
+            "FileType" = "3:2"
+            "InstallAction" = "3:4"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_CE62F1C1_7681_4F45_A648_147A8D7AFCEA"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
@@ -332,20 +332,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:GMI_GRE_UTILITARIO_v1"
-        "ProductCode" = "8:{F6195E87-83A6-4EBC-82EF-4E7248B1A471}"
-        "PackageCode" = "8:{86BB3098-4C64-4AFF-BEF5-575FAB9B025E}"
+        "ProductName" = "8:GMI_GRE_UTILITARIO_v3"
+        "ProductCode" = "8:{F05DED7D-51F9-4DBA-BC48-ADBC9712F502}"
+        "PackageCode" = "8:{467C7D73-AF4F-4FD4-8FB8-3AE5F356F8B7}"
         "UpgradeCode" = "8:{F58C66A2-03C3-43AF-9FEA-8BE519D6C6F5}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.1.0"
+        "ProductVersion" = "8:1.1.3"
         "Manufacturer" = "8:GMI"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:GMI_WSUTILITARIO_v1"
+        "Title" = "8:GMI_WSUTILITARIO_v3"
         "Subject" = "8:"
         "ARPCONTACT" = "8:DEV_GMI"
         "Keywords" = "8:"
@@ -853,35 +853,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3A808DBDF45E4050A450859D8E45518D"
-            {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_81B031D90EBA40F5A9379D40AA3E93FB"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:ContentFiles"
-            "OutputProjectGuid" = "8:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_66512B2E88AF41E7A7F27AB25F161D8B"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2220D9DE5417498B9E333FC72A06D970"
             {
             "SourcePath" = "8:..\\WS_GRE_TOOL\\obj\\Debug\\WS_GRE_TOOL.exe"
             "TargetName" = "8:"
@@ -903,6 +875,34 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D246B1B60F014294A64CECA32E9AEEF6"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_81B031D90EBA40F5A9379D40AA3E93FB"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:ContentFiles"
             "OutputProjectGuid" = "8:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"

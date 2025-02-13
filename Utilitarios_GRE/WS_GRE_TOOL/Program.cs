@@ -51,10 +51,11 @@ namespace WS_GRE_TOOL
                 //logger.Error("probando Errror");
                 System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
                 logger.Info("Inicializando Servicio");
+                stopwatch.Start();
 
-                udfxmlFile = "U_GRE_XML";
-                udfcdr = "U_GRE_CDR";
-                udfpdfsunat = "U_GRE_SUNAT";
+                udfxmlFile = "U_XMLV3";
+                udfcdr = "U_CDRV3";
+                udfpdfsunat = "U_SUNATPDFV3";
 
 
                 if (!LeerConfig()) return;
@@ -110,15 +111,17 @@ namespace WS_GRE_TOOL
                     }
                     else
                     {
+                        logger.Debug("--------------------------------------------------------------------------------------------------");
                         logger.Debug("Conectado satisfactoriamente a BD " + sociedad.DbName + " con DI API");
                         //crear campos
                         CargarEstructura();
 
-                        logger.Debug("-------------------------------------------------");
+                        
                         Conexion.InicializarVarGlob();
 
 
                         //INI XML de Documento firmado
+                        logger.Debug("************************** INI del proceso de XML FILE **************************");
                         if (sociedad.PathFirmaOrigen != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathFirmaOrigen ");
@@ -130,10 +133,12 @@ namespace WS_GRE_TOOL
                             //logger.Debug("Sociedad.PathFirmaOrigenIp3 ");
                             procesarXML(sociedad.PathFirmaOrigenIp3, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
                         }
+                        logger.Debug("************************** FIN del proceso de XML FILE **************************");
                         //FIN XML de Documento firmado
 
 
                         //INI CDR de respuesta
+                        logger.Debug("------------------------- INI del proceso de  CDR       -------------------------");
                         if (sociedad.PathCdrZip != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathCdrZip 1");
@@ -145,16 +150,12 @@ namespace WS_GRE_TOOL
                             //logger.Debug("Sociedad.PathCdrZip 3");
                             procesarCdr(sociedad.PathCdrZipIp3, sociedad.PathCdrProcesado, sociedad.PathCdrError);
                         }
-
-
+                        logger.Debug("------------------------- FIN del proceso de  CDR       -------------------------");
                         //FIN CDR de respuesta
 
-
-
-                        //logger.Debug("Finalizando el Proceso de la sociedad " + sociedad.DbName);
-
+                        logger.Debug("Finalizando el Proceso de la sociedad(BD)  " + sociedad.DbName);
                         Conexion.oCompany.Disconnect();
-                        //logger.Debug("Desconectando de la BD " + sociedad.DbName);
+                        logger.Debug("Desconectado el Proceso de la sociedad(BD) " + sociedad.DbName);
 
                         //logger.Debug("-------------------------------------------------");
                         GC.Collect();
@@ -861,6 +862,7 @@ namespace WS_GRE_TOOL
                 string udfcdrt      = udfcdr.Replace("U_", "");
                 string udfpdfsunatt = udfpdfsunat.Replace("U_", "");
 
+                logger.Debug( "Campos crear " + udfxmlFilet + " - " +  udfcdrt +" - "+ udfpdfsunatt);
 
                 sapObj.CreaCampoMD("ODLN", udfxmlFilet, "GRE XML", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link, 256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
                 sapObj.CreaCampoMD("ODLN", udfcdrt, "GRE CDR", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link, 256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
