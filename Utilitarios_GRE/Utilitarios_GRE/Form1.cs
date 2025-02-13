@@ -31,9 +31,9 @@ namespace Utilitarios_GRE
         static bool CerrarAlFinalizar = false;
         public static clsConfig ConfiguracionGeneral;
 
-        public string udfxmlFile = string.Empty;
-        public string udfcdr = string.Empty;
-        public string udfpdfsunat = string.Empty;
+        public static  string udfxmlFile = string.Empty;
+        public static string udfcdr = string.Empty;
+        public static string udfpdfsunat = string.Empty;
 
 
         public Form1()
@@ -66,6 +66,122 @@ namespace Utilitarios_GRE
 
         }
 
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            udfxmlFile = "U_GRE_XMLVX";
+            udfcdr = "U_GRE_CDRX";
+            udfpdfsunat = "U_GRE_SUNAXT";
+
+           
+            if (!LeerConfig()) return;
+
+
+
+            if (Conexion.ConfiguracionGeneral.Sociedades.Length == 0)
+            {
+                Log.Error("No se encontraron BD en el archivo de configuración, por favor revise");
+                return;
+            }
+
+            Log.Information("BD encontradas en archivo son " + Conexion.ConfiguracionGeneral.Sociedades.Length.ToString());
+
+            foreach (SociedadBD sociedad in Conexion.ConfiguracionGeneral.Sociedades)
+            {
+                string msj;
+                
+
+                // Verificar si las propiedades PathFirmaOrigen y PathFirmaOrigenIp3 existen o no son null
+                string pathFirmaOrigen = sociedad.PathFirmaOrigen ?? string.Empty;
+                string pathFirmaOrigenIp3 = sociedad.PathFirmaOrigenIp3 ?? string.Empty;
+
+                if (string.IsNullOrEmpty(pathFirmaOrigen) || string.IsNullOrEmpty(pathFirmaOrigenIp3))
+                {
+                    //logger.Error($"Uno o ambos paths no están configurados para la sociedad: {sociedad.DbName}");
+                    continue; // Saltar a la siguiente sociedad si los paths no están configurados
+                }
+
+                // Verificar si los directorios existen y contienen archivos
+                bool existenArchivosEnFirmaOrigen = Directory.Exists(pathFirmaOrigen) && Directory.GetFiles(pathFirmaOrigen).Length > 0;
+                bool existenArchivosEnFirmaOrigenIp3 = Directory.Exists(pathFirmaOrigenIp3) && Directory.GetFiles(pathFirmaOrigenIp3).Length > 0;
+
+                if (!existenArchivosEnFirmaOrigen && !existenArchivosEnFirmaOrigenIp3)
+                {
+                    //logger.Error($"No se encontraron archivos en los directorios: {pathFirmaOrigen} y {pathFirmaOrigenIp3}");
+                    continue; // Saltar a la siguiente sociedad si no hay archivos
+                }
+
+                // Si hay archivos en al menos uno de los directorios, proceder con la conexión
+                Conexion.InitializeCompany(sociedad);
+                Conexion.oCompany.Connect();
+                if (Conexion.oCompany.Connected == false)
+                {
+                    int rpta = 0;
+                    Conexion.oCompany.GetLastError(out rpta, out msj);
+                    //logger.Error(rpta.ToString() + " -- " + msj.ToString());
+                    //logger.Error(rpta.ToString() + " -- " + msj.ToString());
+                }
+                else
+                {
+                    //crear campos
+                    CargarEstructura();
+
+                    //logger.Debug("Conectado satisfactoriamente a BD " + sociedad.DbName + " con DI API");
+                    //logger.Debug("-------------------------------------------------");
+                    //logger.Debug("Inicio el proceso de la sociedad " + sociedad.DbName);
+                    //logger.Info("Conectado satisfactoriamente");
+                    Conexion.InicializarVarGlob();
+
+
+                    //INI XML de Documento firmado
+                    if (sociedad.PathFirmaOrigen != string.Empty)
+                    {
+                        //logger.Debug("Sociedad.PathFirmaOrigen ");
+                        procesarXML(sociedad.PathFirmaOrigen, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
+                    }
+
+                    if (sociedad.PathFirmaOrigenIp3 != string.Empty)
+                    {
+                        //logger.Debug("Sociedad.PathFirmaOrigenIp3 ");
+                        procesarXML(sociedad.PathFirmaOrigenIp3, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
+                    }
+                    //FIN XML de Documento firmado
+
+
+                    //INI CDR de respuesta
+                    if (sociedad.PathCdrZip != string.Empty)
+                    {
+                        //logger.Debug("Sociedad.PathCdrZip 1");
+                        procesarCdr(sociedad.PathCdrZip, sociedad.PathCdrProcesado, sociedad.PathCdrError);
+                    }
+
+                    if (sociedad.PathCdrZipIp3 != string.Empty)
+                    {
+                        //logger.Debug("Sociedad.PathCdrZip 3");
+                        procesarCdr(sociedad.PathCdrZipIp3, sociedad.PathCdrProcesado, sociedad.PathCdrError);
+                    }
+
+
+                    //FIN CDR de respuesta
+
+
+
+                    //logger.Debug("Finalizando el Proceso de la sociedad " + sociedad.DbName);
+
+                    Conexion.oCompany.Disconnect();
+                    //logger.Debug("Desconectando de la BD " + sociedad.DbName);
+
+                    //logger.Debug("-------------------------------------------------");
+                    GC.Collect();
+                    GC.WaitForPendingFinalizers();
+                }
+                Conexion.DestroyCompany();
+            }
+
+
+        }
+
         static bool LeerConfig()
         {
             try
@@ -91,101 +207,6 @@ namespace Utilitarios_GRE
                 Console.WriteLine(ex.Message);
                 return false;
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            udfxmlFile = "U_GRE_XML";
-            udfcdr = "U_GRE_CDR";
-            udfpdfsunat = "U_GRE_SUNAT";
-
-           
-            if (!LeerConfig()) return;
-
-
-
-            if (Conexion.ConfiguracionGeneral.Sociedades.Length == 0)
-            {
-                Log.Error("No se encontraron BD en el archivo de configuración, por favor revise");
-                return;
-            }
-
-            Log.Information("BD encontradas en archivo son " + Conexion.ConfiguracionGeneral.Sociedades.Length.ToString());
-
-            foreach (SociedadBD sociedad in Conexion.ConfiguracionGeneral.Sociedades)
-            {
-
-                string msj;
-                Conexion.InitializeCompany(sociedad);
-
-                
-                //logger.Info("Procesando socios");
-                Log.Information("Conectando a la BD " + sociedad.DbName + " con DI API");
-                Conexion.oCompany.Connect();
-                if (Conexion.oCompany.Connected == false)
-                {
-                    int rpta = 0;
-                    Conexion.oCompany.GetLastError(out rpta, out msj);
-                    Log.Error(rpta.ToString() + " -- " + msj.ToString());
-                }
-                else
-                {
-                    //crear campos
-                    CargarEstructura();
-
-                    Log.Information("Conectado satisfactoriamente a BD " + sociedad.DbName + " con DI API");
-                    Log.Information("-------------------------------------------------");
-                    Log.Information("Inicio el proceso de la sociedad " + sociedad.DbName);
-                    //logger.Info("Conectado satisfactoriamente");
-                    Conexion.InicializarVarGlob();
-
-
-                    //INI XML de Documento firmado
-                    if (sociedad.PathFirmaOrigen != string.Empty)
-                    {
-                        Log.Information("Sociedad.PathFirmaOrigen ");
-                        procesarXML(sociedad.PathFirmaOrigen, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
-                    }
-
-                    if (sociedad.PathFirmaOrigenIp3 != string.Empty)
-                    {
-                        Log.Information("Sociedad.PathFirmaOrigenIp3 ");
-                        procesarXML(sociedad.PathFirmaOrigenIp3, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
-                    }
-                    //FIN XML de Documento firmado
-
-
-                    //INI CDR de respuesta
-                    if (sociedad.PathCdrZip != string.Empty)
-                    {
-                        Log.Information("Sociedad.PathCdrZip 1");
-                        procesarCdr(sociedad.PathCdrZip, sociedad.PathCdrProcesado, sociedad.PathCdrError);
-                    }
-
-                    if (sociedad.PathCdrZipIp3 != string.Empty)
-                    {
-                        Log.Information("Sociedad.PathCdrZip 3");
-                        procesarCdr(sociedad.PathCdrZipIp3, sociedad.PathCdrProcesado, sociedad.PathCdrError);
-                    }
-
-
-                    //FIN CDR de respuesta
-
-
-
-                    Log.Information("Finalizando el Proceso de la sociedad " + sociedad.DbName);
-
-                    Conexion.oCompany.Disconnect();
-                    Log.Information("Desconectando de la BD " + sociedad.DbName);
-
-                    Log.Information("-------------------------------------------------");
-                    GC.Collect();
-                    GC.WaitForPendingFinalizers();
-                }
-                Conexion.DestroyCompany();
-            }
-
         }
 
         public void procesarXML(string origenT, string destinoT, string PathFirmaError)
@@ -840,14 +861,24 @@ namespace Utilitarios_GRE
 
                 //sapObj.CreaCampoMD("ODLN", "PRV1", "GRE Correlativo1", SAPbobsCOM.BoFieldTypes.db_Alpha, SAPbobsCOM.BoFldSubTypes.st_None,8, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
 
-                sapObj.CreaCampoMD("ODLN", "GRE_XML", "GRE XML", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link ,256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
-                sapObj.CreaCampoMD("ODLN", "GRE_CDR", "GRE CDR", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link, 256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
-                sapObj.CreaCampoMD("ODLN", "GRE_SUNAT", "GRE PDF SUNAT", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link, 256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
+                string udfxmlFilet = udfxmlFile.Replace("U_", "");
+                string udfcdrt = udfcdr.Replace("U_", "");
+                string udfpdfsunatt = udfpdfsunat.Replace("U_", "");
+
+
+                sapObj.CreaCampoMD("ODLN", udfxmlFilet, "GRE XML", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link, 256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
+                sapObj.CreaCampoMD("ODLN", udfcdrt, "GRE CDR", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link, 256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
+                sapObj.CreaCampoMD("ODLN", udfpdfsunatt, "GRE PDF SUNAT", SAPbobsCOM.BoFieldTypes.db_Memo, SAPbobsCOM.BoFldSubTypes.st_Link, 256000, SAPbobsCOM.BoYesNoEnum.tNO, null, null, null, null, null);
+
+                //udfxmlFile = "U_GRE_XML";
+                //udfcdr = "U_GRE_CDR";
+                //udfpdfsunat = "U_GRE_SUNAT";
+
 
             }
-            catch
+            catch (Exception ex1)
             {
-
+                Log.Error(ex1.Message.ToString());
 
             }
 

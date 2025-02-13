@@ -65,3 +65,222 @@
 2025-02-12 08:40:49.035 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
 2025-02-12 08:40:49.035 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
 2025-02-12 08:40:49.035 -05:00 [INF] Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 11:23:14.035 -05:00 [INF] Aplicación iniciada.
+2025-02-12 11:23:15.563 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-12 11:23:16.423 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-12 11:23:20.848 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 11:23:20.848 -05:00 [INF] Objeto Liberado
+2025-02-12 11:23:21.323 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 11:23:21.323 -05:00 [INF] Objeto Liberado
+2025-02-12 11:23:21.850 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 11:23:21.850 -05:00 [INF] Objeto Liberado
+2025-02-12 11:23:21.850 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API
+2025-02-12 11:23:25.793 -05:00 [INF] -------------------------------------------------
+2025-02-12 11:23:25.793 -05:00 [INF] Inicio el proceso de la sociedad pp_05022025_SBO_SF
+2025-02-12 11:23:33.969 -05:00 [INF] Sociedad.PathFirmaOrigen 
+2025-02-12 11:23:34.845 -05:00 [INF] Carpeta creada: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 11:23:34.845 -05:00 [INF] Carpeta error creada: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR
+2025-02-12 11:23:34.845 -05:00 [INF] Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-12 11:23:34.845 -05:00 [INF] Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 11:23:34.845 -05:00 [INF] Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-12 11:23:34.845 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003425.xml-----------------------
+2025-02-12 11:23:35.983 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003425.xml
+2025-02-12 11:23:35.993 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:39.383 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003425' AND CANCELED <> 'Y'
+2025-02-12 11:23:39.413 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003425' AND CANCELED <> 'Y'
+2025-02-12 11:23:39.703 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14485
+2025-02-12 11:23:41.881 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:41.882 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003425.xml 
+2025-02-12 11:23:41.882 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003425.xml
+2025-02-12 11:23:41.883 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003425.xml-----------------------
+2025-02-12 11:23:41.883 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003426.xml-----------------------
+2025-02-12 11:23:41.883 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003426.xml
+2025-02-12 11:23:41.883 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:45.807 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003426' AND CANCELED <> 'Y'
+2025-02-12 11:23:45.823 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003426' AND CANCELED <> 'Y'
+2025-02-12 11:23:45.853 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14486
+2025-02-12 11:23:46.295 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:46.303 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003426.xml 
+2025-02-12 11:23:46.303 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003426.xml
+2025-02-12 11:23:46.303 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003426.xml-----------------------
+2025-02-12 11:23:46.303 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003427.xml-----------------------
+2025-02-12 11:23:46.303 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003427.xml
+2025-02-12 11:23:46.303 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:46.306 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003427' AND CANCELED <> 'Y'
+2025-02-12 11:23:46.323 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003427' AND CANCELED <> 'Y'
+2025-02-12 11:23:46.362 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14488
+2025-02-12 11:23:46.743 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:46.743 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003427.xml 
+2025-02-12 11:23:46.743 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003427.xml
+2025-02-12 11:23:46.743 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003427.xml-----------------------
+2025-02-12 11:23:46.743 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003428.xml-----------------------
+2025-02-12 11:23:46.743 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003428.xml
+2025-02-12 11:23:46.743 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:46.743 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003428' AND CANCELED <> 'Y'
+2025-02-12 11:23:46.770 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003428' AND CANCELED <> 'Y'
+2025-02-12 11:23:46.792 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14495
+2025-02-12 11:23:47.083 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:47.083 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003428.xml 
+2025-02-12 11:23:47.083 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003428.xml
+2025-02-12 11:23:47.083 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003428.xml-----------------------
+2025-02-12 11:23:47.083 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003429.xml-----------------------
+2025-02-12 11:23:47.083 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003429.xml
+2025-02-12 11:23:47.083 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:47.083 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003429' AND CANCELED <> 'Y'
+2025-02-12 11:23:47.099 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003429' AND CANCELED <> 'Y'
+2025-02-12 11:23:47.123 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14503
+2025-02-12 11:23:47.417 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:47.418 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003429.xml 
+2025-02-12 11:23:47.418 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003429.xml
+2025-02-12 11:23:47.418 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003429.xml-----------------------
+2025-02-12 11:23:47.418 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003430.xml-----------------------
+2025-02-12 11:23:47.418 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003430.xml
+2025-02-12 11:23:47.418 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:47.418 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003430' AND CANCELED <> 'Y'
+2025-02-12 11:23:47.436 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003430' AND CANCELED <> 'Y'
+2025-02-12 11:23:47.463 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14504
+2025-02-12 11:23:47.751 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:47.752 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003430.xml 
+2025-02-12 11:23:47.752 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003430.xml
+2025-02-12 11:23:47.752 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003430.xml-----------------------
+2025-02-12 11:23:47.752 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003431.xml-----------------------
+2025-02-12 11:23:47.752 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003431.xml
+2025-02-12 11:23:47.752 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:47.752 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003431' AND CANCELED <> 'Y'
+2025-02-12 11:23:47.772 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003431' AND CANCELED <> 'Y'
+2025-02-12 11:23:47.789 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14505
+2025-02-12 11:23:48.043 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:48.043 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003431.xml 
+2025-02-12 11:23:48.043 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003431.xml
+2025-02-12 11:23:48.043 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003431.xml-----------------------
+2025-02-12 11:23:48.043 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003432.xml-----------------------
+2025-02-12 11:23:48.043 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003432.xml
+2025-02-12 11:23:48.043 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:48.043 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003432' AND CANCELED <> 'Y'
+2025-02-12 11:23:48.070 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003432' AND CANCELED <> 'Y'
+2025-02-12 11:23:48.093 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14507
+2025-02-12 11:23:48.635 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:48.636 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003432.xml 
+2025-02-12 11:23:48.636 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003432.xml
+2025-02-12 11:23:48.636 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003432.xml-----------------------
+2025-02-12 11:23:48.636 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003433.xml-----------------------
+2025-02-12 11:23:48.636 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003433.xml
+2025-02-12 11:23:48.636 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:48.636 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003433' AND CANCELED <> 'Y'
+2025-02-12 11:23:48.654 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003433' AND CANCELED <> 'Y'
+2025-02-12 11:23:48.673 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14508
+2025-02-12 11:23:49.013 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:49.013 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003433.xml 
+2025-02-12 11:23:49.013 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003433.xml
+2025-02-12 11:23:49.013 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003433.xml-----------------------
+2025-02-12 11:23:49.013 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003434.xml-----------------------
+2025-02-12 11:23:49.013 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003434.xml
+2025-02-12 11:23:49.013 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:49.013 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003434' AND CANCELED <> 'Y'
+2025-02-12 11:23:49.033 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003434' AND CANCELED <> 'Y'
+2025-02-12 11:23:49.053 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14509
+2025-02-12 11:23:49.323 -05:00 [ERR] ❌ Error SAP [U] : (67) GMI: No puede registrar documentos de enero, el periodo contable está cerrado (Max. 3 Días). Coordinar con Contabilidad/Costos
+2025-02-12 11:23:49.323 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003434.xml 
+2025-02-12 11:23:49.323 -05:00 [ERR] Termino con error de proceso , GRE  20565975812-09-T001-0003434.xml
+2025-02-12 11:23:49.323 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003434.xml-----------------------
+2025-02-12 11:23:49.323 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T001-0003446.xml-----------------------
+2025-02-12 11:23:49.323 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003446.xml
+2025-02-12 11:23:49.323 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:49.323 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003446' AND CANCELED <> 'Y'
+2025-02-12 11:23:49.343 -05:00 [INF] Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003446' AND CANCELED <> 'Y'
+2025-02-12 11:23:49.363 -05:00 [INF] Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14529
+2025-02-12 11:23:49.793 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-12 11:23:49.793 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003446.xml 
+2025-02-12 11:23:49.793 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T001-0003446.xml
+2025-02-12 11:23:49.793 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T001-0003446.xml-----------------------
+2025-02-12 11:23:49.793 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T002-0003387.xml-----------------------
+2025-02-12 11:23:49.793 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003387.xml
+2025-02-12 11:23:49.793 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:49.793 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003387' AND CANCELED <> 'Y'
+2025-02-12 11:23:49.813 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5907
+2025-02-12 11:23:51.226 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Entrega
+2025-02-12 11:23:51.227 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T002-0003387.xml 
+2025-02-12 11:23:51.227 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T002-0003387.xml
+2025-02-12 11:23:51.227 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T002-0003387.xml-----------------------
+2025-02-12 11:23:51.227 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T002-0003388.xml-----------------------
+2025-02-12 11:23:51.227 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003388.xml
+2025-02-12 11:23:51.227 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:51.227 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003388' AND CANCELED <> 'Y'
+2025-02-12 11:23:51.242 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5900
+2025-02-12 11:23:51.583 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Entrega
+2025-02-12 11:23:51.589 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T002-0003388.xml 
+2025-02-12 11:23:51.589 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T002-0003388.xml
+2025-02-12 11:23:51.589 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T002-0003388.xml-----------------------
+2025-02-12 11:23:51.589 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T002-0003389.xml-----------------------
+2025-02-12 11:23:51.589 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003389.xml
+2025-02-12 11:23:51.589 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:51.589 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003389' AND CANCELED <> 'Y'
+2025-02-12 11:23:51.606 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5901
+2025-02-12 11:23:51.943 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Entrega
+2025-02-12 11:23:51.952 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T002-0003389.xml 
+2025-02-12 11:23:51.952 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T002-0003389.xml
+2025-02-12 11:23:51.952 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T002-0003389.xml-----------------------
+2025-02-12 11:23:51.952 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T002-0003390.xml-----------------------
+2025-02-12 11:23:51.952 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003390.xml
+2025-02-12 11:23:51.952 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:51.952 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003390' AND CANCELED <> 'Y'
+2025-02-12 11:23:51.973 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5903
+2025-02-12 11:23:52.443 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Entrega
+2025-02-12 11:23:52.444 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T002-0003390.xml 
+2025-02-12 11:23:52.444 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T002-0003390.xml
+2025-02-12 11:23:52.445 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T002-0003390.xml-----------------------
+2025-02-12 11:23:52.445 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T002-0003391.xml-----------------------
+2025-02-12 11:23:52.445 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003391.xml
+2025-02-12 11:23:52.445 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:52.445 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003391' AND CANCELED <> 'Y'
+2025-02-12 11:23:52.463 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5904
+2025-02-12 11:23:52.893 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Entrega
+2025-02-12 11:23:52.903 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T002-0003391.xml 
+2025-02-12 11:23:52.903 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T002-0003391.xml
+2025-02-12 11:23:52.903 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T002-0003391.xml-----------------------
+2025-02-12 11:23:52.903 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T002-0003393.xml-----------------------
+2025-02-12 11:23:52.903 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003393.xml
+2025-02-12 11:23:52.903 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:52.903 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003393' AND CANCELED <> 'Y'
+2025-02-12 11:23:52.923 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5905
+2025-02-12 11:23:53.302 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Entrega
+2025-02-12 11:23:53.304 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T002-0003393.xml 
+2025-02-12 11:23:53.304 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T002-0003393.xml
+2025-02-12 11:23:53.304 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T002-0003393.xml-----------------------
+2025-02-12 11:23:53.304 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T002-0003394.xml-----------------------
+2025-02-12 11:23:53.304 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003394.xml
+2025-02-12 11:23:53.304 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:53.304 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003394' AND CANCELED <> 'Y'
+2025-02-12 11:23:53.317 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5908
+2025-02-12 11:23:53.843 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Entrega
+2025-02-12 11:23:53.843 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T002-0003394.xml 
+2025-02-12 11:23:53.843 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T002-0003394.xml
+2025-02-12 11:23:53.843 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T002-0003394.xml-----------------------
+2025-02-12 11:23:53.843 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T002-0003395.xml-----------------------
+2025-02-12 11:23:53.843 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003395.xml
+2025-02-12 11:23:53.883 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:53.883 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003395' AND CANCELED <> 'Y'
+2025-02-12 11:23:53.904 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5909
+2025-02-12 11:23:54.273 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Entrega
+2025-02-12 11:23:54.273 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T002-0003395.xml 
+2025-02-12 11:23:54.273 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T002-0003395.xml
+2025-02-12 11:23:54.273 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T002-0003395.xml-----------------------
+2025-02-12 11:23:54.273 -05:00 [INF] ----------------------- Inicio XML 20565975812-09-T002-0003396.xml-----------------------
+2025-02-12 11:23:54.273 -05:00 [INF] Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003396.xml
+2025-02-12 11:23:54.273 -05:00 [INF] Buscando Entrada en SAP
+2025-02-12 11:23:54.273 -05:00 [INF] Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003396' AND CANCELED <> 'Y'
+2025-02-12 11:23:54.290 -05:00 [INF] Se encontro el documento ODLN (Entrega) en SAP con DocEntry = 5910
+2025-02-12 11:23:55.191 -05:00 [INF] ✅ Se adjunto satisfactoriamente, XML a Entrega
+2025-02-12 11:23:55.192 -05:00 [INF] Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T002-0003396.xml 
+2025-02-12 11:23:55.192 -05:00 [INF] Termino exito de proceso , GRE  20565975812-09-T002-0003396.xml
+2025-02-12 11:23:55.192 -05:00 [INF] ----------------------- Fin XML 20565975812-09-T002-0003396.xml-----------------------
+2025-02-12 17:07:01.802 -05:00 [INF] Aplicación iniciada.
+2025-02-12 17:07:03.200 -05:00 [INF] BD encontradas en archivo son 6
+2025-02-12 17:07:03.543 -05:00 [INF] Conectando a la BD pp_05022025_SBO_SF con DI API
+2025-02-12 17:07:06.974 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 17:07:06.975 -05:00 [INF] Objeto Liberado
+2025-02-12 17:07:07.912 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 17:07:07.913 -05:00 [INF] Objeto Liberado
+2025-02-12 17:07:08.704 -05:00 [ERR] codigo error : -5002 -- mensaje : Sin registros 
+2025-02-12 17:07:08.704 -05:00 [INF] Objeto Liberado
+2025-02-12 17:07:08.707 -05:00 [INF] Conectado satisfactoriamente a BD pp_05022025_SBO_SF con DI API

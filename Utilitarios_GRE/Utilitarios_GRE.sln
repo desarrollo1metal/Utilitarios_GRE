@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "INSTALL_WS_UTILITARIO", "INSTALL_WS_UTILITARIO\INSTALL_WS_UTILITARIO.vdproj", "{3C3A73CC-1F99-4CD0-BC8B-8BAEBBF749EE}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilitarios_GRE", "Utilitarios_GRE\Utilitarios_GRE.csproj", "{16F505B3-E662-4C28-8718-82FBAF75FFF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_GRE_TOOL", "WS_GRE_TOOL\WS_GRE_TOOL.csproj", "{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C3A73CC-1F99-4CD0-BC8B-8BAEBBF749EE}.Debug|Any CPU.ActiveCfg = Debug
+		{3C3A73CC-1F99-4CD0-BC8B-8BAEBBF749EE}.Release|Any CPU.ActiveCfg = Release
 		{16F505B3-E662-4C28-8718-82FBAF75FFF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16F505B3-E662-4C28-8718-82FBAF75FFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16F505B3-E662-4C28-8718-82FBAF75FFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16F505B3-E662-4C28-8718-82FBAF75FFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
