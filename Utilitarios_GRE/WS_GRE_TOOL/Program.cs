@@ -50,7 +50,9 @@ namespace WS_GRE_TOOL
                 //logger.Debug("TOOL - GMI");
                 //logger.Error("probando Errror");
                 System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
-                logger.Info("Inicializando Servicio");
+
+                logger.Info("---------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+                logger.Info("Inicializando Tool GMI ");
                 stopwatch.Start();
 
                 udfxmlFile = "U_XMLV3";
@@ -165,10 +167,10 @@ namespace WS_GRE_TOOL
                 }
 
 
-
                 stopwatch.Stop();
                 logger.Info("Tiempo total de ejecución: " + stopwatch.Elapsed.ToString());
-                
+                logger.Info("---------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
                 //Util.FileMGMT.EliminarTemporales(AppDomain.CurrentDomain.BaseDirectory);
             }
             catch (Exception ex)
