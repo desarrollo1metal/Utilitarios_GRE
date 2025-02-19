@@ -42,8 +42,7 @@ namespace WS_GRE_TOOL
         public string PathCdrZipIp3 { get; set; }
         public string PathCdrProcesado { get; set; }
         public string PathCdrError { get; set; }
-
-
+        public string Pathbackupzip { get; set; }
 
     }
 

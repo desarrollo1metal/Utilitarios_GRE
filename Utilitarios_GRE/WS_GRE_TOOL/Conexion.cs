@@ -53,23 +53,7 @@ namespace WS_GRE_TOOL
             try
             {
                 string sSQL = string.Empty;
-                //sSQL = Util.VSSQLFactory.GetScript(oCompany, 6, null);
-
-                ////oRecordSet = (Recordset)oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
-                ////oRecordSet.DoQuery(sSQL);
-                ////if (!oRecordSet.EoF)
-                ////{
-                ////    string ARET = oRecordSet.Fields.Item("U_BPP_PPAR").Value;
-                ////    string RCode = oRecordSet.Fields.Item("U_BPP_PPRI").Value;
-                ////    //Procesar.SociedadRetenedora = (ARET == "Y");
-                ////    //Procesar.CodRet = RCode;
-                ////    //Procesar.FullLog = Conexion.ConfiguracionGeneral.LogCompleto;
-                ////}
-                ////else
-                ////{
-                ////    //Procesar.SociedadRetenedora = false;
-                ////    //Procesar.CodRet = "";
-                ////}
+               
             }
             catch { }
             finally

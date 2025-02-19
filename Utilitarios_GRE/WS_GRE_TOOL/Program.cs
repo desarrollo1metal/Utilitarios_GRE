@@ -27,9 +27,9 @@ namespace WS_GRE_TOOL
         public static string udfxmlFile = string.Empty;
         public static string udfcdr = string.Empty;
         public static string udfpdfsunat = string.Empty;
-        static string versionNow = "1.2.5";
-        string descripProd = "GMI SERVICIO_ST2";
-        string codProd = "GMI_ST2";
+        static string versionNow = "3.0.0";
+        string descripProd = "GMI AddOn Despacho";
+        string codProd = "GMI_ADZZX1";
 
         private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(typeof(Program));
         [STAThread]
@@ -121,24 +121,24 @@ namespace WS_GRE_TOOL
                 //#endif
                 if (bdversion == null || bdversion == "")
                 {
-                    //insert nuevo de cero
-
-                    //logger.Info("Instalando addon");
-                    //AppMain.MensajeAdvertencia("Instalando addon");
-                    //CargarEstructura();
+                    
                     if (filas == 0)
                     {
-                       
+
+                        CargarEstructura();
 
                         SAPbobsCOM.Recordset oRecordSet4 = null;
                         try
                         {
+                            
                             //String query = "insert into [dbo].[@vs_prd1](Code,LineId,Object,LogInst,U_VS_CODPRD,U_VS_DSCPRD,U_VS_VRSION) values('VS',(SELECT COUNT(0) FROM [dbo].[@vs_prd1])+1,'BPVS_OPRD',NULL,'" + AppMain.codigoproducto+ "','"+AppMain.descripcionproducto+"','" +AppMain.versionAddon+ "')";
                             string query = "insert into [dbo].[@GMI_VER1](Code,LineId,Object,LogInst,U_GMI_CODPRD,U_GMI_DSCPRD,U_GMI_VRSION) values('GMI',(SELECT COUNT(0) FROM [dbo].[@GMI_VER1])+1,'BGMI_TVER',NULL,'" + codProd + "','" + descripProd + "','" + versionNow + "')";
                             oRecordSet4 = (Recordset)Conexion.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
                             oRecordSet4.DoQuery(query);
 
-                            logger.Debug("Se registra nuevo producto codProd  = " + codProd + " - descripProd  = " + descripProd + " - versionNow = " + versionNow);
+                            logger.Debug("Se registro nuevo producto codProd  = " + codProd + " - descripProd  = " + descripProd + " - versionNow = " + versionNow);
+
+
                         }
                         catch (Exception ex)
                         {
@@ -165,11 +165,7 @@ namespace WS_GRE_TOOL
                         //AppMain.MensajeAdvertencia("Actualizando version del addon");
                         CargarEstructura();
 
-                        //ProductoBL.ActualizarVersion();
-                        //actualizar version
-                        //string consultaSQLupdate = $"UPDATE U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = '{producto}' AND ";
-
-                        
+                     
                         string consultaSQLupdate = $@" UPDATE [@GMI_VER1]  SET U_GMI_VRSION = '{versionNow}'  WHERE U_GMI_CODPRD = '{codProd}';";
 
                         //ini actualizar
@@ -181,7 +177,7 @@ namespace WS_GRE_TOOL
                             oRecordSet1 = (Recordset)Conexion.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
                             oRecordSet1.DoQuery(consultaSQLupdate);
 
-                            logger.Debug("Consulta SQL " + consultaSQLupdate);
+                            logger.Debug("Se actualizo versión , SQL " + consultaSQLupdate);
                         }
                         catch (Exception ex)
                         {
@@ -216,18 +212,9 @@ namespace WS_GRE_TOOL
         {
             SetUpLogger();
 
-            
-
-            //fin
-
-            //logger.Debug("Inicio del sercio");
-
-            //log4net.Config.XmlConfigurator.Configure();
             try
             {
-                //Console.Title = "TOOL - GMI";
-                //logger.Debug("TOOL - GMI");
-                //logger.Error("probando Errror");
+                
                 System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
 
                 logger.Info("---------------------------------------------------------------------------------------------------------------------------------------------------------------------");
@@ -238,10 +225,7 @@ namespace WS_GRE_TOOL
                 udfcdr = "U_CDRV3";
                 udfpdfsunat = "U_SUNATPDFV3";
 
-
                 if (!LeerConfig()) return;
-
-
 
                 if (Conexion.ConfiguracionGeneral.Sociedades.Length == 0)
                 {
@@ -251,11 +235,9 @@ namespace WS_GRE_TOOL
 
                 logger.Debug("BD encontradas en archivo son " + Conexion.ConfiguracionGeneral.Sociedades.Length.ToString());
 
-
                 foreach (SociedadBD sociedad in Conexion.ConfiguracionGeneral.Sociedades)
                 {
                     string msj;
-
 
                     // Verificar si las propiedades PathFirmaOrigen y PathFirmaOrigenIp3 existen o no son null
                     string pathFirmaOrigen = sociedad.PathFirmaOrigen ?? string.Empty;
@@ -295,15 +277,12 @@ namespace WS_GRE_TOOL
                         logger.Debug("--------------------------------------------------------------------------------------------------");
                         logger.Debug("Conectado satisfactoriamente a BD " + sociedad.DbName + " con DI API");
                         //crear campos
-                        //recien  validamos versiones
-
+                        
                         //INI   version
                         ValidarVersion();
                         //FIN   version
 
-
                         Conexion.InicializarVarGlob();
-
 
                         //INI XML de Documento firmado
                         logger.Debug("************************** INI del proceso de XML FILE **************************");
@@ -672,8 +651,6 @@ namespace WS_GRE_TOOL
         {
 
             bool val = false;
-
-
 
             try
             {

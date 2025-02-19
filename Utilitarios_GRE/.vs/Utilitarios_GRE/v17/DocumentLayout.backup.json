@@ -7,18 +7,12 @@
       "RelativeMoniker": "D:0:0:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}|WS_GRE_TOOL\\WS_GRE_TOOL.csproj|solutionrelative:ws_gre_tool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}|WS_GRE_TOOL\\WS_GRE_TOOL.csproj|C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\ws_gre_tool\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}|WS_GRE_TOOL\\WS_GRE_TOOL.csproj|solutionrelative:ws_gre_tool\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}|WS_GRE_TOOL\\WS_GRE_TOOL.csproj|c:\\ti_mimsa\\proj\\utilitario_gre\\utilitarios_gre\\ws_gre_tool\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}|WS_GRE_TOOL\\WS_GRE_TOOL.csproj|solutionrelative:ws_gre_tool\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WS_GRE_TOOL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\utilitarios_gre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16F505B3-E662-4C28-8718-82FBAF75FFF0}|Utilitarios_GRE\\Utilitarios_GRE.csproj|solutionrelative:utilitarios_gre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}|WS_GRE_TOOL\\WS_GRE_TOOL.csproj|c:\\ti_mimsa\\proj\\utilitario_gre\\utilitarios_gre\\ws_gre_tool\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}|WS_GRE_TOOL\\WS_GRE_TOOL.csproj|c:\\ti_mimsa\\proj\\utilitario_gre\\utilitarios_gre\\ws_gre_tool\\clsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B4F0D5D-6DA8-4704-9FB2-A4B44CF1A3F9}|WS_GRE_TOOL\\WS_GRE_TOOL.csproj|solutionrelative:ws_gre_tool\\clsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsConfig.cs",
+              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\clsConfig.cs",
+              "RelativeDocumentMoniker": "WS_GRE_TOOL\\clsConfig.cs",
+              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\clsConfig.cs",
+              "RelativeToolTip": "WS_GRE_TOOL\\clsConfig.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAiwCsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:31:32.223Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -68,53 +75,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Config.xml",
+              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\Config.xml",
+              "RelativeDocumentMoniker": "WS_GRE_TOOL\\Config.xml",
+              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\Config.xml",
+              "RelativeToolTip": "WS_GRE_TOOL\\Config.xml",
+              "ViewState": "AgIAACwAAAAAAAAAAAApwDgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-02-19T14:02:09.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\Program.cs",
               "RelativeDocumentMoniker": "WS_GRE_TOOL\\Program.cs",
               "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\Program.cs",
               "RelativeToolTip": "WS_GRE_TOOL\\Program.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAowKEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAC4BAAAAAAAAAAAcwDIBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T15:14:37.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WS_GRE_TOOL",
-              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\WS_GRE_TOOL.csproj",
-              "RelativeDocumentMoniker": "WS_GRE_TOOL\\WS_GRE_TOOL.csproj",
-              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\WS_GRE_TOOL.csproj",
-              "RelativeToolTip": "WS_GRE_TOOL\\WS_GRE_TOOL.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T22:30:54.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Program.cs",
-              "RelativeDocumentMoniker": "Utilitarios_GRE\\Program.cs",
-              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\Utilitarios_GRE\\Program.cs",
-              "RelativeToolTip": "Utilitarios_GRE\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T18:33:55.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\Conexion.cs",
-              "RelativeDocumentMoniker": "WS_GRE_TOOL\\Conexion.cs",
-              "ToolTip": "C:\\TI_MIMSA\\PROJ\\Utilitario_GRE\\Utilitarios_GRE\\WS_GRE_TOOL\\Conexion.cs",
-              "RelativeToolTip": "WS_GRE_TOOL\\Conexion.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAmwCoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T18:23:28.712Z",
               "EditorCaption": ""
             }
           ]
