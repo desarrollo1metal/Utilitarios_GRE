@@ -1,0 +1,276 @@
+2025-02-18 15:35:28,305 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 15:35:28,316 INFO : Inicializando Tool GMI 
+2025-02-18 15:35:28,316 ERROR: No se encontró el archivo de configuración Config.xml en la ruta C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\WS_GRE_TOOL\bin\Debug\Config.xml
+2025-02-18 15:35:38,415 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 15:35:38,415 INFO : Inicializando Tool GMI 
+2025-02-18 15:35:38,415 ERROR: No se encontró el archivo de configuración Config.xml en la ruta C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\WS_GRE_TOOL\bin\Debug\Config.xml
+2025-02-18 15:35:50,490 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 15:35:50,505 INFO : Inicializando Tool GMI 
+2025-02-18 15:35:58,592 ERROR: No se encontró el archivo de configuración Config.xml en la ruta C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\WS_GRE_TOOL\bin\Debug\Config.xml
+2025-02-18 15:36:24,713 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 15:36:24,719 INFO : Inicializando Tool GMI 
+2025-02-18 15:36:29,680 ERROR: No se encontró el archivo de configuración Config.xml en la ruta C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\WS_GRE_TOOL\bin\Debug\Config.xml
+2025-02-18 16:15:42,179 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 16:15:42,186 INFO : Inicializando Tool GMI 
+2025-02-18 16:17:40,025 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 16:17:40,028 INFO : Inicializando Tool GMI 
+2025-02-18 16:17:55,457 DEBUG: BD encontradas en archivo son 6
+2025-02-18 16:17:56,255 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 16:17:58,984 ERROR: 100000060 -- B1 License Error Unknown error #100000060
+2025-02-18 16:18:09,397 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 16:20:25,262 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 16:20:25,269 INFO : Inicializando Tool GMI 
+2025-02-18 16:20:44,611 DEBUG: BD encontradas en archivo son 6
+2025-02-18 16:20:47,464 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 16:23:36,767 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 16:23:37,577 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 16:32:59,970 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 16:32:59,976 INFO : Inicializando Tool GMI 
+2025-02-18 16:33:05,804 DEBUG: BD encontradas en archivo son 6
+2025-02-18 16:33:06,894 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 16:33:20,254 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 16:33:20,254 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 16:35:58,859 INFO : Actualizando version del addon
+2025-02-18 16:36:33,737 DEBUG: Campos crear XMLV3 - CDRV3 - SUNATPDFV3
+2025-02-18 16:36:43,154 DEBUG:  Se ha creado el campo de usuario: XMLV3en la tabla: ODLN
+2025-02-18 16:36:43,157 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 16:36:50,073 DEBUG:  Se ha creado el campo de usuario: CDRV3en la tabla: ODLN
+2025-02-18 16:36:50,074 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 16:36:56,578 DEBUG:  Se ha creado el campo de usuario: SUNATPDFV3en la tabla: ODLN
+2025-02-18 16:36:56,578 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 16:51:36,217 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 16:51:36,217 INFO : Inicializando Tool GMI 
+2025-02-18 16:51:52,716 DEBUG: BD encontradas en archivo son 6
+2025-02-18 16:51:59,426 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 16:52:16,786 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 16:52:23,426 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 16:53:03,895 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 16:53:03,907 INFO : Inicializando Tool GMI 
+2025-02-18 16:53:05,922 DEBUG: BD encontradas en archivo son 6
+2025-02-18 16:53:06,805 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 16:53:10,895 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 16:53:10,895 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:10:22,216 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:10:22,223 INFO : Inicializando Tool GMI 
+2025-02-18 17:10:23,948 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:10:25,627 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:10:45,028 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:10:45,028 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:11:58,023 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:11:58,029 INFO : Inicializando Tool GMI 
+2025-02-18 17:14:08,246 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:14:08,246 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:14:16,146 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:14:16,146 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:14:19,209 ERROR: 1). [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]El nombre de objeto 'dbo.@BGMI_VER1' no es válido.
+2). [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]No se puede preparar la instrucción o instrucciones.
+
+System.Runtime.InteropServices.COMException (0xFFFFF830): 1). [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]El nombre de objeto 'dbo.@BGMI_VER1' no es válido.
+2). [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]No se puede preparar la instrucción o instrucciones.
+
+   en SAPbobsCOM.IRecordset.DoQuery(String QueryStr)
+   en WS_GRE_TOOL.Program.ValidarVersion() en C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\WS_GRE_TOOL\Program.cs:línea 135
+2025-02-18 17:14:19,243 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-18 17:14:19,246 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-18 17:14:19,246 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:14:19,247 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:14:19,248 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-18 17:14:19,249 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:14:19,249 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:14:19,249 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-18 17:14:19,250 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-18 17:14:19,831 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-18 17:14:19,833 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:14:19,833 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:14:19,834 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3
+2025-02-18 17:14:19,834 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:14:19,835 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:14:19,835 DEBUG: ------------------------- FIN del proceso de  CDR       -------------------------
+2025-02-18 17:14:19,835 DEBUG: Finalizando el Proceso de la sociedad(BD)  Z_SBO_SF_13012025
+2025-02-18 17:14:19,863 DEBUG: Desconectado el Proceso de la sociedad(BD) Z_SBO_SF_13012025
+2025-02-18 17:14:21,399 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:15:00,222 ERROR: -132 -- Error during SBO user authentication
+2025-02-18 17:15:07,332 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:15:07,338 INFO : Inicializando Tool GMI 
+2025-02-18 17:15:07,381 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:15:07,381 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:15:12,053 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:15:12,053 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:16:03,703 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:16:03,708 INFO : Inicializando Tool GMI 
+2025-02-18 17:16:03,765 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:16:03,765 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:16:13,504 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:16:13,504 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:17:26,425 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:17:26,432 INFO : Inicializando Tool GMI 
+2025-02-18 17:17:26,480 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:17:26,480 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:17:29,413 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:17:29,413 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:18:49,463 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:18:49,475 INFO : Inicializando Tool GMI 
+2025-02-18 17:18:49,519 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:18:49,519 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:18:51,845 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:18:51,847 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:18:59,916 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-18 17:18:59,917 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-18 17:18:59,918 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:18:59,918 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:18:59,918 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-18 17:18:59,918 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:18:59,918 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:18:59,919 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-18 17:18:59,919 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-18 17:18:59,931 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-18 17:18:59,931 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:18:59,932 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:18:59,932 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3
+2025-02-18 17:18:59,934 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:18:59,934 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:18:59,935 DEBUG: ------------------------- FIN del proceso de  CDR       -------------------------
+2025-02-18 17:18:59,935 DEBUG: Finalizando el Proceso de la sociedad(BD)  Z_SBO_SF_13012025
+2025-02-18 17:18:59,973 DEBUG: Desconectado el Proceso de la sociedad(BD) Z_SBO_SF_13012025
+2025-02-18 17:19:01,593 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:19:24,521 ERROR: -132 -- Error during SBO user authentication
+2025-02-18 17:19:39,586 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:19:39,592 INFO : Inicializando Tool GMI 
+2025-02-18 17:19:39,642 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:19:39,642 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:19:42,259 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:19:42,259 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:21:49,953 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:21:49,960 INFO : Inicializando Tool GMI 
+2025-02-18 17:21:50,017 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:21:50,017 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:21:52,480 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:21:52,480 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:23:16,705 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-18 17:23:16,705 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-18 17:23:16,705 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:23:16,705 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:23:16,705 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-18 17:23:16,705 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:23:16,705 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:23:16,705 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-18 17:23:16,705 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-18 17:23:17,063 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-18 17:23:17,064 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:23:17,064 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:23:17,065 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3
+2025-02-18 17:23:17,066 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:23:17,066 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:23:17,067 DEBUG: ------------------------- FIN del proceso de  CDR       -------------------------
+2025-02-18 17:23:17,067 DEBUG: Finalizando el Proceso de la sociedad(BD)  Z_SBO_SF_13012025
+2025-02-18 17:23:17,091 DEBUG: Desconectado el Proceso de la sociedad(BD) Z_SBO_SF_13012025
+2025-02-18 17:23:18,795 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:23:47,925 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:23:47,935 INFO : Inicializando Tool GMI 
+2025-02-18 17:23:47,980 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:23:47,980 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:31:52,531 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:31:52,541 INFO : Inicializando Tool GMI 
+2025-02-18 17:31:52,603 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:31:52,603 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:31:57,551 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:31:57,551 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:32:02,111 INFO : Actualizando version del addon
+2025-02-18 17:32:15,991 DEBUG: Campos crear XMLV3 - CDRV3 - SUNATPDFV3
+2025-02-18 17:32:18,036 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-18 17:32:18,039 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 17:32:19,029 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-18 17:32:19,029 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 17:32:20,026 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-18 17:32:20,026 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 17:32:23,861 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-18 17:32:23,861 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-18 17:32:23,861 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:32:23,861 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:32:23,861 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-18 17:32:23,861 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:32:23,861 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:32:23,861 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-18 17:32:23,861 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-18 17:32:23,881 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-18 17:32:23,881 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:32:23,881 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:32:23,881 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3
+2025-02-18 17:32:23,881 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:32:23,881 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:32:23,881 DEBUG: ------------------------- FIN del proceso de  CDR       -------------------------
+2025-02-18 17:32:23,881 DEBUG: Finalizando el Proceso de la sociedad(BD)  Z_SBO_SF_13012025
+2025-02-18 17:32:23,921 DEBUG: Desconectado el Proceso de la sociedad(BD) Z_SBO_SF_13012025
+2025-02-18 17:32:25,421 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:33:05,956 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:33:05,960 INFO : Inicializando Tool GMI 
+2025-02-18 17:33:06,013 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:33:06,013 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:33:09,621 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:33:09,621 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:33:46,782 INFO : Actualizando version del addon
+2025-02-18 17:33:48,672 DEBUG: Campos crear XMLV3 - CDRV3 - SUNATPDFV3
+2025-02-18 17:33:50,250 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-18 17:33:50,258 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 17:33:51,300 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-18 17:33:51,300 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 17:33:52,332 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-18 17:33:52,332 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 17:34:53,483 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:34:53,490 INFO : Inicializando Tool GMI 
+2025-02-18 17:34:53,530 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:34:53,530 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:37:15,080 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:37:17,323 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:37:20,587 INFO : Actualizando version del addon
+2025-02-18 17:37:22,550 DEBUG: Campos crear XMLV3 - CDRV3 - SUNATPDFV3
+2025-02-18 17:37:24,122 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-18 17:37:24,123 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 17:37:25,247 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-18 17:37:25,251 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 17:37:26,171 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-18 17:37:26,171 DEBUG: Objeto Liberado - creado de campos
+2025-02-18 17:37:35,417 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-18 17:37:35,417 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-18 17:37:35,417 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:37:35,427 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:37:35,427 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-18 17:37:35,427 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:37:35,427 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:37:35,427 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-18 17:37:35,427 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-18 17:37:35,442 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-18 17:37:35,442 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:37:35,442 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:37:35,443 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3
+2025-02-18 17:37:35,443 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:37:35,443 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:37:35,443 DEBUG: ------------------------- FIN del proceso de  CDR       -------------------------
+2025-02-18 17:37:35,443 DEBUG: Finalizando el Proceso de la sociedad(BD)  Z_SBO_SF_13012025
+2025-02-18 17:37:35,491 DEBUG: Desconectado el Proceso de la sociedad(BD) Z_SBO_SF_13012025
+2025-02-18 17:37:37,690 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:39:46,970 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-18 17:39:46,976 INFO : Inicializando Tool GMI 
+2025-02-18 17:39:47,023 DEBUG: BD encontradas en archivo son 6
+2025-02-18 17:39:47,023 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-18 17:39:51,905 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-18 17:39:51,905 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-18 17:39:54,916 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-18 17:39:54,916 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-18 17:39:54,916 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:39:54,916 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:39:54,916 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-18 17:39:54,916 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:39:54,916 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-18 17:39:54,916 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-18 17:39:54,916 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-18 17:39:55,286 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-18 17:39:55,286 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:39:55,286 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:39:55,286 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3
+2025-02-18 17:39:55,286 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:39:55,286 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-18 17:39:55,286 DEBUG: ------------------------- FIN del proceso de  CDR       -------------------------
+2025-02-18 17:39:55,286 DEBUG: Finalizando el Proceso de la sociedad(BD)  Z_SBO_SF_13012025
+2025-02-18 17:39:55,329 DEBUG: Desconectado el Proceso de la sociedad(BD) Z_SBO_SF_13012025
+2025-02-18 17:39:56,132 DEBUG: Se encontro archivos pendiente de procesar...

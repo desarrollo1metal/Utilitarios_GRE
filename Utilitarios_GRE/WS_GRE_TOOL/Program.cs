@@ -10,19 +10,26 @@ using log4net.Layout;
 using log4net.Repository.Hierarchy;
 using SAPbobsCOM;
 using Ionic.Zip;
+using System.Data.SqlClient;
 
 
 namespace WS_GRE_TOOL
 {
     public class Program
     {
+        
+        string versiónTools = string.Empty;
         static bool AbortarEnError = false;
         static bool CerrarAlFinalizar = false;
         public static clsConfig ConfiguracionGeneral;
+        private static bool Actualizar = false;
 
         public static string udfxmlFile = string.Empty;
         public static string udfcdr = string.Empty;
         public static string udfpdfsunat = string.Empty;
+        static string versionNow = "1.2.5";
+        string descripProd = "GMI SERVICIO_ST2";
+        string codProd = "GMI_ST2";
 
         private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(typeof(Program));
         [STAThread]
@@ -31,15 +38,187 @@ namespace WS_GRE_TOOL
             logger.Debug("1nicio");
             Console.SetWindowSize(100, 20);
             logger.Debug("fin");
-            Iniciar();
+
+            Program programa = new Program();
+            programa.Iniciar();
 
             Environment.Exit(0);
 
         }
 
-        static void Iniciar()
+        public  string ObtenerNumVersion()
+        {
+            
+            string bdversion = string.Empty;
+            string consultaSQL = $"SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = '{codProd}'";
+
+            Recordset oRecordSet3 = null;
+            try
+            {
+                oRecordSet3= (Recordset)Conexion.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
+                oRecordSet3.DoQuery(consultaSQL);
+
+                int filas = oRecordSet3.RecordCount;
+                if (!oRecordSet3.EoF) bdversion = oRecordSet3.Fields.Item(0).Value.ToString();
+            }
+            catch { }
+            finally
+            {
+                //VSSQLFactory.LiberarObjeto(oRecordSet);
+                try
+                {
+                    if (oRecordSet3 != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(oRecordSet3);
+                }
+                catch { }
+                try
+                {
+                    oRecordSet3 = null;
+                }
+                catch { }
+                GC.Collect();
+            }
+
+
+
+            return bdversion;
+        }
+
+        private void ValidarVersion()
+        {
+
+            logger.Info("iniciar validad versión ");
+
+            string bdversion = string.Empty;
+            string consultaSQL = $"SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = '{codProd}'";
+            logger.Info("Consulta SQL " + consultaSQL);
+            //string query = "SELECT u_vs_vrsion from [dbo].[@vs_prd1] where u_vs_codprd='" + AppMain.codigoproducto + "'";
+            //00001_MSSQL
+            Recordset oRecordSet = null;
+            int filas = 0;
+            try
+            {
+                oRecordSet = (Recordset)Conexion.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
+                //string qry = UTIL.VSSQLFactory.GetScript(1, new string[] { AppMain.codigoproducto });
+                oRecordSet.DoQuery(consultaSQL); //00001
+                filas = oRecordSet.RecordCount;
+                if (!oRecordSet.EoF) bdversion = oRecordSet.Fields.Item(0).Value.ToString();
+            }
+            catch
+            {
+                bdversion = null;
+            }
+            finally
+            {
+                if (oRecordSet != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(oRecordSet);
+                oRecordSet = null;
+                GC.Collect();
+            }
+
+            try
+            {
+                //#if DEBUG
+                //                return;
+                //#endif
+                if (bdversion == null || bdversion == "")
+                {
+                    //insert nuevo de cero
+
+                    //logger.Info("Instalando addon");
+                    //AppMain.MensajeAdvertencia("Instalando addon");
+                    //CargarEstructura();
+                    if (filas == 0)
+                    {
+                       
+
+                        SAPbobsCOM.Recordset oRecordSet4 = null;
+                        try
+                        {
+                            //String query = "insert into [dbo].[@vs_prd1](Code,LineId,Object,LogInst,U_VS_CODPRD,U_VS_DSCPRD,U_VS_VRSION) values('VS',(SELECT COUNT(0) FROM [dbo].[@vs_prd1])+1,'BPVS_OPRD',NULL,'" + AppMain.codigoproducto+ "','"+AppMain.descripcionproducto+"','" +AppMain.versionAddon+ "')";
+                            string query = "insert into [dbo].[@GMI_VER1](Code,LineId,Object,LogInst,U_GMI_CODPRD,U_GMI_DSCPRD,U_GMI_VRSION) values('GMI',(SELECT COUNT(0) FROM [dbo].[@GMI_VER1])+1,'BGMI_TVER',NULL,'" + codProd + "','" + descripProd + "','" + versionNow + "')";
+                            oRecordSet4 = (Recordset)Conexion.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
+                            oRecordSet4.DoQuery(query);
+
+                            logger.Debug("Se registra nuevo producto codProd  = " + codProd + " - descripProd  = " + descripProd + " - versionNow = " + versionNow);
+                        }
+                        catch (Exception ex)
+                        {
+                            logger.Error(ex.Message, ex);
+                        }
+                        finally
+                        {
+                            if (oRecordSet4 != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(oRecordSet4);
+                            oRecordSet4 = null;
+                            GC.Collect();
+                        }
+                    }
+                    //    ProductoBL.RegistrarProducto();
+                    //else
+                    //    ProductoBL.ActualizarVersion();
+                    ////AppMain.MensajeError("Addon instalado correctamente, reinicie SAP Business One");
+                }
+                else
+                {
+                    if (VersionMenor(versionNow, bdversion))
+                    {
+                        logger.Info("Actualizando version del addon");
+                        Actualizar = true;
+                        //AppMain.MensajeAdvertencia("Actualizando version del addon");
+                        CargarEstructura();
+
+                        //ProductoBL.ActualizarVersion();
+                        //actualizar version
+                        //string consultaSQLupdate = $"UPDATE U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = '{producto}' AND ";
+
+                        
+                        string consultaSQLupdate = $@" UPDATE [@GMI_VER1]  SET U_GMI_VRSION = '{versionNow}'  WHERE U_GMI_CODPRD = '{codProd}';";
+
+                        //ini actualizar
+
+                        SAPbobsCOM.Recordset oRecordSet1 = null;
+                        try
+                        {
+                            //String query = "update [dbo].[@vs_prd1] set u_vs_vrsion='" + AppMain.versionAddon + "' where u_vs_codprd='" + AppMain.codigoproducto + "'";
+                            oRecordSet1 = (Recordset)Conexion.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
+                            oRecordSet1.DoQuery(consultaSQLupdate);
+
+                            logger.Debug("Consulta SQL " + consultaSQLupdate);
+                        }
+                        catch (Exception ex)
+                        {
+                            logger.Error(ex.Message, ex);
+                        }
+                        finally
+                        {
+                            if (oRecordSet1 != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(oRecordSet1);
+                            oRecordSet1 = null;
+                            GC.Collect();
+                        }
+
+                        //fin actualizar
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex.Message, ex);
+            }
+            finally
+            {
+                if (oRecordSet != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(oRecordSet);
+                oRecordSet = null;
+                GC.Collect();
+            }
+        }
+
+
+        public  void Iniciar()
         {
             SetUpLogger();
+
+            
+
+            //fin
 
             //logger.Debug("Inicio del sercio");
 
@@ -116,9 +295,13 @@ namespace WS_GRE_TOOL
                         logger.Debug("--------------------------------------------------------------------------------------------------");
                         logger.Debug("Conectado satisfactoriamente a BD " + sociedad.DbName + " con DI API");
                         //crear campos
-                        CargarEstructura();
+                        //recien  validamos versiones
 
-                        
+                        //INI   version
+                        ValidarVersion();
+                        //FIN   version
+
+
                         Conexion.InicializarVarGlob();
 
 
@@ -922,6 +1105,104 @@ namespace WS_GRE_TOOL
 
             hierarchy.Root.Level = hierarchy.LevelMap[_settings.Get("loglevel")] == null ? log4net.Core.Level.Error : hierarchy.LevelMap[_settings.Get("loglevel")];
             hierarchy.Configured = true;
+        }
+
+        private  bool VersionMenor(string versionactual, string versionlocal)
+        {
+            int[] vactual = Version(versionactual);
+            int[] vlocal = Version(versionlocal);
+
+            if (vactual.Length == 3)
+            {
+                if (vlocal[0] < vactual[0])
+                    return true;
+                else if (vlocal[0] == vactual[0] && vlocal[1] < vactual[1])
+                    return true;
+                else if (vlocal[0] == vactual[0] && vlocal[1] == vactual[1] && vlocal[2] < vactual[2])
+                    return true;
+
+            }
+
+            if (vactual.Length == 4)
+            {
+                if (vlocal[0] < vactual[0])
+                    return true;
+                else if (vlocal[0] == vactual[0] && vlocal[1] < vactual[1])
+                    return true;
+                else if (vlocal[0] == vactual[0] && vlocal[1] == vactual[1] && vlocal[2] < vactual[2])
+                    return true;
+                else if (vlocal[0] == vactual[0] && vlocal[1] == vactual[1] && vlocal[2] == vactual[2] && vlocal[3] < vactual[3])
+                    return true;
+            }
+
+
+            return false;
+        }
+
+        private  int[] Version(string version)
+        {
+            string phrase = version;
+            string[] words = phrase.Split('.');
+
+            int[] ver = Array.ConvertAll(words, int.Parse);
+
+
+            if (ver.Length == 3)
+            {
+                //ver = new int[4];
+                int[] pospunto = new int[3];
+                pospunto[0] = version.IndexOf(".");
+                pospunto[1] = version.IndexOf(".", pospunto[0] + 1);
+                pospunto[2] = version.IndexOf(".", pospunto[1] + 1);
+                try
+                {
+                    ver[0] = int.Parse(version.Substring(0, pospunto[0]));
+                    ver[1] = int.Parse(version.Substring(pospunto[0] + 1, pospunto[1] - pospunto[0] - 1));
+                    //string parche = version.Substring(pospunto[1] + 1, pospunto[2] - pospunto[1] - 1);
+                    //ver[2] = int.Parse(NormalizarVersion(parche));
+                    string parche = version.Substring(pospunto[1] + 1, pospunto[2] - pospunto[1] - 1);
+                    ver[2] = int.Parse(NormalizarVersion(parche));
+                }
+                catch { }
+                //return ver;
+            }
+
+            if (ver.Length == 4)
+            {
+                //ver = new int[4];
+                int[] pospunto = new int[3];
+                pospunto[0] = version.IndexOf(".");
+                pospunto[1] = version.IndexOf(".", pospunto[0] + 1);
+                pospunto[2] = version.IndexOf(".", pospunto[1] + 1);
+                try
+                {
+                    ver[0] = int.Parse(version.Substring(0, pospunto[0]));
+                    ver[1] = int.Parse(version.Substring(pospunto[0] + 1, pospunto[1] - pospunto[0] - 1));
+                    string parche = version.Substring(pospunto[1] + 1, pospunto[2] - pospunto[1] - 1);
+                    ver[2] = int.Parse(NormalizarVersion(parche));
+                    string revision = version.Substring(pospunto[2] + 1, version.Length - pospunto[2] - 1);
+                    ver[3] = int.Parse(NormalizarVersion(revision));
+                }
+                catch { }
+                //return ver;
+            }
+
+            return ver;
+        }
+
+        string NormalizarVersion(string ver)
+        {
+            byte[] asciiBytes = System.Text.Encoding.ASCII.GetBytes(ver);
+            string normalizado = "";
+            foreach (byte digito in asciiBytes)
+            {
+                int ascii = int.Parse(digito.ToString());
+
+                if (ascii > 57 || ascii < 48)
+                    break;
+                normalizado += Convert.ToChar(digito).ToString();
+            }
+            return normalizado;
         }
 
 

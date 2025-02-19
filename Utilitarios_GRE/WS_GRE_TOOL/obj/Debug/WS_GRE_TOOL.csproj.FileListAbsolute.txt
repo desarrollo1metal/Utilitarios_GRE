@@ -1,3 +1,4 @@
+C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\WS_GRE_TOOL\bin\Debug\Config.xml
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\WS_GRE_TOOL\bin\Debug\WS_GRE_TOOL.exe.config
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\WS_GRE_TOOL\bin\Debug\WS_GRE_TOOL.exe
 C:\TI_MIMSA\PROJ\Utilitario_GRE\Utilitarios_GRE\WS_GRE_TOOL\bin\Debug\WS_GRE_TOOL.pdb

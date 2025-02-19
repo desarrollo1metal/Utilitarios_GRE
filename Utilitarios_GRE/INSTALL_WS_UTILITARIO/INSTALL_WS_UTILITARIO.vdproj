@@ -16,25 +16,25 @@
         "Entry"
         {
         "MsmKey" = "8:_1F15B504883940C24114CEFCBA980D16"
-        "OwnerKey" = "8:_79AFCCDD00794817B79638D8658EB597"
+        "OwnerKey" = "8:_503AB26F6ED749B5AC903364CB19EF27"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_3B253E801AF41938184D1179B95B3E7D"
-        "OwnerKey" = "8:_79AFCCDD00794817B79638D8658EB597"
+        "OwnerKey" = "8:_503AB26F6ED749B5AC903364CB19EF27"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_79AFCCDD00794817B79638D8658EB597"
+        "MsmKey" = "8:_503AB26F6ED749B5AC903364CB19EF27"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_915EB99607BA5FF2F7D8EFB6812435F0"
-        "OwnerKey" = "8:_79AFCCDD00794817B79638D8658EB597"
+        "OwnerKey" = "8:_503AB26F6ED749B5AC903364CB19EF27"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,7 +46,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_79AFCCDD00794817B79638D8658EB597"
+        "OwnerKey" = "8:_503AB26F6ED749B5AC903364CB19EF27"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -133,31 +133,31 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_7BD04B58FFFD401697DA0CC30BA55AB7"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_14EE54DF20CC44709EB09B6E6D7568A5"
             {
             "Name" = "8:Resultado principal from WS_GRE_TOOL (Active)"
             "Condition" = "8:"
-            "Object" = "8:_79AFCCDD00794817B79638D8658EB597"
-            "FileType" = "3:2"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_06CFFA27_1001_4F24_85EA_C7F6693EA3B2"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_C90DAFBDE828465187555AE7876A530A"
-            {
-            "Name" = "8:Resultado principal from WS_GRE_TOOL (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_79AFCCDD00794817B79638D8658EB597"
+            "Object" = "8:_503AB26F6ED749B5AC903364CB19EF27"
             "FileType" = "3:2"
             "InstallAction" = "3:4"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_D6CF8115_4663_4745_9F9B_BA15CE2ABFBC"
+            "Identifier" = "8:_AE16B782_90B2_468F_8D54_0A10DA8AB1F5"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_79364DA722294E7BAC24073CB2F5CCD5"
+            {
+            "Name" = "8:Resultado principal from WS_GRE_TOOL (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_503AB26F6ED749B5AC903364CB19EF27"
+            "FileType" = "3:2"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_0AD3C17A_440B_453D_AE6A_BE89DDBF187A"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
@@ -332,20 +332,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:GMI_GRE_UTILITARIO_v4"
-        "ProductCode" = "8:{113CB043-C168-4713-8002-979C4FC32CF2}"
-        "PackageCode" = "8:{956AB7AC-3D3D-47BD-9CB8-EED526B0E85F}"
-        "UpgradeCode" = "8:{F58C66A2-03C3-43AF-9FEA-8BE519D6C6F5}"
+        "ProductName" = "8:GMI_SERVICIO_TOOL_V2"
+        "ProductCode" = "8:{866ECDA5-4E77-4349-8682-528EFBD541B6}"
+        "PackageCode" = "8:{CC0A8A82-F2A9-496D-8332-B17403E8041D}"
+        "UpgradeCode" = "8:{9AE99F90-9DF3-4D1A-8DC2-7345126C3FAD}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.1.4"
+        "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:GMI"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:GMI_WSUTILITARIO_v4"
+        "Title" = "8:GMI_SERVICIO_TOOL_V2"
         "Subject" = "8:"
         "ARPCONTACT" = "8:DEV_GMI"
         "Keywords" = "8:"
@@ -853,7 +853,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_79AFCCDD00794817B79638D8658EB597"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_503AB26F6ED749B5AC903364CB19EF27"
             {
             "SourcePath" = "8:..\\WS_GRE_TOOL\\obj\\Debug\\WS_GRE_TOOL.exe"
             "TargetName" = "8:"
@@ -881,7 +881,7 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EC4483B11F944D328E015C549913BAC5"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9FF4FF40AC604AB9A4B5FAFA1B001B0E"
             {
             "SourcePath" = "8:"
             "TargetName" = "8:"

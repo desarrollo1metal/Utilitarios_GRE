@@ -13,7 +13,7 @@
 		<SociedadBD>
 
 			<!-- Credenciales de la BD -->
-			<DbName>pp_05022025_SBO_SF</DbName>
+			<DbName>Z_SBO_SF_13012025</DbName>
 			<SAPuser>manager9</SAPuser>
 			<SAPpassword>1234</SAPpassword>
 

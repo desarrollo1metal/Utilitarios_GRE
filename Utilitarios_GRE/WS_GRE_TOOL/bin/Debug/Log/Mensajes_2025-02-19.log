@@ -1,0 +1,266 @@
+2025-02-19 08:27:55,815 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-19 08:27:55,821 INFO : Inicializando Tool GMI 
+2025-02-19 08:27:55,923 DEBUG: BD encontradas en archivo son 6
+2025-02-19 08:27:55,924 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:27:55,924 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:27:55,924 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:27:55,925 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:27:55,925 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:27:55,925 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:27:55,926 INFO : Tiempo total de ejecución: 00:00:00.1037442
+2025-02-19 08:27:55,926 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-19 08:28:57,439 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-19 08:28:57,445 INFO : Inicializando Tool GMI 
+2025-02-19 08:28:57,493 DEBUG: BD encontradas en archivo son 6
+2025-02-19 08:28:57,493 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-19 08:29:03,250 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-19 08:29:03,250 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-19 08:29:03,282 INFO : iniciar validad versión 
+2025-02-19 08:29:03,282 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_ST2'
+2025-02-19 08:29:17,040 INFO : Actualizando version del addon
+2025-02-19 08:29:28,373 DEBUG: Campos crear XMLV3 - CDRV3 - SUNATPDFV3
+2025-02-19 08:29:29,895 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-19 08:29:29,908 DEBUG: Objeto Liberado - creado de campos
+2025-02-19 08:29:30,731 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-19 08:29:30,731 DEBUG: Objeto Liberado - creado de campos
+2025-02-19 08:29:31,659 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-19 08:29:31,659 DEBUG: Objeto Liberado - creado de campos
+2025-02-19 08:29:36,784 DEBUG: Consulta SQL  UPDATE [@GMI_VER1]  SET U_GMI_VRSION = '1.2.0'  WHERE U_GMI_CODPRD = 'GMI_ST2';
+2025-02-19 08:29:36,791 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-19 08:29:36,791 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-19 08:29:36,791 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-19 08:29:36,791 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-19 08:29:36,791 DEBUG: Numero de archivos XML 6
+2025-02-19 08:29:36,791 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003272.xml-----------------------
+2025-02-19 08:29:36,800 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003272.xml
+2025-02-19 08:29:36,816 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:29:36,820 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003272' AND CANCELED <> 'Y'
+2025-02-19 08:29:36,849 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003272' AND CANCELED <> 'Y'
+2025-02-19 08:29:36,904 DEBUG: Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14196
+2025-02-19 08:29:39,807 DEBUG: ? Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-19 08:29:39,810 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003272.xml
+2025-02-19 08:29:39,810 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003272.xml 
+2025-02-19 08:29:39,810 DEBUG: Termino exito de proceso , GRE  20565975812-09-T001-0003272.xml
+2025-02-19 08:29:39,810 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003272.xml-----------------------
+2025-02-19 08:29:39,810 DEBUG: Numero de archivos XML 6
+2025-02-19 08:29:39,810 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003273.xml-----------------------
+2025-02-19 08:29:39,810 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003273.xml
+2025-02-19 08:29:39,810 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:29:39,810 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003273' AND CANCELED <> 'Y'
+2025-02-19 08:29:39,834 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003273' AND CANCELED <> 'Y'
+2025-02-19 08:29:39,857 DEBUG: Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14197
+2025-02-19 08:29:40,823 DEBUG: ? Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-19 08:29:40,823 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003273.xml
+2025-02-19 08:29:40,829 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003273.xml 
+2025-02-19 08:29:40,829 DEBUG: Termino exito de proceso , GRE  20565975812-09-T001-0003273.xml
+2025-02-19 08:29:40,829 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003273.xml-----------------------
+2025-02-19 08:29:40,829 DEBUG: Numero de archivos XML 6
+2025-02-19 08:29:40,829 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003274.xml-----------------------
+2025-02-19 08:29:40,829 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003274.xml
+2025-02-19 08:29:40,829 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:29:40,829 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003274' AND CANCELED <> 'Y'
+2025-02-19 08:29:40,849 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003274' AND CANCELED <> 'Y'
+2025-02-19 08:29:40,880 DEBUG: Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14198
+2025-02-19 08:29:41,852 DEBUG: ? Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-19 08:29:41,852 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003274.xml
+2025-02-19 08:29:41,860 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003274.xml 
+2025-02-19 08:29:41,860 DEBUG: Termino exito de proceso , GRE  20565975812-09-T001-0003274.xml
+2025-02-19 08:29:41,860 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003274.xml-----------------------
+2025-02-19 08:29:41,860 DEBUG: Numero de archivos XML 6
+2025-02-19 08:29:41,860 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003275.xml-----------------------
+2025-02-19 08:29:41,860 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003275.xml
+2025-02-19 08:29:41,860 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:29:41,860 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003275' AND CANCELED <> 'Y'
+2025-02-19 08:29:41,887 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003275' AND CANCELED <> 'Y'
+2025-02-19 08:29:41,904 DEBUG: Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14199
+2025-02-19 08:29:42,260 DEBUG: ? Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-19 08:29:42,260 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003275.xml
+2025-02-19 08:29:42,269 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003275.xml 
+2025-02-19 08:29:42,269 DEBUG: Termino exito de proceso , GRE  20565975812-09-T001-0003275.xml
+2025-02-19 08:29:42,269 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003275.xml-----------------------
+2025-02-19 08:29:42,269 DEBUG: Numero de archivos XML 6
+2025-02-19 08:29:42,269 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003276.xml-----------------------
+2025-02-19 08:29:42,269 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003276.xml
+2025-02-19 08:29:42,274 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:29:42,274 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003276' AND CANCELED <> 'Y'
+2025-02-19 08:29:42,295 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003276' AND CANCELED <> 'Y'
+2025-02-19 08:29:42,315 DEBUG: Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14200
+2025-02-19 08:29:42,837 DEBUG: ? Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-19 08:29:42,839 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003276.xml
+2025-02-19 08:29:42,839 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003276.xml 
+2025-02-19 08:29:42,839 DEBUG: Termino exito de proceso , GRE  20565975812-09-T001-0003276.xml
+2025-02-19 08:29:42,839 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003276.xml-----------------------
+2025-02-19 08:29:42,839 DEBUG: Numero de archivos XML 6
+2025-02-19 08:29:42,856 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003277.xml-----------------------
+2025-02-19 08:29:42,856 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003277.xml
+2025-02-19 08:29:42,868 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:29:42,869 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003277' AND CANCELED <> 'Y'
+2025-02-19 08:29:42,890 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003277' AND CANCELED <> 'Y'
+2025-02-19 08:29:42,919 DEBUG: Se encontro el documento OWTR (Transferencia de Stock) en SAP con DocEntry = 14201
+2025-02-19 08:29:43,230 DEBUG: ? Se adjunto satisfactoriamente, XML a Transferencia de Stock
+2025-02-19 08:29:43,230 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003277.xml
+2025-02-19 08:29:43,237 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado\20565975812-09-T001-0003277.xml 
+2025-02-19 08:29:43,237 DEBUG: Termino exito de proceso , GRE  20565975812-09-T001-0003277.xml
+2025-02-19 08:29:43,237 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003277.xml-----------------------
+2025-02-19 08:29:43,237 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:29:43,239 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-19 08:29:43,250 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-19 08:29:43,250 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-19 08:29:43,250 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-19 08:29:43,384 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-19 08:29:43,385 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-19 08:29:43,385 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-19 08:29:43,386 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3
+2025-02-19 08:29:43,386 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-19 08:29:43,386 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-19 08:29:43,387 DEBUG: ------------------------- FIN del proceso de  CDR       -------------------------
+2025-02-19 08:29:43,387 DEBUG: Finalizando el Proceso de la sociedad(BD)  Z_SBO_SF_13012025
+2025-02-19 08:29:43,404 DEBUG: Desconectado el Proceso de la sociedad(BD) Z_SBO_SF_13012025
+2025-02-19 08:29:45,114 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:29:45,116 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:29:45,116 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:29:45,117 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:29:45,117 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:29:45,117 INFO : Tiempo total de ejecución: 00:00:47.6701056
+2025-02-19 08:29:45,117 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-19 08:31:37,247 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-19 08:31:37,257 INFO : Inicializando Tool GMI 
+2025-02-19 08:31:37,311 DEBUG: BD encontradas en archivo son 6
+2025-02-19 08:31:37,313 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:31:37,313 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:31:37,313 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:31:37,313 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:31:37,313 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:31:37,313 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:31:37,313 INFO : Tiempo total de ejecución: 00:00:00.0572010
+2025-02-19 08:31:37,314 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-19 08:33:32,307 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-19 08:33:32,309 INFO : Inicializando Tool GMI 
+2025-02-19 08:33:32,352 DEBUG: BD encontradas en archivo son 6
+2025-02-19 08:33:32,352 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-19 08:33:37,209 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-19 08:33:37,209 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-19 08:33:37,218 INFO : iniciar validad versión 
+2025-02-19 08:33:37,218 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_ST2'
+2025-02-19 08:33:41,459 INFO : Actualizando version del addon
+2025-02-19 08:33:41,469 DEBUG: Campos crear XMLV3 - CDRV3 - SUNATPDFV3
+2025-02-19 08:33:42,804 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-19 08:33:42,804 DEBUG: Objeto Liberado - creado de campos
+2025-02-19 08:33:43,782 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-19 08:33:43,783 DEBUG: Objeto Liberado - creado de campos
+2025-02-19 08:33:44,759 DEBUG: codigo error : -5002 -- mensaje : Sin registros 
+2025-02-19 08:33:44,768 DEBUG: Objeto Liberado - creado de campos
+2025-02-19 08:33:44,768 DEBUG: Consulta SQL  UPDATE [@GMI_VER1]  SET U_GMI_VRSION = '1.2.5'  WHERE U_GMI_CODPRD = 'GMI_ST2';
+2025-02-19 08:33:44,779 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-19 08:33:44,782 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-19 08:33:44,782 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-19 08:33:44,784 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-19 08:33:44,784 DEBUG: Numero de archivos XML 8
+2025-02-19 08:33:44,784 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003439.xml-----------------------
+2025-02-19 08:33:44,784 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003439.xml
+2025-02-19 08:33:44,834 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:33:44,835 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003439' AND CANCELED <> 'Y'
+2025-02-19 08:33:44,855 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003439' AND CANCELED <> 'Y'
+2025-02-19 08:33:44,889 ERROR: No se encontraron en (Entrada) ni (Transferencia de Stock)
+2025-02-19 08:33:44,889 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003439.xml
+2025-02-19 08:33:44,898 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003439.xml 
+2025-02-19 08:33:44,898 ERROR: Termino con error de proceso , GRE  20565975812-09-T001-0003439.xml
+2025-02-19 08:33:44,898 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003439.xml-----------------------
+2025-02-19 08:33:44,898 DEBUG: Numero de archivos XML 8
+2025-02-19 08:33:44,898 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003440.xml-----------------------
+2025-02-19 08:33:44,898 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003440.xml
+2025-02-19 08:33:44,898 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:33:44,902 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003440' AND CANCELED <> 'Y'
+2025-02-19 08:33:44,921 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003440' AND CANCELED <> 'Y'
+2025-02-19 08:33:44,953 ERROR: No se encontraron en (Entrada) ni (Transferencia de Stock)
+2025-02-19 08:33:44,954 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003440.xml
+2025-02-19 08:33:44,955 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003440.xml 
+2025-02-19 08:33:44,955 ERROR: Termino con error de proceso , GRE  20565975812-09-T001-0003440.xml
+2025-02-19 08:33:44,955 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003440.xml-----------------------
+2025-02-19 08:33:44,956 DEBUG: Numero de archivos XML 8
+2025-02-19 08:33:44,956 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003441.xml-----------------------
+2025-02-19 08:33:44,956 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003441.xml
+2025-02-19 08:33:44,956 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:33:44,956 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003441' AND CANCELED <> 'Y'
+2025-02-19 08:33:44,972 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003441' AND CANCELED <> 'Y'
+2025-02-19 08:33:44,998 ERROR: No se encontraron en (Entrada) ni (Transferencia de Stock)
+2025-02-19 08:33:45,002 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003441.xml
+2025-02-19 08:33:45,002 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003441.xml 
+2025-02-19 08:33:45,002 ERROR: Termino con error de proceso , GRE  20565975812-09-T001-0003441.xml
+2025-02-19 08:33:45,002 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003441.xml-----------------------
+2025-02-19 08:33:45,002 DEBUG: Numero de archivos XML 8
+2025-02-19 08:33:45,002 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003443.xml-----------------------
+2025-02-19 08:33:45,002 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003443.xml
+2025-02-19 08:33:45,002 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:33:45,002 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003443' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,020 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003443' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,055 ERROR: No se encontraron en (Entrada) ni (Transferencia de Stock)
+2025-02-19 08:33:45,057 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003443.xml
+2025-02-19 08:33:45,058 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003443.xml 
+2025-02-19 08:33:45,058 ERROR: Termino con error de proceso , GRE  20565975812-09-T001-0003443.xml
+2025-02-19 08:33:45,059 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003443.xml-----------------------
+2025-02-19 08:33:45,059 DEBUG: Numero de archivos XML 8
+2025-02-19 08:33:45,059 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003444.xml-----------------------
+2025-02-19 08:33:45,059 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003444.xml
+2025-02-19 08:33:45,059 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:33:45,060 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003444' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,079 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003444' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,110 ERROR: No se encontraron en (Entrada) ni (Transferencia de Stock)
+2025-02-19 08:33:45,112 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003444.xml
+2025-02-19 08:33:45,115 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003444.xml 
+2025-02-19 08:33:45,115 ERROR: Termino con error de proceso , GRE  20565975812-09-T001-0003444.xml
+2025-02-19 08:33:45,115 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003444.xml-----------------------
+2025-02-19 08:33:45,116 DEBUG: Numero de archivos XML 8
+2025-02-19 08:33:45,116 DEBUG: ----------------------- Inicio XML 20565975812-09-T001-0003445.xml-----------------------
+2025-02-19 08:33:45,116 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T001 : correlativo = 0003445.xml
+2025-02-19 08:33:45,118 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:33:45,118 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003445' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,139 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T001' AND U_BPP_MDCD = '0003445' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,172 ERROR: No se encontraron en (Entrada) ni (Transferencia de Stock)
+2025-02-19 08:33:45,173 DEBUG: Archivo existente eliminado: 20565975812-09-T001-0003445.xml
+2025-02-19 08:33:45,175 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T001-0003445.xml 
+2025-02-19 08:33:45,176 ERROR: Termino con error de proceso , GRE  20565975812-09-T001-0003445.xml
+2025-02-19 08:33:45,176 DEBUG: ----------------------- Fin XML 20565975812-09-T001-0003445.xml-----------------------
+2025-02-19 08:33:45,177 DEBUG: Numero de archivos XML 8
+2025-02-19 08:33:45,177 DEBUG: ----------------------- Inicio XML 20565975812-09-T002-0003398.xml-----------------------
+2025-02-19 08:33:45,177 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003398.xml
+2025-02-19 08:33:45,177 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:33:45,178 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003398' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,199 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003398' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,219 ERROR: No se encontraron en (Entrada) ni (Transferencia de Stock)
+2025-02-19 08:33:45,219 DEBUG: Archivo existente eliminado: 20565975812-09-T002-0003398.xml
+2025-02-19 08:33:45,219 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T002-0003398.xml 
+2025-02-19 08:33:45,219 ERROR: Termino con error de proceso , GRE  20565975812-09-T002-0003398.xml
+2025-02-19 08:33:45,219 DEBUG: ----------------------- Fin XML 20565975812-09-T002-0003398.xml-----------------------
+2025-02-19 08:33:45,219 DEBUG: Numero de archivos XML 8
+2025-02-19 08:33:45,219 DEBUG: ----------------------- Inicio XML 20565975812-09-T002-0003399.xml-----------------------
+2025-02-19 08:33:45,219 DEBUG: Ruc = 20565975812 : tipoDoc = 09 : serieDoc = T002 : correlativo = 0003399.xml
+2025-02-19 08:33:45,219 DEBUG: Buscando Entrada en SAP
+2025-02-19 08:33:45,219 DEBUG: Query SELECT DocEntry FROM ODLN WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003399' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,249 DEBUG: Query SELECT DocEntry FROM OWTR WHERE U_BPP_MDTD = '09' AND U_BPP_MDSD = 'T002' AND U_BPP_MDCD = '0003399' AND CANCELED <> 'Y'
+2025-02-19 08:33:45,271 ERROR: No se encontraron en (Entrada) ni (Transferencia de Stock)
+2025-02-19 08:33:45,272 DEBUG: Archivo existente eliminado: 20565975812-09-T002-0003399.xml
+2025-02-19 08:33:45,274 DEBUG: Archivo movido a  : C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR\20565975812-09-T002-0003399.xml 
+2025-02-19 08:33:45,274 ERROR: Termino con error de proceso , GRE  20565975812-09-T002-0003399.xml
+2025-02-19 08:33:45,274 DEBUG: ----------------------- Fin XML 20565975812-09-T002-0003399.xml-----------------------
+2025-02-19 08:33:45,275 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:33:45,275 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-19 08:33:45,276 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-19 08:33:45,276 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-19 08:33:45,277 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-19 08:33:45,692 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-19 08:33:45,692 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-19 08:33:45,692 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-19 08:33:45,692 DEBUG: Carpeta Origen: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3
+2025-02-19 08:33:45,692 DEBUG: Carpeta Destino: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-19 08:33:45,692 DEBUG: Inicio de mover xml C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-19 08:33:45,692 DEBUG: ------------------------- FIN del proceso de  CDR       -------------------------
+2025-02-19 08:33:45,692 DEBUG: Finalizando el Proceso de la sociedad(BD)  Z_SBO_SF_13012025
+2025-02-19 08:33:45,726 DEBUG: Desconectado el Proceso de la sociedad(BD) Z_SBO_SF_13012025
+2025-02-19 08:33:47,169 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:33:47,169 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:33:47,169 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:33:47,169 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:33:47,169 ERROR: No se encontraron archivos en los directorios: C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA y C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3
+2025-02-19 08:33:47,169 INFO : Tiempo total de ejecución: 00:00:14.8605059
+2025-02-19 08:33:47,169 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------

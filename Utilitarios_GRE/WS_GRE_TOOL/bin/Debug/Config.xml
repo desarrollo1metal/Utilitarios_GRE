@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<clsConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ServidorSAP>
+		<DbUserName>sa</DbUserName>
+		<DbPassword>B1Admin</DbPassword>
+		<DbType>2017</DbType>
+		<Server>192.168.1.2</Server>
+		<LicenseServer>192.168.1.2:30000</LicenseServer>
+	</ServidorSAP>
+	<Sociedades>
+
+		<!-- Nodo  se puede agregar SociedadBD a demanda -->
+		<SociedadBD>
+
+			<!-- Credenciales de la BD -->
+			<DbName>Z_SBO_SF_13012025</DbName>
+			<SAPuser>manager9</SAPuser>
+			<SAPpassword>1234</SAPpassword>
+
+			<!-- para XML firmado de documento GRE -->
+			<PathFirmaOrigen>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</PathFirmaOrigen>
+			<PathFirmaOrigenIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3</PathFirmaOrigenIp3>
+			<PathProcesadoFirma>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</PathProcesadoFirma>
+			<PathFirmaError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</PathFirmaError>
+
+			<!-- para CDR y PDF SUNAT -->
+			<PathCdrZip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</PathCdrZip>
+			<PathCdrZipIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3</PathCdrZipIp3>
+			<PathCdrProcesado>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</PathCdrProcesado>
+			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
+
+		</SociedadBD>
+
+
+
+		<SociedadBD>
+
+			<!-- Credenciales de la BD -->
+			<DbName>pp_05022025_SBO_SF</DbName>
+			<SAPuser>manager9</SAPuser>
+			<SAPpassword>1234</SAPpassword>
+
+			<!-- para XML firmado de documento GRE -->
+			<PathFirmaOrigen>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</PathFirmaOrigen>
+			<PathFirmaOrigenIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3</PathFirmaOrigenIp3>
+			<PathProcesadoFirma>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</PathProcesadoFirma>
+			<PathFirmaError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</PathFirmaError>
+
+			<!-- para CDR y PDF SUNAT -->
+			<PathCdrZip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</PathCdrZip>
+			<PathCdrZipIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3</PathCdrZipIp3>
+			<PathCdrProcesado>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</PathCdrProcesado>
+			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
+
+		</SociedadBD>
+		<SociedadBD>
+
+			<!-- Credenciales de la BD -->
+			<DbName>pp_05022025_SBO_SF</DbName>
+			<SAPuser>manager9</SAPuser>
+			<SAPpassword>1234</SAPpassword>
+
+			<!-- para XML firmado de documento GRE -->
+			<PathFirmaOrigen>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</PathFirmaOrigen>
+			<PathFirmaOrigenIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3</PathFirmaOrigenIp3>
+			<PathProcesadoFirma>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</PathProcesadoFirma>
+			<PathFirmaError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</PathFirmaError>
+
+			<!-- para CDR y PDF SUNAT -->
+			<PathCdrZip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</PathCdrZip>
+			<PathCdrZipIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3</PathCdrZipIp3>
+			<PathCdrProcesado>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</PathCdrProcesado>
+			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
+
+		</SociedadBD>
+		<SociedadBD>
+
+			<!-- Credenciales de la BD -->
+			<DbName>pp_05022025_SBO_SF</DbName>
+			<SAPuser>manager9</SAPuser>
+			<SAPpassword>1234</SAPpassword>
+
+			<!-- para XML firmado de documento GRE -->
+			<PathFirmaOrigen>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</PathFirmaOrigen>
+			<PathFirmaOrigenIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3</PathFirmaOrigenIp3>
+			<PathProcesadoFirma>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</PathProcesadoFirma>
+			<PathFirmaError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</PathFirmaError>
+
+			<!-- para CDR y PDF SUNAT -->
+			<PathCdrZip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</PathCdrZip>
+			<PathCdrZipIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3</PathCdrZipIp3>
+			<PathCdrProcesado>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</PathCdrProcesado>
+			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
+
+		</SociedadBD>
+		<SociedadBD>
+
+			<!-- Credenciales de la BD -->
+			<DbName>pp_05022025_SBO_SF</DbName>
+			<SAPuser>manager9</SAPuser>
+			<SAPpassword>1234</SAPpassword>
+
+			<!-- para XML firmado de documento GRE -->
+			<PathFirmaOrigen>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</PathFirmaOrigen>
+			<PathFirmaOrigenIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3</PathFirmaOrigenIp3>
+			<PathProcesadoFirma>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</PathProcesadoFirma>
+			<PathFirmaError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</PathFirmaError>
+
+			<!-- para CDR y PDF SUNAT -->
+			<PathCdrZip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</PathCdrZip>
+			<PathCdrZipIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3</PathCdrZipIp3>
+			<PathCdrProcesado>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</PathCdrProcesado>
+			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
+
+		</SociedadBD>
+		<SociedadBD>
+
+			<!-- Credenciales de la BD -->
+			<DbName>pp_05022025_SBO_SF</DbName>
+			<SAPuser>manager9</SAPuser>
+			<SAPpassword>1234</SAPpassword>
+
+			<!-- para XML firmado de documento GRE -->
+			<PathFirmaOrigen>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</PathFirmaOrigen>
+			<PathFirmaOrigenIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3</PathFirmaOrigenIp3>
+			<PathProcesadoFirma>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</PathProcesadoFirma>
+			<PathFirmaError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</PathFirmaError>
+
+			<!-- para CDR y PDF SUNAT -->
+			<PathCdrZip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</PathCdrZip>
+			<PathCdrZipIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3</PathCdrZipIp3>
+			<PathCdrProcesado>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</PathCdrProcesado>
+			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
+
+		</SociedadBD>
+
+
+	</Sociedades>
+
+	<TiempoEspera>300</TiempoEspera>
+
+</clsConfig>
