@@ -33,7 +33,7 @@
 			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
 
 			<!-- backup para zip procesados exitosamente -->
-			<Pathbackupzip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Pathbackupzip>
+			<Pathbackupzip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTABACKUPCDR</Pathbackupzip>
 
 		</SociedadBD>
 

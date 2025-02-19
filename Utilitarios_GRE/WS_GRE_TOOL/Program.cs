@@ -27,9 +27,9 @@ namespace WS_GRE_TOOL
         public static string udfxmlFile = string.Empty;
         public static string udfcdr = string.Empty;
         public static string udfpdfsunat = string.Empty;
-        static string versionNow = "3.0.0";
-        string descripProd = "GMI AddOn Despacho";
-        string codProd = "GMI_ADZZX1";
+        static string versionNow = "1.0.0";
+        string descripProd = "GMI Tool diversos";
+        string codProd = "GMI_TOOLDV1";
 
         private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(typeof(Program));
         [STAThread]
@@ -208,6 +208,17 @@ namespace WS_GRE_TOOL
         }
 
 
+        private static bool ContieneArchivosOCarpetas(string path)
+        {
+            if (string.IsNullOrEmpty(path) || !Directory.Exists(path))
+            {
+                return false; // Si el path no existe o está vacío, retornar false
+            }
+
+            // Verificar si hay archivos o subcarpetas en el directorio
+            return Directory.GetFiles(path).Length > 0 || Directory.GetDirectories(path).Length > 0;
+        }
+
         public  void Iniciar()
         {
             SetUpLogger();
@@ -241,23 +252,36 @@ namespace WS_GRE_TOOL
 
                     // Verificar si las propiedades PathFirmaOrigen y PathFirmaOrigenIp3 existen o no son null
                     string pathFirmaOrigen = sociedad.PathFirmaOrigen ?? string.Empty;
-                    string pathFirmaOrigenIp3 = sociedad.PathFirmaOrigenIp3 ?? string.Empty;
+                    string pathFirmaOrigenIp3   = sociedad.PathFirmaOrigenIp3 ?? string.Empty;
+                    string pathPathCdrZip       = sociedad.PathCdrZip ?? string.Empty;
+                    string pathPathCdrZipIp3    = sociedad.PathCdrZipIp3 ?? string.Empty;
 
-                    if (string.IsNullOrEmpty(pathFirmaOrigen) || string.IsNullOrEmpty(pathFirmaOrigenIp3))
+
+
+                    if (string.IsNullOrEmpty(pathFirmaOrigen) 
+                            || string.IsNullOrEmpty(pathFirmaOrigenIp3) 
+                            || string.IsNullOrEmpty(pathPathCdrZip) 
+                            || string.IsNullOrEmpty(pathPathCdrZipIp3))
                     {
-                        logger.Error($"Uno o ambos paths no están configurados para la sociedad: {sociedad.DbName}");
-                        continue; // Saltar a la siguiente sociedad si los paths no están configurados
+                        logger.Error($"Uno o ambos paths de INPUT no están configurados para la sociedad: {sociedad.DbName}");
+                        //continue; // Saltar a la siguiente sociedad si los paths no están configurados
                     }
 
                     // Verificar si los directorios existen y contienen archivos
                     bool existenArchivosEnFirmaOrigen = Directory.Exists(pathFirmaOrigen) && Directory.GetFiles(pathFirmaOrigen).Length > 0;
                     bool existenArchivosEnFirmaOrigenIp3 = Directory.Exists(pathFirmaOrigenIp3) && Directory.GetFiles(pathFirmaOrigenIp3).Length > 0;
+                    bool existenArchivosEnpathPathCdrZip = Directory.Exists(pathPathCdrZip) && Directory.GetFiles(pathPathCdrZip).Length > 0;
+                    bool existenArchivosEnpathPathCdrZipIp3 = Directory.Exists(pathPathCdrZipIp3) && Directory.GetFiles(pathPathCdrZipIp3).Length > 0;
 
-                    if (!existenArchivosEnFirmaOrigen && !existenArchivosEnFirmaOrigenIp3)
+                    if (    !existenArchivosEnFirmaOrigen 
+                            && !existenArchivosEnFirmaOrigenIp3
+                            && !existenArchivosEnpathPathCdrZip
+                            && !existenArchivosEnpathPathCdrZipIp3)
                     {
-                        logger.Error($"No se encontraron archivos en los directorios: {pathFirmaOrigen} y {pathFirmaOrigenIp3}");
+                        logger.Error($"No se encontraron archivos en los directorios: {pathFirmaOrigen} , {pathFirmaOrigenIp3} ,{pathPathCdrZip} y {pathPathCdrZipIp3} ");
                         continue; // Saltar a la siguiente sociedad si no hay archivos
                     }
+
 
                     logger.Debug("Se encontro archivos pendiente de procesar...");
 
@@ -306,13 +330,13 @@ namespace WS_GRE_TOOL
                         if (sociedad.PathCdrZip != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathCdrZip 1");
-                            procesarCdr(sociedad.PathCdrZip, sociedad.PathCdrProcesado, sociedad.PathCdrError);
+                            procesarCdr(sociedad.PathCdrZip, sociedad.PathCdrProcesado, sociedad.PathCdrError, sociedad.Pathbackupzip);
                         }
 
                         if (sociedad.PathCdrZipIp3 != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathCdrZip 3");
-                            procesarCdr(sociedad.PathCdrZipIp3, sociedad.PathCdrProcesado, sociedad.PathCdrError);
+                            procesarCdr(sociedad.PathCdrZipIp3, sociedad.PathCdrProcesado, sociedad.PathCdrError ,sociedad.Pathbackupzip);
                         }
                         logger.Debug("------------------------- FIN del proceso de  CDR       -------------------------");
                         //FIN CDR de respuesta
@@ -414,7 +438,6 @@ namespace WS_GRE_TOOL
                         //ini procesar en SAP , adjuntar
                         if (procesarXMLAdjuntoSAP(archivo, nombreArchivo, origenT, destinoT, PathFirmaError))
                         {
-
                             logger.Debug($"Termino exito de proceso , GRE  {nombreArchivo}");
                         }
                         else
@@ -422,7 +445,6 @@ namespace WS_GRE_TOOL
                             logger.Error($"Termino con error de proceso , GRE  {nombreArchivo}");
                         }
                         //fin procesar en SAP , adjuntar
-
 
                     }
                     catch (Exception ex)
@@ -447,7 +469,7 @@ namespace WS_GRE_TOOL
 
         }
 
-        public static  void procesarCdr(string origenT, string destinoT, string PathFirmaError)
+        public static  void procesarCdr(string origenT, string destinoT, string PathFirmaError ,string PathbackupzipT)
         {
 
             string rutaOrigen = @origenT;
@@ -471,6 +493,14 @@ namespace WS_GRE_TOOL
                     Directory.CreateDirectory(PathFirmaError);
                     logger.Debug($"Carpeta error creada CDR : {PathFirmaError}");
                 }
+
+                // 📌 Asegurar que la carpeta backupCRD existe
+                if (!Directory.Exists(PathbackupzipT))
+                {
+                    Directory.CreateDirectory(PathbackupzipT);
+                    logger.Debug($"Carpeta backup CDR zip creada : {PathbackupzipT}");
+                }
+
 
                 // 📌 Obtener todos los archivos CDR.ZIP en la carpeta origen
                 string[] archivos = Directory.GetFiles(rutaOrigen, "*.zip");
@@ -517,7 +547,7 @@ namespace WS_GRE_TOOL
 
                             // Mover el archivo ZIP de A a B
                             File.Move(archivoZip2, zipDestino);
-                            logger.Debug($"Archivo {nombreArchivo} movido exitosamente.");
+                            logger.Debug($"Archivo {nombreArchivo} movido exitosamente a {zipDestino}");
 
                             // Crear carpeta de extracción
                             string carpetaExtraccion = Path.Combine(rutaB, Path.GetFileNameWithoutExtension(nombreArchivo));
@@ -616,11 +646,35 @@ namespace WS_GRE_TOOL
                                     logger.Debug("Carpeta eliminada " + zipDestino.ToString());
                                     //File.Delete(zipDestino); // Eliminar la copia existente
                                 }
+                            }
+
+
+                            //Caso exitoso, en la carpeta proceso queda el zip y se debe mover este zip a un tag , mover zip
+                            if (existos) {
+
+                                string nuevoNombreArchivo1 = Path.Combine(PathbackupzipT, Path.GetFileName(archivoZip2));
+
+                                if (File.Exists(nuevoNombreArchivo1))
+                                {
+
+                                    File.Delete(nuevoNombreArchivo1); // Eliminar la copia existente
+                                    logger.Debug("Archivo eliminado " + nuevoNombreArchivo1.ToString());
+                                }
+
+                                File.Move(zipDestino, nuevoNombreArchivo1);
+                                logger.Debug($"Archivo ZIP  {Path.GetFileName(zipDestino)} movido backup a: {nuevoNombreArchivo1}");
+
+                                //zipDestino = zipDestino.Replace(".zip", "");
+                                //if (Directory.Exists(zipDestino))
+                                //{
+                                //    Directory.Delete(zipDestino, true);
+                                //    logger.Debug("Carpeta mo " + zipDestino.ToString());
+                                //    //File.Delete(zipDestino); // Eliminar la copia existente
+                                //}
 
                             }
 
                             existos = true;
-
 
                             logger.Debug("----------------------- Fin " + nombreArchivo + "-----------------------");
                         }
@@ -1043,7 +1097,6 @@ namespace WS_GRE_TOOL
             }
 
         }
-
 
         private static void SetUpLogger()
         {

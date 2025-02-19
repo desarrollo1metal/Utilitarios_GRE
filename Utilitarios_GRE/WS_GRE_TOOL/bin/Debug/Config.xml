@@ -20,18 +20,22 @@
 			<!-- para XML firmado de documento GRE -->
 			<PathFirmaOrigen>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</PathFirmaOrigen>
 			<PathFirmaOrigenIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_IP3</PathFirmaOrigenIp3>
+			
 			<PathProcesadoFirma>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</PathProcesadoFirma>
 			<PathFirmaError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</PathFirmaError>
 
 			<!-- para CDR y PDF SUNAT -->
+			
 			<PathCdrZip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</PathCdrZip>
 			<PathCdrZipIp3>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTA_IP3</PathCdrZipIp3>
+			
 			<PathCdrProcesado>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</PathCdrProcesado>
 			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
 
+			<!-- backup para zip procesados exitosamente -->
+			<Pathbackupzip>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTABACKUPCDR</Pathbackupzip>
+
 		</SociedadBD>
-
-
 
 		<SociedadBD>
 
@@ -53,6 +57,7 @@
 			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
 
 		</SociedadBD>
+		
 		<SociedadBD>
 
 			<!-- Credenciales de la BD -->
@@ -73,6 +78,7 @@
 			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
 
 		</SociedadBD>
+		
 		<SociedadBD>
 
 			<!-- Credenciales de la BD -->
@@ -93,6 +99,7 @@
 			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
 
 		</SociedadBD>
+		
 		<SociedadBD>
 
 			<!-- Credenciales de la BD -->
@@ -113,6 +120,7 @@
 			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
 
 		</SociedadBD>
+		
 		<SociedadBD>
 
 			<!-- Credenciales de la BD -->
@@ -133,7 +141,6 @@
 			<PathCdrError>C:\TI_MIMSA\FILE_DAEMON\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</PathCdrError>
 
 		</SociedadBD>
-
 
 	</Sociedades>
 
