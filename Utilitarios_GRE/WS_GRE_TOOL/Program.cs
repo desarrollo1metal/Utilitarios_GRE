@@ -250,35 +250,34 @@ namespace WS_GRE_TOOL
                 {
                     string msj;
 
-                    // Verificar si las propiedades PathFirmaOrigen y PathFirmaOrigenIp3 existen o no son null
-                    string pathFirmaOrigen = sociedad.PathFirmaOrigen ?? string.Empty;
-                    string pathFirmaOrigenIp3   = sociedad.PathFirmaOrigenIp3 ?? string.Empty;
-                    string pathPathCdrZip       = sociedad.PathCdrZip ?? string.Empty;
-                    string pathPathCdrZipIp3    = sociedad.PathCdrZipIp3 ?? string.Empty;
+                    // Verificar si las propiedades Path1FirmaOrigen y Path2FirmaOrigen existen o no son null
+                    string path1FirmaOrigen = sociedad.Path1FirmaOrigen ?? string.Empty;
+                    string Path2FirmaOrigen = sociedad.Path2FirmaOrigen ?? string.Empty;
 
+                    string Path1CdrZip = sociedad.Path1CdrZip ?? string.Empty;
+                    string Path2CdrZip = sociedad.Path2CdrZip ?? string.Empty;
 
-
-                    if (string.IsNullOrEmpty(pathFirmaOrigen) 
-                            || string.IsNullOrEmpty(pathFirmaOrigenIp3) 
-                            || string.IsNullOrEmpty(pathPathCdrZip) 
-                            || string.IsNullOrEmpty(pathPathCdrZipIp3))
+                    if (string.IsNullOrEmpty(path1FirmaOrigen) 
+                            || string.IsNullOrEmpty(Path2FirmaOrigen) 
+                            || string.IsNullOrEmpty(Path1CdrZip) 
+                            || string.IsNullOrEmpty(Path2CdrZip))
                     {
                         logger.Error($"Uno o ambos paths de INPUT no están configurados para la sociedad: {sociedad.DbName}");
                         //continue; // Saltar a la siguiente sociedad si los paths no están configurados
                     }
 
                     // Verificar si los directorios existen y contienen archivos
-                    bool existenArchivosEnFirmaOrigen = Directory.Exists(pathFirmaOrigen) && Directory.GetFiles(pathFirmaOrigen).Length > 0;
-                    bool existenArchivosEnFirmaOrigenIp3 = Directory.Exists(pathFirmaOrigenIp3) && Directory.GetFiles(pathFirmaOrigenIp3).Length > 0;
-                    bool existenArchivosEnpathPathCdrZip = Directory.Exists(pathPathCdrZip) && Directory.GetFiles(pathPathCdrZip).Length > 0;
-                    bool existenArchivosEnpathPathCdrZipIp3 = Directory.Exists(pathPathCdrZipIp3) && Directory.GetFiles(pathPathCdrZipIp3).Length > 0;
+                    bool existenArchivosEnpath1FirmaOrigen = Directory.Exists(path1FirmaOrigen) && Directory.GetFiles(path1FirmaOrigen).Length > 0;
+                    bool existenArchivosEnpath2FirmaOrigen = Directory.Exists(Path2FirmaOrigen) && Directory.GetFiles(Path2FirmaOrigen).Length > 0;
+                    bool existenArchivosEnpathPath1CdrZip = Directory.Exists(Path1CdrZip) && Directory.GetFiles(Path1CdrZip).Length > 0;
+                    bool existenArchivosEnpathPath2CdrZip = Directory.Exists(Path2CdrZip) && Directory.GetFiles(Path2CdrZip).Length > 0;
 
-                    if (    !existenArchivosEnFirmaOrigen 
-                            && !existenArchivosEnFirmaOrigenIp3
-                            && !existenArchivosEnpathPathCdrZip
-                            && !existenArchivosEnpathPathCdrZipIp3)
+                    if (    !existenArchivosEnpath1FirmaOrigen
+                            && !existenArchivosEnpath2FirmaOrigen
+                            && !existenArchivosEnpathPath1CdrZip
+                            && !existenArchivosEnpathPath2CdrZip    )
                     {
-                        logger.Error($"No se encontraron archivos en los directorios: {pathFirmaOrigen} , {pathFirmaOrigenIp3} ,{pathPathCdrZip} y {pathPathCdrZipIp3} ");
+                        logger.Error($"No se encontraron archivos en los directorios: {path1FirmaOrigen} , {Path2FirmaOrigen} ,{Path1CdrZip} y {Path2CdrZip} ");
                         continue; // Saltar a la siguiente sociedad si no hay archivos
                     }
 
@@ -310,33 +309,36 @@ namespace WS_GRE_TOOL
 
                         //INI XML de Documento firmado
                         logger.Debug("************************** INI del proceso de XML FILE **************************");
-                        if (sociedad.PathFirmaOrigen != string.Empty)
+                        // path1
+                        if (sociedad.Path1FirmaOrigen != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathFirmaOrigen ");
-                            procesarXML(sociedad.PathFirmaOrigen, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
+                            procesarXML(sociedad.Path1FirmaOrigen, sociedad.Path1ProcesadoFirma, sociedad.Path1FirmaError);
                         }
 
-                        if (sociedad.PathFirmaOrigenIp3 != string.Empty)
+                        // path2
+                        if (sociedad.Path2FirmaOrigen != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathFirmaOrigenIp3 ");
-                            procesarXML(sociedad.PathFirmaOrigenIp3, sociedad.PathProcesadoFirma, sociedad.PathFirmaError);
+                            procesarXML(sociedad.Path2FirmaOrigen, sociedad.Path2ProcesadoFirma, sociedad.Path2FirmaError);
                         }
+
                         logger.Debug("************************** FIN del proceso de XML FILE **************************");
                         //FIN XML de Documento firmado
 
 
                         //INI CDR de respuesta
                         logger.Debug("------------------------- INI del proceso de  CDR       -------------------------");
-                        if (sociedad.PathCdrZip != string.Empty)
+                        if (sociedad.Path1CdrZip != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathCdrZip 1");
-                            procesarCdr(sociedad.PathCdrZip, sociedad.PathCdrProcesado, sociedad.PathCdrError, sociedad.Pathbackupzip);
+                            procesarCdr(sociedad.Path1CdrZip, sociedad.Path1CdrProcesado, sociedad.Path1CdrError, sociedad.Pathbackupzip);
                         }
 
-                        if (sociedad.PathCdrZipIp3 != string.Empty)
+                        if (sociedad.Path2CdrZip != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathCdrZip 3");
-                            procesarCdr(sociedad.PathCdrZipIp3, sociedad.PathCdrProcesado, sociedad.PathCdrError ,sociedad.Pathbackupzip);
+                            procesarCdr(sociedad.Path2CdrZip, sociedad.Path2CdrProcesado, sociedad.Path2CdrError, sociedad.Pathbackupzip);
                         }
                         logger.Debug("------------------------- FIN del proceso de  CDR       -------------------------");
                         //FIN CDR de respuesta

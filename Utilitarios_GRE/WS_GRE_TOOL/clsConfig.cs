@@ -31,17 +31,29 @@ namespace WS_GRE_TOOL
         public string SAPuser { get; set; }
         public string SAPpassword { get; set; }
 
-        public string PathFirmaOrigen { get; set; }
-        public string PathFirmaOrigenIp3 { get; set; }
-        public string PathFirmaError { get; set; }
-        public string PathProcesadoFirma { get; set; }
+
+        public string Path1FirmaOrigen { get; set; }
+        public string Path1FirmaError { get; set; }
+        public string Path1ProcesadoFirma { get; set; }
 
 
 
-        public string PathCdrZip { get; set; }
-        public string PathCdrZipIp3 { get; set; }
-        public string PathCdrProcesado { get; set; }
-        public string PathCdrError { get; set; }
+        public string Path2FirmaOrigen { get; set; }
+        public string Path2FirmaError { get; set; }
+        public string Path2ProcesadoFirma { get; set; }
+
+
+
+        public string Path1CdrZip { get; set; }
+        public string Path1CdrProcesado { get; set; }
+        public string Path1CdrError { get; set; }
+
+
+        public string Path2CdrZip { get; set; }
+        public string Path2CdrProcesado { get; set; }
+        public string Path2CdrError { get; set; }
+
+
         public string Pathbackupzip { get; set; }
 
     }
