@@ -85,7 +85,7 @@
 		<SociedadBD>
 
 			<!-- Credenciales de la BD -->
-			<DbName>Z_SBO_INDUZINC_05022025		</DbName>
+			<DbName>Z_SBO_INDUZINC_05022025</DbName>
 			<SAPuser>manager9</SAPuser>
 			<SAPpassword>1234</SAPpassword>
 
