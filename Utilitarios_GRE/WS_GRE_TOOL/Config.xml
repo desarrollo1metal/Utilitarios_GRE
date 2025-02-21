@@ -7,6 +7,7 @@
 		<Server>192.168.1.2</Server>
 		<LicenseServer>192.168.1.2:30000</LicenseServer>
 	</ServidorSAP>
+
 	<Sociedades>
 
 		<!-- Nodo  se puede agregar SociedadBD a demanda -->
@@ -16,29 +17,32 @@
 			<DbName>Z_SBO_SF_13012025</DbName>
 			<SAPuser>manager9</SAPuser>
 			<SAPpassword>1234</SAPpassword>
+			
+			<!-- Fecha de inicio para tomar en cuenta archivos fecha de modificacion -->
+			<FechaActivoInicio>2025-01-01</FechaActivoInicio>
 
 			<!-- INPUT 1 para XML firmado de documento GRE -->
-			<Path1FirmaOrigen>\\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
-			<Path1ProcesadoFirma>\\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
-			<Path1FirmaError>\\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
+			<Path1FirmaOrigen>C:\TEST\IP45\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
+			<Path1ProcesadoFirma>C:\TEST\IP45\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
+			<Path1FirmaError>C:\TEST\IP45\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
 
 			<!-- INPUT 2 para XML firmado de documento GRE -->
-			<Path2FirmaOrigen>\\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
-			<Path2ProcesadoFirma>\\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
-			<Path2FirmaError>\\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
+			<Path2FirmaOrigen>C:\TEST\SF\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
+			<Path2ProcesadoFirma>C:\TEST\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
+			<Path2FirmaError>C:\TEST\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
 			
 			<!-- para CDR y PDF SUNAT -->
 
 			<!-- INPUT 1 para CDR GRE -->
-			<Path1CdrZip>\\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
-			<Path1CdrProcesado>\\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
-			<Path1CdrError>\\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
+			<Path1CdrZip>C:\TEST\IP45\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
+			<Path1CdrProcesado>C:\TEST\IP45\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
+			<Path1CdrError>C:\TEST\IP45\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
 
 
 			<!-- INPUT 2 para CDR GRE -->
-			<Path2CdrZip>\\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
-			<Path2CdrProcesado>\\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
-			<Path2CdrError>\\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
+			<Path2CdrZip>C:\TEST\IP3\SF\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
+			<Path2CdrProcesado>C:\TEST\IP3\SF\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
+			<Path2CdrError>C:\TEST\IP3\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
 
 			<!-- backup para zip procesados exitosamente -->
 			<Pathbackupzip>\\192.168.1.3\gre zip\SF</Pathbackupzip>
@@ -52,29 +56,33 @@
 			<DbName>Z_MIMSA_19022025</DbName>
 			<SAPuser>manager9</SAPuser>
 			<SAPpassword>1234</SAPpassword>
+			
+			<!-- Fecha de inicio para tomar en cuenta archivos fecha de modificacion -->
+			<FechaActivoInicio>2025-01-01</FechaActivoInicio>
+			
 
 			<!-- INPUT 1 para XML firmado de documento GRE -->
-			<Path1FirmaOrigen>\\192.168.1.45\guias\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
-			<Path1ProcesadoFirma>\\192.168.1.45\guias\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
-			<Path1FirmaError>\\192.168.1.45\guias\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
+			<Path1FirmaOrigen>C:\TEST\IP45\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
+			<Path1ProcesadoFirma>C:\TEST\IP45\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
+			<Path1FirmaError>C:\TEST\IP45\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
 
 			<!-- INPUT 2 para XML firmado de documento GRE -->
-			<Path2FirmaOrigen>\\192.168.1.3\guias_pub\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
-			<Path2ProcesadoFirma>\\192.168.1.3\guias_pub\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
-			<Path2FirmaError>\\192.168.1.3\guias_pub\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
+			<Path2FirmaOrigen>C:\TEST\IP3\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
+			<Path2ProcesadoFirma>C:\TEST\IP3\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
+			<Path2FirmaError>C:\TEST\IP3\MIMSA\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
 			
 			<!-- para CDR y PDF SUNAT -->
 
 			<!-- INPUT 1 para CDR GRE -->
-			<Path1CdrZip>\\192.168.1.45\guias\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
-			<Path1CdrProcesado>\\192.168.1.45\guias\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
-			<Path1CdrError>\\192.168.1.45\guias\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
+			<Path1CdrZip>C:\TEST\IP45\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
+			<Path1CdrProcesado>C:\TEST\IP45\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
+			<Path1CdrError>C:\TEST\IP45\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
 
 
 			<!-- INPUT 2 para CDR GRE -->
-			<Path2CdrZip>\\192.168.1.3\guias_pub\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
-			<Path2CdrProcesado>\\192.168.1.3\guias_pub\MIMSA\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
-			<Path2CdrError>\\192.168.1.3\guias_pub\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
+			<Path2CdrZip>C:\TEST\IP3\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
+			<Path2CdrProcesado>C:\TEST\IP3\MIMSA\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
+			<Path2CdrError>C:\TEST\IP3\MIMSA\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
 
 			<!-- backup para zip procesados exitosamente -->
 			<Pathbackupzip>\\192.168.1.3\gre zip\MIMSA</Pathbackupzip>
@@ -88,29 +96,32 @@
 			<DbName>Z_SBO_INDUZINC_05022025</DbName>
 			<SAPuser>manager9</SAPuser>
 			<SAPpassword>1234</SAPpassword>
+			
+			<!-- Fecha de inicio para tomar en cuenta archivos fecha de modificacion -->
+			<FechaActivoInicio>2025-01-01</FechaActivoInicio>
 
 			<!-- INPUT 1 para XML firmado de documento GRE -->
-			<Path1FirmaOrigen>\\192.168.1.45\guias\INZ\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
-			<Path1ProcesadoFirma>\\192.168.1.45\guias\INZ\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
-			<Path1FirmaError>\\192.168.1.45\guias\INZ\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
+			<Path1FirmaOrigen>C:\TEST\IP45\INZ\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
+			<Path1ProcesadoFirma>C:\TEST\IP45\INZ\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
+			<Path1FirmaError>C:\TEST\IP45\INZ\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
 
 			<!-- INPUT 2 para XML firmado de documento GRE -->
-			<Path2FirmaOrigen>\\192.168.1.3\guias_pub\INDUZINC\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
-			<Path2ProcesadoFirma>\\192.168.1.3\guias_pub\INDUZINC\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
-			<Path2FirmaError>\\192.168.1.3\guias_pub\INDUZINC\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
+			<Path2FirmaOrigen>C:\TEST\IP3\INZ\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
+			<Path2ProcesadoFirma>C:\TEST\IP3\INZ\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
+			<Path2FirmaError>C:\TEST\IP3\INZ\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
 			
 			<!-- para CDR y PDF SUNAT -->
 
 			<!-- INPUT 1 para CDR GRE -->
-			<Path1CdrZip>\\192.168.1.45\guias\INZ\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
-			<Path1CdrProcesado>\\192.168.1.45\guias\INZ\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
-			<Path1CdrError>\\192.168.1.45\guias\INZ\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
+			<Path1CdrZip>C:\TEST\IP45\INZ\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
+			<Path1CdrProcesado>C:\TEST\IP45\INZ\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
+			<Path1CdrError>C:\TEST\IP45\INZ\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
 
 
 			<!-- INPUT 2 para CDR GRE -->
-			<Path2CdrZip>\\192.168.1.3\guias_pub\INDUZINC\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
-			<Path2CdrProcesado>\\192.168.1.3\guias_pub\INDUZINC\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
-			<Path2CdrError>\\192.168.1.3\guias_pub\INDUZINC\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
+			<Path2CdrZip>C:\TEST\IP3\INZ\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
+			<Path2CdrProcesado>C:\TEST\IP3\INZ\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
+			<Path2CdrError>C:\TEST\IP3\INZ\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
 
 			<!-- backup para zip procesados exitosamente -->
 			<Pathbackupzip>\\192.168.1.3\gre zip\INDUZINC</Pathbackupzip>
@@ -124,29 +135,32 @@
 			<DbName>Z_SBO_Mega_Estructuras_14022025</DbName>
 			<SAPuser>manager9</SAPuser>
 			<SAPpassword>1234</SAPpassword>
+			
+			<!-- Fecha de inicio para tomar en cuenta archivos fecha de modificacion -->
+			<FechaActivoInicio>2025-01-01</FechaActivoInicio>
 
 			<!-- INPUT 1 para XML firmado de documento GRE -->
-			<Path1FirmaOrigen>\\192.168.1.45\guias\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
-			<Path1ProcesadoFirma>\\192.168.1.45\guias\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
-			<Path1FirmaError>\\192.168.1.45\guias\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
+			<Path1FirmaOrigen>C:\TEST\IP45\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
+			<Path1ProcesadoFirma>C:\TEST\IP45\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
+			<Path1FirmaError>C:\TEST\IP45\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
 
 			<!-- INPUT 2 para XML firmado de documento GRE -->
-			<Path2FirmaOrigen>\\192.168.1.3\guias_pub\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
-			<Path2ProcesadoFirma>\\192.168.1.3\guias_pub\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
-			<Path2FirmaError>\\192.168.1.3\guias_pub\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
+			<Path2FirmaOrigen>C:\TEST\IP3\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
+			<Path2ProcesadoFirma>C:\TEST\IP3\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
+			<Path2FirmaError>C:\TEST\IP3\MEGA\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
 			
 			<!-- para CDR y PDF SUNAT -->
 
 			<!-- INPUT 1 para CDR GRE -->
-			<Path1CdrZip>\\192.168.1.45\guias\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
-			<Path1CdrProcesado>\\192.168.1.45\guias\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
-			<Path1CdrError>\\192.168.1.45\guias\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
+			<Path1CdrZip>C:\TEST\IP45\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
+			<Path1CdrProcesado>C:\TEST\IP45\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
+			<Path1CdrError>C:\TEST\IP45\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
 
 
 			<!-- INPUT 2 para CDR GRE -->
-			<Path2CdrZip>\\192.168.1.3\guias_pub\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
-			<Path2CdrProcesado>\\192.168.1.3\guias_pub\MEGA\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
-			<Path2CdrError>\\192.168.1.3\guias_pub\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
+			<Path2CdrZip>C:\TEST\IP3\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
+			<Path2CdrProcesado>C:\TEST\IP3\MEGA\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
+			<Path2CdrError>C:\TEST\IP3\MEGA\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
 
 			<!-- backup para zip procesados exitosamente -->
 			<Pathbackupzip>\\192.168.1.3\gre zip\MEGA</Pathbackupzip>
@@ -159,29 +173,33 @@
 			<DbName>Z_SBO_RumiImport_15022025</DbName>
 			<SAPuser>manager9</SAPuser>
 			<SAPpassword>1234</SAPpassword>
+			
+			<!-- Fecha de inicio para tomar en cuenta archivos fecha de modificacion -->
+			<FechaActivoInicio>2025-01-01</FechaActivoInicio>
+			
 
 			<!-- INPUT 1 para XML firmado de documento GRE -->
-			<Path1FirmaOrigen>\\192.168.1.45\guias\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
-			<Path1ProcesadoFirma>\\192.168.1.45\guias\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
-			<Path1FirmaError>\\192.168.1.45\guias\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
+			<Path1FirmaOrigen>C:\TEST\IP45\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
+			<Path1ProcesadoFirma>C:\TEST\IP45\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
+			<Path1FirmaError>C:\TEST\IP45\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
 
 			<!-- INPUT 2 para XML firmado de documento GRE -->
-			<Path2FirmaOrigen>\\192.168.1.3\guias_pub\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
-			<Path2ProcesadoFirma>\\192.168.1.3\guias_pub\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
-			<Path2FirmaError>\\192.168.1.3\guias_pub\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
+			<Path2FirmaOrigen>C:\TEST\IP3\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
+			<Path2ProcesadoFirma>C:\TEST\IP3\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
+			<Path2FirmaError>C:\TEST\IP3\RUMI\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
 			
 			<!-- para CDR y PDF SUNAT -->
 
 			<!-- INPUT 1 para CDR GRE -->
-			<Path1CdrZip>\\192.168.1.45\guias\RUMI\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
-			<Path1CdrProcesado>\\192.168.1.45\guias\RUMI\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
-			<Path1CdrError>\\192.168.1.45\guias\RUMI\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
+			<Path1CdrZip>C:\TEST\IP45\RUMI\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
+			<Path1CdrProcesado>C:\TEST\IP45\RUMI\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
+			<Path1CdrError>C:\TEST\IP45\RUMI\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
 
 
 			<!-- INPUT 2 para CDR GRE -->
-			<Path2CdrZip>\\192.168.1.3\guias_pub\RUMI\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
-			<Path2CdrProcesado>\\192.168.1.3\guias_pub\RUMI\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
-			<Path2CdrError>\\192.168.1.3\guias_pub\SF\RUMI.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
+			<Path2CdrZip>C:\TEST\IP3\RUMI\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
+			<Path2CdrProcesado>C:\TEST\IP3\RUMI\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
+			<Path2CdrError>C:\TEST\IP3\SF\RUMI.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
 
 			<!-- backup para zip procesados exitosamente -->
 			<Pathbackupzip>\\192.168.1.3\gre zip\RUMI</Pathbackupzip>
@@ -194,39 +212,41 @@
 			<DbName>Z_SBO_Postes_y_Estructuras_12022025</DbName>
 			<SAPuser>manager9</SAPuser>
 			<SAPpassword>1234</SAPpassword>
+			
+			<!-- Fecha de inicio para tomar en cuenta archivos fecha de modificacion -->
+			<FechaActivoInicio>2025-01-01</FechaActivoInicio>
 
 			<!-- INPUT 1 para XML firmado de documento GRE -->
-			<Path1FirmaOrigen>\\192.168.1.45\guias\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
-			<Path1ProcesadoFirma>\\192.168.1.45\guias\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
-			<Path1FirmaError>\\192.168.1.45\guias\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
+			<Path1FirmaOrigen>C:\TEST\IP45\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path1FirmaOrigen>
+			<Path1ProcesadoFirma>C:\TEST\IP45\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path1ProcesadoFirma>
+			<Path1FirmaError>C:\TEST\IP45\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path1FirmaError>
 
 			<!-- INPUT 2 para XML firmado de documento GRE -->
-			<Path2FirmaOrigen>\\192.168.1.3\guias_pub\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
-			<Path2ProcesadoFirma>\\192.168.1.3\guias_pub\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
-			<Path2FirmaError>\\192.168.1.3\guias_pub\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
+			<Path2FirmaOrigen>C:\TEST\IP3\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMA</Path2FirmaOrigen>
+			<Path2ProcesadoFirma>C:\TEST\IP3\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado</Path2ProcesadoFirma>
+			<Path2FirmaError>C:\TEST\IP3\POSTES\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR</Path2FirmaError>
 			
 			<!-- para CDR y PDF SUNAT -->
 
 			<!-- INPUT 1 para CDR GRE -->
-			<Path1CdrZip>\\192.168.1.45\guias\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
-			<Path1CdrProcesado>\\192.168.1.45\guias\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
-			<Path1CdrError>\\192.168.1.45\guias\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
+			<Path1CdrZip>C:\TEST\IP45\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTA</Path1CdrZip>
+			<Path1CdrProcesado>C:\TEST\IP45\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO</Path1CdrProcesado>
+			<Path1CdrError>C:\TEST\IP45\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path1CdrError>
 
 
 			<!-- INPUT 2 para CDR GRE -->
-			<Path2CdrZip>\\192.168.1.3\guias_pub\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
-			<Path2CdrProcesado>\\192.168.1.3\guias_pub\POSTES\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
-			<Path2CdrError>\\192.168.1.3\guias_pub\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
+			<Path2CdrZip>C:\TEST\IP3\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTA</Path2CdrZip>
+			<Path2CdrProcesado>C:\TEST\IP3\POSTES\SFS_v1.6\sunat_archivos\sfs\sfs\RPTAPROCESADO</Path2CdrProcesado>
+			<Path2CdrError>C:\TEST\IP3\POSTES\SFS_v1.6\sunat_archivos\sfs\RPTAERROR</Path2CdrError>
 
 			<!-- backup para zip procesados exitosamente -->
 			<Pathbackupzip>\\192.168.1.3\gre zip\POSTES</Pathbackupzip>
 
 		</SociedadBD>
-		
-		
 	
 	</Sociedades>
 
+	
 	<TiempoEspera>300</TiempoEspera>
 
 </clsConfig>

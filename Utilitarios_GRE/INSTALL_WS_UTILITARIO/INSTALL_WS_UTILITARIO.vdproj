@@ -15,26 +15,26 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_1F15B504883940C24114CEFCBA980D16"
-        "OwnerKey" = "8:_BA54846EEAF64B0E8E37F246C2346A4C"
+        "MsmKey" = "8:_3616CAE55C269507037B572CC7848548"
+        "OwnerKey" = "8:_A0F451704C6B49B995163FE5553E0AA5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_3B253E801AF41938184D1179B95B3E7D"
-        "OwnerKey" = "8:_BA54846EEAF64B0E8E37F246C2346A4C"
+        "OwnerKey" = "8:_A0F451704C6B49B995163FE5553E0AA5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_915EB99607BA5FF2F7D8EFB6812435F0"
-        "OwnerKey" = "8:_BA54846EEAF64B0E8E37F246C2346A4C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BA54846EEAF64B0E8E37F246C2346A4C"
+        "MsmKey" = "8:_A0F451704C6B49B995163FE5553E0AA5"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F473310746A7C22BF6AE25E390604E36"
+        "OwnerKey" = "8:_A0F451704C6B49B995163FE5553E0AA5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,19 +46,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BA54846EEAF64B0E8E37F246C2346A4C"
+        "OwnerKey" = "8:_A0F451704C6B49B995163FE5553E0AA5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1F15B504883940C24114CEFCBA980D16"
+        "OwnerKey" = "8:_F473310746A7C22BF6AE25E390604E36"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_915EB99607BA5FF2F7D8EFB6812435F0"
+        "OwnerKey" = "8:_3616CAE55C269507037B572CC7848548"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -133,31 +133,31 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_249877BDEE53402182FCD9EF0745D612"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_B32868A6FBC4452AB90B726351801031"
             {
             "Name" = "8:Resultado principal from WS_GRE_TOOL (Active)"
             "Condition" = "8:"
-            "Object" = "8:_BA54846EEAF64B0E8E37F246C2346A4C"
-            "FileType" = "3:2"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_198C8B3C_4464_4407_ABDF_AA0BD411B7E8"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_61F4959E33A84AC989AF595CF460B012"
-            {
-            "Name" = "8:Resultado principal from WS_GRE_TOOL (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_BA54846EEAF64B0E8E37F246C2346A4C"
+            "Object" = "8:_A0F451704C6B49B995163FE5553E0AA5"
             "FileType" = "3:2"
             "InstallAction" = "3:4"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_A13BFF1F_BB7D_44A6_8EA2_24518325A84D"
+            "Identifier" = "8:_536FC712_AA22_4676_A168_01EBEF204C3A"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_ED12F22A5B264AD7AB5B4C0CD0615B3C"
+            {
+            "Name" = "8:Resultado principal from WS_GRE_TOOL (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_A0F451704C6B49B995163FE5553E0AA5"
+            "FileType" = "3:2"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_D3A3A34D_D7D9_4718_93C3_6B312BDC9C67"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
@@ -184,20 +184,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1F15B504883940C24114CEFCBA980D16"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3616CAE55C269507037B572CC7848548"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_1F15B504883940C24114CEFCBA980D16"
+                    "_3616CAE55C269507037B572CC7848548"
                     {
-                    "Name" = "8:log4net.dll"
+                    "Name" = "8:DotNetZip.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:log4net.dll"
+            "SourcePath" = "8:DotNetZip.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_81B031D90EBA40F5A9379D40AA3E93FB"
@@ -246,20 +246,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_915EB99607BA5FF2F7D8EFB6812435F0"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F473310746A7C22BF6AE25E390604E36"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_915EB99607BA5FF2F7D8EFB6812435F0"
+                    "_F473310746A7C22BF6AE25E390604E36"
                     {
-                    "Name" = "8:DotNetZip.dll"
+                    "Name" = "8:log4net.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:DotNetZip.dll"
+            "SourcePath" = "8:log4net.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_81B031D90EBA40F5A9379D40AA3E93FB"
@@ -332,20 +332,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:GMI_SERVICIO_TOOLV1"
-        "ProductCode" = "8:{A169F5B3-9AC7-49C3-BA9B-B0C7F5F92690}"
-        "PackageCode" = "8:{B7498035-FA5F-42D4-8BCF-28BB9B7705C3}"
+        "ProductName" = "8:GMI_SERVICIO_TOOLV101"
+        "ProductCode" = "8:{690DE1DA-7370-4B30-8FA9-AF23C9C69085}"
+        "PackageCode" = "8:{A9C070FD-7CE1-483D-912A-BD62214F35DF}"
         "UpgradeCode" = "8:{44F71793-3A67-436E-A35F-5781995FB8A8}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:GMI"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:GMI_TOOL_Diversos1"
+        "Title" = "8:GMI_TOOL_Diversos101"
         "Subject" = "8:"
         "ARPCONTACT" = "8:DEV_GMI"
         "Keywords" = "8:"
@@ -853,7 +853,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_BA54846EEAF64B0E8E37F246C2346A4C"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A0F451704C6B49B995163FE5553E0AA5"
             {
             "SourcePath" = "8:..\\WS_GRE_TOOL\\obj\\Debug\\WS_GRE_TOOL.exe"
             "TargetName" = "8:"
@@ -881,7 +881,7 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EE4486CFA0B8479D9B0E2A4F84231613"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D8276BCBD9DC4140B81D868D4760AE86"
             {
             "SourcePath" = "8:"
             "TargetName" = "8:"

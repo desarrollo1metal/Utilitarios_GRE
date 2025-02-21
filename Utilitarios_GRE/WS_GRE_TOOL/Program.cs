@@ -27,7 +27,7 @@ namespace WS_GRE_TOOL
         public static string udfxmlFile = string.Empty;
         public static string udfcdr = string.Empty;
         public static string udfpdfsunat = string.Empty;
-        static string versionNow = "1.0.0";
+        static string versionNow = "1.0.1";
         string descripProd = "GMI Tool diversos";
         string codProd = "GMI_TOOLDV1";
 
@@ -232,6 +232,7 @@ namespace WS_GRE_TOOL
                 logger.Info("Inicializando Tool GMI ");
                 stopwatch.Start();
 
+                //campos que se deben crear
                 udfxmlFile = "U_XMLV3";
                 udfcdr = "U_CDRV3";
                 udfpdfsunat = "U_SUNATPDFV3";
@@ -277,6 +278,7 @@ namespace WS_GRE_TOOL
                             && !existenArchivosEnpathPath1CdrZip
                             && !existenArchivosEnpathPath2CdrZip    )
                     {
+                        
                         logger.Error($"No se encontraron archivos en los directorios: {path1FirmaOrigen} , {Path2FirmaOrigen} ,{Path1CdrZip} y {Path2CdrZip} ");
                         continue; // Saltar a la siguiente sociedad si no hay archivos
                     }
@@ -313,14 +315,14 @@ namespace WS_GRE_TOOL
                         if (sociedad.Path1FirmaOrigen != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathFirmaOrigen ");
-                            procesarXML(sociedad.Path1FirmaOrigen, sociedad.Path1ProcesadoFirma, sociedad.Path1FirmaError);
+                            procesarXML(sociedad.Path1FirmaOrigen, sociedad.Path1ProcesadoFirma, sociedad.Path1FirmaError , sociedad.FechaActivoInicio);
                         }
 
                         // path2
                         if (sociedad.Path2FirmaOrigen != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathFirmaOrigenIp3 ");
-                            procesarXML(sociedad.Path2FirmaOrigen, sociedad.Path2ProcesadoFirma, sociedad.Path2FirmaError);
+                            procesarXML(sociedad.Path2FirmaOrigen, sociedad.Path2ProcesadoFirma, sociedad.Path2FirmaError, sociedad.FechaActivoInicio);
                         }
 
                         logger.Debug("************************** FIN del proceso de XML FILE **************************");
@@ -332,13 +334,13 @@ namespace WS_GRE_TOOL
                         if (sociedad.Path1CdrZip != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathCdrZip 1");
-                            procesarCdr(sociedad.Path1CdrZip, sociedad.Path1CdrProcesado, sociedad.Path1CdrError, sociedad.Pathbackupzip);
+                            procesarCdr(sociedad.Path1CdrZip, sociedad.Path1CdrProcesado, sociedad.Path1CdrError, sociedad.Pathbackupzip, sociedad.FechaActivoInicio);
                         }
 
                         if (sociedad.Path2CdrZip != string.Empty)
                         {
                             //logger.Debug("Sociedad.PathCdrZip 3");
-                            procesarCdr(sociedad.Path2CdrZip, sociedad.Path2CdrProcesado, sociedad.Path2CdrError, sociedad.Pathbackupzip);
+                            procesarCdr(sociedad.Path2CdrZip, sociedad.Path2CdrProcesado, sociedad.Path2CdrError, sociedad.Pathbackupzip, sociedad.FechaActivoInicio);
                         }
                         logger.Debug("------------------------- FIN del proceso de  CDR       -------------------------");
                         //FIN CDR de respuesta
@@ -394,7 +396,7 @@ namespace WS_GRE_TOOL
             }
         }
 
-        public static void procesarXML(string origenT, string destinoT, string PathFirmaError)
+        public static void procesarXML(string origenT, string destinoT, string PathFirmaError , string fechaActivoSInicio)
         {
 
             string rutaOrigen = @origenT;
@@ -427,37 +429,81 @@ namespace WS_GRE_TOOL
 
                 foreach (string archivo in archivos)
                 {
-                    string nombreArchivo = Path.GetFileName(archivo); // Obtener solo el nombre
-                    int totalArchivos = archivos.Length;
-                    logger.Debug("Numero de archivos XML " + totalArchivos);
+                    //agregar fecha de inicio de filtro
 
-                    try
+                    ////ini
+                   
+                    if (fechaActivoSInicio == null)
                     {
+                        logger.Error("No se encontró el nodo 'FechaActivoInicio' en el archivo XML.");
+                        return;
+                    }
 
-                        string destino = Path.Combine(rutaDestino, nombreArchivo); // Ruta completa en destino
+                    string fechaLimiteStr = fechaActivoSInicio;
+                    DateTime fechaLimite;
 
-                        logger.Debug("----------------------- Inicio XML " + nombreArchivo + "-----------------------");
-                        //ini procesar en SAP , adjuntar
-                        if (procesarXMLAdjuntoSAP(archivo, nombreArchivo, origenT, destinoT, PathFirmaError))
+                    // Intentar convertir la fecha
+                    if (!DateTime.TryParse(fechaLimiteStr, out fechaLimite))
+                    {
+                        logger.Error("La FechaActivoInicio en el archivo XML no tiene un formato válido.");
+                        return;
+                    }
+                    
+
+                        DateTime fechaActual = DateTime.Now;
+                    // Crear un objeto FileInfo para el archivo actual
+                    FileInfo fileInfo = new FileInfo(archivo);
+
+                    // Filtrar por fecha de modificación
+                    if (fileInfo.LastWriteTime >= fechaLimite && fileInfo.LastWriteTime <= DateTime.Now)
+                    {
+                        logger.Debug($"Procesando archivo: {fileInfo.Name}, Fecha de modificación: {fileInfo.LastWriteTime}");
+
+                        // Aquí puedes agregar la lógica para mover el archivo
+                        string nombreArchivo = Path.GetFileName(archivo); // Obtener solo el nombre
+                        int totalArchivos = archivos.Length;
+                        logger.Debug("Numero de archivos XML " + totalArchivos);
+
+                        try
                         {
-                            logger.Debug($"Termino exito de proceso , GRE  {nombreArchivo}");
+
+                            string destino = Path.Combine(rutaDestino, nombreArchivo); // Ruta completa en destino
+
+                            logger.Debug("----------------------- Inicio XML " + nombreArchivo + "-----------------------");
+                            //ini procesar en SAP , adjuntar
+                            if (procesarXMLAdjuntoSAP(archivo, nombreArchivo, origenT, destinoT, PathFirmaError))
+                            {
+                                logger.Debug($"Termino exito de proceso , GRE  {nombreArchivo}");
+                            }
+                            else
+                            {
+                                logger.Error($"Termino con error de proceso , GRE  {nombreArchivo}");
+                            }
+                            //fin procesar en SAP , adjuntar
+
                         }
-                        else
+                        catch (Exception ex)
                         {
-                            logger.Error($"Termino con error de proceso , GRE  {nombreArchivo}");
+
+                            logger.Error(ex.ToString());
                         }
-                        //fin procesar en SAP , adjuntar
+                        finally
+                        {
+                            logger.Debug("----------------------- Fin XML " + nombreArchivo + "-----------------------");
+                        }
+
 
                     }
-                    catch (Exception ex)
+                    else
                     {
+                        logger.Info($"Archivo omitido: {fileInfo.Name}, Fecha de modificación: {fileInfo.LastWriteTime}, no se encuentra en rango permitido. ");
 
-                        logger.Error( ex.ToString());
+                        continue;
                     }
-                    finally
-                    {
-                        logger.Debug("----------------------- Fin XML " + nombreArchivo + "-----------------------");
-                    }
+
+                    ////fin 
+
+
 
                 }
 
@@ -471,7 +517,7 @@ namespace WS_GRE_TOOL
 
         }
 
-        public static  void procesarCdr(string origenT, string destinoT, string PathFirmaError ,string PathbackupzipT)
+        public static  void procesarCdr(string origenT, string destinoT, string PathFirmaError ,string PathbackupzipT, string fechaActivoSInicio)
         {
 
             string rutaOrigen = @origenT;
@@ -528,157 +574,207 @@ namespace WS_GRE_TOOL
                         foreach (string archivoZip2 in archivosZip2)
                         {
 
-                            string nombreArchivo = Path.GetFileName(archivoZip2);
-                            string zipDestino = Path.Combine(rutaB, nombreArchivo);
-
-                            logger.Debug("----------------------- Inicio " + nombreArchivo + "-----------------------");
-
-
-                            if (File.Exists(zipDestino))
+                            if (fechaActivoSInicio == null)
                             {
-                                logger.Debug("Eliminado la carpeta con nombre " + zipDestino.ToString());
-                                File.Delete(zipDestino); // Eliminar la copia existente
+                                logger.Error("No se encontró el nodo 'FechaActivoInicio' en el archivo XML.");
+                                return;
                             }
 
-                            string t1 = zipDestino.Replace(".zip", "");
-                            if (Directory.Exists(t1))
+                            string fechaLimiteStr = fechaActivoSInicio;
+                            DateTime fechaLimite;
+
+                            // Intentar convertir la fecha
+                            if (!DateTime.TryParse(fechaLimiteStr, out fechaLimite))
                             {
-                                logger.Debug("Eliminado el archivo .zip con nombre " + t1);
-                                Directory.Delete(t1, true); // Eliminar la copia existente
+                                logger.Error("La FechaActivoInicio en el archivo XML no tiene un formato válido.");
+                                return;
                             }
 
-                            // Mover el archivo ZIP de A a B
-                            File.Move(archivoZip2, zipDestino);
-                            logger.Debug($"Archivo {nombreArchivo} movido exitosamente a {zipDestino}");
 
-                            // Crear carpeta de extracción
-                            string carpetaExtraccion = Path.Combine(rutaB, Path.GetFileNameWithoutExtension(nombreArchivo));
-                            Directory.CreateDirectory(carpetaExtraccion);
+                            DateTime fechaActual = DateTime.Now;
+                            // Crear un objeto FileInfo para el archivo actual
+                            FileInfo fileInfo = new FileInfo(archivoZip2);
 
-                            using (ZipFile zip = ZipFile.Read(zipDestino))
+                            // Filtrar por fecha de modificación
+                            if (fileInfo.LastWriteTime >= fechaLimite && fileInfo.LastWriteTime <= DateTime.Now)
                             {
-                                zip.ExtractAll(carpetaExtraccion, ExtractExistingFileAction.OverwriteSilently);
-                                //Console.WriteLine($"Archivo ZIP {Path.GetFileName(archivoZip2)} descomprimido en: {carpetaExtraccion}");
-                                logger.Debug($"Archivo {nombreArchivo} extraído en: {carpetaExtraccion}");
-
-                                foreach (ZipEntry entry in zip)
-                                {
-                                    entry.Extract(carpetaExtraccion, ExtractExistingFileAction.OverwriteSilently);
-                                    logger.Debug($"Archivo {entry.FileName} extraído en: {carpetaExtraccion}");
-
-                                    // Si el archivo extraído es un XML, leer su contenido y obtener el nodo DocumentDescription
-                                    if (Path.GetExtension(entry.FileName).ToLower() == ".xml")
-                                    {
-
-                                        string xmlPath = Path.Combine(carpetaExtraccion, entry.FileName);
-
-                                        XmlDocument xmlDoc = new XmlDocument();
-                                        xmlDoc.Load(xmlPath);
-
-                                        // Crear un NamespaceManager para manejar los namespaces
-                                        XmlNamespaceManager nsmgr = new XmlNamespaceManager(xmlDoc.NameTable);
-                                        nsmgr.AddNamespace("cbc", "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2");
-                                        nsmgr.AddNamespace("cac", "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2");
-
-                                        // Seleccionar el nodo <cbc:DocumentDescription>
-                                        XmlNode documentDescriptionNode = xmlDoc.SelectSingleNode("//cbc:DocumentDescription", nsmgr);
-
-                                        if (documentDescriptionNode != null)
-                                        {
-                                            DocumentDescriptionpdfSunat = documentDescriptionNode.InnerText;
-                                            fullFileNamecrd = entry.FileName;
-
-                                            logger.Debug($"Contenido de DocumentDescription en {entry.FileName}: {documentDescriptionNode.InnerText}");
-                                        }
-
-                                    }
-
-                                }
-
-
-                                //SAP UPDATE
+                                logger.Debug($"Procesando archivo: {fileInfo.Name}, Fecha de modificación: {fileInfo.LastWriteTime}");
+                                
                                 try
                                 {
 
-                                    //ini procesar en SAP , adjuntar
-                                    string valorFinal = destinoT + "\\" + nombreArchivo.Replace(".zip", "") + "\\" + fullFileNamecrd;
-                                    if (guardarxmlCdr(valorFinal, fullFileNamecrd.Replace(".xml", ""), DocumentDescriptionpdfSunat))
+                                    string nombreArchivo = Path.GetFileName(archivoZip2);
+                                    string zipDestino = Path.Combine(rutaB, nombreArchivo);
+
+                                    logger.Debug("----------------------- Inicio " + nombreArchivo + "-----------------------");
+
+                                    if (File.Exists(zipDestino))
                                     {
-                                        logger.Debug($" ✅ Termino exitoso de proceso ,CDR-GRE  {nombreArchivo}");
+                                        logger.Debug("Eliminado la carpeta con nombre " + zipDestino.ToString());
+                                        File.Delete(zipDestino); // Eliminar la copia existente
                                     }
-                                    else
+
+                                    string t1 = zipDestino.Replace(".zip", "");
+                                    if (Directory.Exists(t1))
                                     {
-                                        logger.Error($" ❌ Termino con error de proceso , CDR-GRE  {nombreArchivo}");
-                                        existos = false;
+                                        logger.Debug("Eliminado el archivo .zip con nombre " + t1);
+                                        Directory.Delete(t1, true); // Eliminar la copia existente
                                     }
-                                    //fin procesar en SAP , adjuntar
+
+                                    // Mover el archivo ZIP de A a B
+                                    File.Move(archivoZip2, zipDestino);
+                                    logger.Debug($"Archivo {nombreArchivo} movido exitosamente a {zipDestino}");
+
+                                    // Crear carpeta de extracción
+                                    string carpetaExtraccion = Path.Combine(rutaB, Path.GetFileNameWithoutExtension(nombreArchivo));
+                                    Directory.CreateDirectory(carpetaExtraccion);
+
+                                    using (ZipFile zip = ZipFile.Read(zipDestino))
+                                    {
+                                        zip.ExtractAll(carpetaExtraccion, ExtractExistingFileAction.OverwriteSilently);
+                                        //Console.WriteLine($"Archivo ZIP {Path.GetFileName(archivoZip2)} descomprimido en: {carpetaExtraccion}");
+                                        logger.Debug($"Archivo {nombreArchivo} extraído en: {carpetaExtraccion}");
+
+                                        foreach (ZipEntry entry in zip)
+                                        {
+                                            entry.Extract(carpetaExtraccion, ExtractExistingFileAction.OverwriteSilently);
+                                            logger.Debug($"Archivo {entry.FileName} extraído en: {carpetaExtraccion}");
+
+                                            // Si el archivo extraído es un XML, leer su contenido y obtener el nodo DocumentDescription
+                                            if (Path.GetExtension(entry.FileName).ToLower() == ".xml")
+                                            {
+
+                                                string xmlPath = Path.Combine(carpetaExtraccion, entry.FileName);
+
+                                                XmlDocument xmlDoc = new XmlDocument();
+                                                xmlDoc.Load(xmlPath);
+
+                                                // Crear un NamespaceManager para manejar los namespaces
+                                                XmlNamespaceManager nsmgr = new XmlNamespaceManager(xmlDoc.NameTable);
+                                                nsmgr.AddNamespace("cbc", "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2");
+                                                nsmgr.AddNamespace("cac", "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2");
+
+                                                // Seleccionar el nodo <cbc:DocumentDescription>
+                                                XmlNode documentDescriptionNode = xmlDoc.SelectSingleNode("//cbc:DocumentDescription", nsmgr);
+
+                                                if (documentDescriptionNode != null)
+                                                {
+                                                    DocumentDescriptionpdfSunat = documentDescriptionNode.InnerText;
+                                                    fullFileNamecrd = entry.FileName;
+
+                                                    logger.Debug($"Contenido de DocumentDescription en {entry.FileName}: {documentDescriptionNode.InnerText}");
+                                                }
+
+                                            }
+
+                                        }
+
+
+                                        //SAP UPDATE
+                                        try
+                                        {
+
+                                            //ini procesar en SAP , adjuntar
+                                            string valorFinal = destinoT + "\\" + nombreArchivo.Replace(".zip", "") + "\\" + fullFileNamecrd;
+                                            if (guardarxmlCdr(valorFinal, fullFileNamecrd.Replace(".xml", ""), DocumentDescriptionpdfSunat))
+                                            {
+                                                logger.Debug($" ✅ Termino exitoso de proceso ,CDR-GRE  {nombreArchivo}");
+                                            }
+                                            else
+                                            {
+                                                logger.Error($" ❌ Termino con error de proceso , CDR-GRE  {nombreArchivo}");
+                                                existos = false;
+                                            }
+                                            //fin procesar en SAP , adjuntar
+
+                                        }
+                                        catch (Exception ex)
+                                        {
+
+                                            logger.Error(ex.ToString());
+                                        }
+                                        finally
+                                        {
+
+                                        }
+
+
+                                    } // Aquí se libera el archivo ZIP automáticamente
+
+                                    if (!existos)
+                                    {
+                                        string nuevoNombreArchivo1 = Path.Combine(PathFirmaError, Path.GetFileName(archivoZip2));
+
+                                        if (File.Exists(nuevoNombreArchivo1))
+                                        {
+
+                                            File.Delete(nuevoNombreArchivo1); // Eliminar la copia existente
+                                            logger.Debug("Archivo eliminado " + nuevoNombreArchivo1.ToString());
+                                        }
+
+                                        File.Move(zipDestino, nuevoNombreArchivo1);
+                                        logger.Debug($"Archivo ZIP  {Path.GetFileName(zipDestino)} movido a: {nuevoNombreArchivo1}");
+
+                                        zipDestino = zipDestino.Replace(".zip", "");
+                                        if (Directory.Exists(zipDestino))
+                                        {
+                                            Directory.Delete(zipDestino, true);
+                                            logger.Debug("Carpeta eliminada " + zipDestino.ToString());
+                                            //File.Delete(zipDestino); // Eliminar la copia existente
+                                        }
+                                    }
+
+                                    //Caso exitoso, en la carpeta proceso queda el zip y se debe mover este zip a un tag , mover zip
+                                    if (existos)
+                                    {
+
+                                        string nuevoNombreArchivo1 = Path.Combine(PathbackupzipT, Path.GetFileName(archivoZip2));
+
+                                        if (File.Exists(nuevoNombreArchivo1))
+                                        {
+
+                                            File.Delete(nuevoNombreArchivo1); // Eliminar la copia existente
+                                            logger.Debug("Archivo eliminado " + nuevoNombreArchivo1.ToString());
+                                        }
+
+                                        File.Move(zipDestino, nuevoNombreArchivo1);
+                                        logger.Debug($"Archivo ZIP  {Path.GetFileName(zipDestino)} movido backup a: {nuevoNombreArchivo1}");
+
+                                        //zipDestino = zipDestino.Replace(".zip", "");
+                                        //if (Directory.Exists(zipDestino))
+                                        //{
+                                        //    Directory.Delete(zipDestino, true);
+                                        //    logger.Debug("Carpeta mo " + zipDestino.ToString());
+                                        //    //File.Delete(zipDestino); // Eliminar la copia existente
+                                        //}
+
+                                    }
+
+                                    existos = true;
+
+                                    logger.Debug("----------------------- Fin " + nombreArchivo + "-----------------------");
 
                                 }
                                 catch (Exception ex)
                                 {
 
-                                    logger.Error( ex.ToString());
-                                }
-                                finally
-                                {
-
+                                    logger.Error(ex.ToString());
                                 }
 
-
-                            } // Aquí se libera el archivo ZIP automáticamente
-
-                            if (!existos)
+                            }
+                            else
                             {
-                                string nuevoNombreArchivo1 = Path.Combine(PathFirmaError, Path.GetFileName(archivoZip2));
+                                logger.Info($"Archivo omitido: {fileInfo.Name}, Fecha de modificación: {fileInfo.LastWriteTime}, no se encuentra en rango permitido. ");
 
-                                if (File.Exists(nuevoNombreArchivo1))
-                                {
-
-                                    File.Delete(nuevoNombreArchivo1); // Eliminar la copia existente
-                                    logger.Debug("Archivo eliminado " + nuevoNombreArchivo1.ToString());
-                                }
-
-                                File.Move(zipDestino, nuevoNombreArchivo1);
-                                logger.Debug($"Archivo ZIP  {Path.GetFileName(zipDestino)} movido a: {nuevoNombreArchivo1}");
-
-                                zipDestino = zipDestino.Replace(".zip", "");
-                                if (Directory.Exists(zipDestino))
-                                {
-                                    Directory.Delete(zipDestino, true);
-                                    logger.Debug("Carpeta eliminada " + zipDestino.ToString());
-                                    //File.Delete(zipDestino); // Eliminar la copia existente
-                                }
+                                continue;
                             }
 
+                            ////fin 
 
-                            //Caso exitoso, en la carpeta proceso queda el zip y se debe mover este zip a un tag , mover zip
-                            if (existos) {
+                            //fin
 
-                                string nuevoNombreArchivo1 = Path.Combine(PathbackupzipT, Path.GetFileName(archivoZip2));
 
-                                if (File.Exists(nuevoNombreArchivo1))
-                                {
 
-                                    File.Delete(nuevoNombreArchivo1); // Eliminar la copia existente
-                                    logger.Debug("Archivo eliminado " + nuevoNombreArchivo1.ToString());
-                                }
-
-                                File.Move(zipDestino, nuevoNombreArchivo1);
-                                logger.Debug($"Archivo ZIP  {Path.GetFileName(zipDestino)} movido backup a: {nuevoNombreArchivo1}");
-
-                                //zipDestino = zipDestino.Replace(".zip", "");
-                                //if (Directory.Exists(zipDestino))
-                                //{
-                                //    Directory.Delete(zipDestino, true);
-                                //    logger.Debug("Carpeta mo " + zipDestino.ToString());
-                                //    //File.Delete(zipDestino); // Eliminar la copia existente
-                                //}
-
-                            }
-
-                            existos = true;
-
-                            logger.Debug("----------------------- Fin " + nombreArchivo + "-----------------------");
                         }
                     }
                     catch (Exception ex)

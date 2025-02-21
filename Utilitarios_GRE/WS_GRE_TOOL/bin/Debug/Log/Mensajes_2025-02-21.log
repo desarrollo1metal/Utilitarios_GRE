@@ -1,0 +1,162 @@
+2025-02-21 12:43:38,488 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-21 12:43:38,493 INFO : Inicializando Tool GMI 
+2025-02-21 12:43:38,569 DEBUG: BD encontradas en archivo son 6
+2025-02-21 12:43:46,567 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-21 12:44:31,060 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-21 12:44:31,060 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-21 12:44:31,072 INFO : iniciar validad versión 
+2025-02-21 12:44:31,072 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_TOOLDV1'
+2025-02-21 12:44:31,810 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-21 12:44:48,516 DEBUG: Carpeta creada: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 12:44:50,617 DEBUG: Carpeta error creada: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR
+2025-02-21 12:44:55,055 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 12:44:55,406 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 12:44:55,792 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 12:46:42,475 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-21 12:46:42,481 INFO : Inicializando Tool GMI 
+2025-02-21 12:46:43,432 DEBUG: BD encontradas en archivo son 6
+2025-02-21 12:46:44,809 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-21 12:46:52,443 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-21 12:46:52,443 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-21 12:46:52,450 INFO : iniciar validad versión 
+2025-02-21 12:46:52,451 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_TOOLDV1'
+2025-02-21 12:46:52,693 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-21 12:47:11,031 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 12:47:11,031 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 12:47:11,031 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 12:49:02,630 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-21 12:49:02,649 INFO : Inicializando Tool GMI 
+2025-02-21 12:49:05,714 DEBUG: BD encontradas en archivo son 6
+2025-02-21 12:49:09,718 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-21 12:49:14,577 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-21 12:49:14,577 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-21 12:49:14,593 INFO : iniciar validad versión 
+2025-02-21 12:49:14,593 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_TOOLDV1'
+2025-02-21 12:49:14,850 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-21 12:49:16,751 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 12:49:16,751 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 12:49:16,751 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 12:51:25,431 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-21 12:51:25,442 INFO : Inicializando Tool GMI 
+2025-02-21 12:51:25,531 DEBUG: BD encontradas en archivo son 6
+2025-02-21 12:51:26,382 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-21 12:51:31,747 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-21 12:51:31,747 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-21 12:51:31,753 INFO : iniciar validad versión 
+2025-02-21 12:51:31,753 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_TOOLDV1'
+2025-02-21 12:51:32,054 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-21 12:51:37,733 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 12:51:37,733 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 12:51:37,733 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 12:52:09,466 DEBUG: Archivo omitido: 20565975812-09-T001-0003162.xml, Fecha de modificación: 8/11/2024 19:00:03
+2025-02-21 12:52:24,889 DEBUG: Archivo omitido: 20565975812-09-T001-0003164.xml, Fecha de modificación: 9/11/2024 12:00:03
+2025-02-21 14:25:18,891 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-21 14:25:18,904 INFO : Inicializando Tool GMI 
+2025-02-21 14:25:18,985 DEBUG: BD encontradas en archivo son 6
+2025-02-21 14:25:20,109 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-21 14:25:22,787 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-21 14:25:22,787 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-21 14:25:22,794 INFO : iniciar validad versión 
+2025-02-21 14:25:22,794 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_TOOLDV1'
+2025-02-21 14:25:22,940 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-21 14:26:32,012 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-21 14:26:32,024 INFO : Inicializando Tool GMI 
+2025-02-21 14:26:32,096 DEBUG: BD encontradas en archivo son 6
+2025-02-21 14:26:33,557 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-21 14:26:36,998 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-21 14:26:36,998 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-21 14:26:37,003 INFO : iniciar validad versión 
+2025-02-21 14:26:37,003 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_TOOLDV1'
+2025-02-21 14:26:37,172 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-21 14:27:02,484 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 14:27:02,484 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:27:02,484 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:28:02,604 DEBUG: Archivo omitido: 20565975812-09-T001-0003162.xml, Fecha de modificación: 8/11/2024 19:00:03
+2025-02-21 14:28:09,622 DEBUG: Archivo omitido: 20565975812-09-T001-0003164.xml, Fecha de modificación: 9/11/2024 12:00:03
+2025-02-21 14:28:17,955 DEBUG: Procesando archivo: 20565975812-09-T001-0003165.xml, Fecha de modificación: 11/11/2024 10:00:03
+2025-02-21 14:28:24,976 DEBUG: Procesando archivo: 20565975812-09-T001-0003166.xml, Fecha de modificación: 11/11/2024 10:00:08
+2025-02-21 14:28:26,837 DEBUG: Procesando archivo: 20565975812-09-T001-0003167.xml, Fecha de modificación: 11/11/2024 10:00:13
+2025-02-21 14:28:29,491 DEBUG: Procesando archivo: 20565975812-09-T001-0003168.xml, Fecha de modificación: 11/11/2024 10:00:18
+2025-02-21 14:28:36,934 DEBUG: Archivo omitido: 20565975812-09-T002-0002733.xml, Fecha de modificación: 8/11/2024 19:00:08
+2025-02-21 14:28:44,220 DEBUG: Archivo omitido: 20565975812-09-T002-0002734.xml, Fecha de modificación: 8/11/2024 19:00:13
+2025-02-21 14:28:44,243 DEBUG: Carpeta creada: \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:28:44,259 DEBUG: Carpeta error creada: \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA_ERROR
+2025-02-21 14:28:44,364 DEBUG: Carpeta Origen: \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 14:28:44,364 DEBUG: Carpeta Destino: \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:28:44,365 DEBUG: Inicio de mover xml \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:28:53,453 DEBUG: Archivo omitido: 20565975812-09-T001-0001574.xml, Fecha de modificación: 9/02/2023 15:36:30
+2025-02-21 14:28:59,692 DEBUG: Archivo omitido: 20565975812-09-T001-0001575.xml, Fecha de modificación: 27/12/2022 22:34:51
+2025-02-21 14:50:51,140 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-21 14:50:51,157 INFO : Inicializando Tool GMI 
+2025-02-21 14:50:51,219 DEBUG: BD encontradas en archivo son 6
+2025-02-21 14:50:51,368 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-21 14:50:54,139 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-21 14:50:54,140 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-21 14:50:54,148 INFO : iniciar validad versión 
+2025-02-21 14:50:54,149 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_TOOLDV1'
+2025-02-21 14:50:54,426 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-21 14:52:11,672 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 14:52:11,672 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:52:11,672 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:52:18,389 DEBUG: Carpeta Origen: \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 14:52:18,390 DEBUG: Carpeta Destino: \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:52:18,390 DEBUG: Inicio de mover xml \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:52:23,456 INFO : Archivo omitido: 20565975812-09-T001-0001574.xml, Fecha de modificación: 9/02/2023 15:36:30, no se encuentra en rango permitido. 
+2025-02-21 14:53:03,532 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-21 14:53:03,538 INFO : Inicializando Tool GMI 
+2025-02-21 14:53:03,613 DEBUG: BD encontradas en archivo son 6
+2025-02-21 14:53:03,617 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-21 14:53:07,422 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-21 14:53:07,422 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-21 14:53:07,424 INFO : iniciar validad versión 
+2025-02-21 14:53:07,424 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_TOOLDV1'
+2025-02-21 14:53:07,572 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-21 14:53:11,266 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 14:53:11,266 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:53:11,266 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:53:13,229 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 14:53:13,229 DEBUG: Carpeta Destino: \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:53:13,229 DEBUG: Inicio de mover xml \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:53:13,792 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-21 14:53:13,792 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-21 14:53:39,893 DEBUG: Carpeta creada CDR : \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-21 14:53:39,956 DEBUG: Carpeta error creada CDR : \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\RPTAERROR
+2025-02-21 14:53:39,966 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP45\INZ\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-21 14:53:39,967 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-21 14:53:39,967 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-21 14:55:11,764 DEBUG: Procesando archivo: 1c0cccc1-0f09-4ed2-a324-6a5be3a75d0d.zip, Fecha de modificación: 11/11/2024 10:03:53
+2025-02-21 14:55:16,414 DEBUG: Procesando archivo: 3e8c425d-0d5b-477f-b0d3-0d0ca48c7034.zip, Fecha de modificación: 11/11/2024 10:03:54
+2025-02-21 14:55:19,998 INFO : Archivo omitido: 40cb6c44-1706-48ab-acd1-4ade902b41a6.zip, Fecha de modificación: 8/11/2024 19:03:54, no se encuentra en rango permitido. 
+2025-02-21 14:55:35,558 INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-02-21 14:55:35,562 INFO : Inicializando Tool GMI 
+2025-02-21 14:55:35,636 DEBUG: BD encontradas en archivo son 6
+2025-02-21 14:55:35,640 DEBUG: Se encontro archivos pendiente de procesar...
+2025-02-21 14:55:38,099 DEBUG: --------------------------------------------------------------------------------------------------
+2025-02-21 14:55:38,100 DEBUG: Conectado satisfactoriamente a BD Z_SBO_SF_13012025 con DI API
+2025-02-21 14:55:38,105 INFO : iniciar validad versión 
+2025-02-21 14:55:38,105 INFO : Consulta SQL SELECT U_GMI_VRSION FROM [dbo].[@GMI_VER1] WHERE U_GMI_CODPRD = 'GMI_TOOLDV1'
+2025-02-21 14:55:38,337 DEBUG: ************************** INI del proceso de XML FILE **************************
+2025-02-21 14:55:42,605 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 14:55:42,605 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:55:42,605 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:55:54,763 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP3\SF\SFS_v1.6\sunat_archivos\sfs\FIRMA
+2025-02-21 14:55:54,763 DEBUG: Carpeta Destino: \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:55:54,763 DEBUG: Inicio de mover xml \\192.168.1.3\guias_pub\SF\SFS_v1.6\sunat_archivos\sfs\FIRMAprocesado
+2025-02-21 14:56:00,509 DEBUG: ************************** FIN del proceso de XML FILE **************************
+2025-02-21 14:56:00,510 DEBUG: ------------------------- INI del proceso de  CDR       -------------------------
+2025-02-21 14:56:15,004 DEBUG: Carpeta Origen: C:\TI_MIMSA\TEST_20022025\IP45\INZ\SFS_v1.6\sunat_archivos\sfs\RPTA
+2025-02-21 14:56:15,004 DEBUG: Carpeta Destino: \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-21 14:56:15,004 DEBUG: Inicio de mover xml \\192.168.1.45\guias\SF\SFS_v1.6\sunat_archivos\sfs\RPTAPROCESADO
+2025-02-21 14:56:40,710 DEBUG: Procesando archivo: 1c0cccc1-0f09-4ed2-a324-6a5be3a75d0d.zip, Fecha de modificación: 11/11/2024 10:03:53
+2025-02-21 14:56:44,993 DEBUG: Procesando archivo: 3e8c425d-0d5b-477f-b0d3-0d0ca48c7034.zip, Fecha de modificación: 11/11/2024 10:03:54
+2025-02-21 14:56:49,770 INFO : Archivo omitido: 40cb6c44-1706-48ab-acd1-4ade902b41a6.zip, Fecha de modificación: 8/11/2024 19:03:54, no se encuentra en rango permitido. 
+2025-02-21 14:56:52,830 INFO : Archivo omitido: 429e9107-dea6-45e4-8c77-602d6005fd67.zip, Fecha de modificación: 8/11/2024 19:03:54, no se encuentra en rango permitido. 
+2025-02-21 14:56:55,335 INFO : Archivo omitido: 54df74db-cbe4-4553-a2d3-ec6552529a1e.zip, Fecha de modificación: 8/11/2024 10:03:53, no se encuentra en rango permitido. 
+2025-02-21 14:56:58,209 INFO : Archivo omitido: 8abc8434-fbe9-40c7-8fb0-c2d3377a9446.zip, Fecha de modificación: 7/11/2024 19:03:54, no se encuentra en rango permitido. 
+2025-02-21 14:57:03,333 INFO : Archivo omitido: aba41571-f146-411a-ba0f-a75f15cad08d.zip, Fecha de modificación: 8/11/2024 19:03:53, no se encuentra en rango permitido. 
+2025-02-21 14:57:07,680 INFO : Archivo omitido: b14f95f0-442e-4180-b477-cd189ab9a490.zip, Fecha de modificación: 9/11/2024 12:03:53, no se encuentra en rango permitido. 
+2025-02-21 14:57:09,329 INFO : Archivo omitido: b3cb4abe-4401-4b24-aa86-2f5bfae91039.zip, Fecha de modificación: 8/11/2024 10:03:53, no se encuentra en rango permitido. 
+2025-02-21 14:57:11,073 DEBUG: Procesando archivo: b93b0d38-1873-44b7-932c-fadd51f34095.zip, Fecha de modificación: 11/11/2024 10:03:54
+2025-02-21 14:57:11,976 INFO : Archivo omitido: d10a84b4-a64f-488d-a9d2-871daedc045e.zip, Fecha de modificación: 8/11/2024 12:03:54, no se encuentra en rango permitido. 
+2025-02-21 14:57:13,111 INFO : Archivo omitido: d68d2471-146b-41e4-bc73-f88f3811b5ea.zip, Fecha de modificación: 8/11/2024 15:03:53, no se encuentra en rango permitido. 
+2025-02-21 14:57:18,491 DEBUG: Procesando archivo: d778c07a-2a42-4545-9e1d-1277f10dfd75.zip, Fecha de modificación: 11/11/2024 10:03:53

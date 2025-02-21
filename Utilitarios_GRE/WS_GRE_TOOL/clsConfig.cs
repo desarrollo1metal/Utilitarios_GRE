@@ -55,6 +55,8 @@ namespace WS_GRE_TOOL
 
 
         public string Pathbackupzip { get; set; }
+        public string FechaActivoInicio { get; set; }
+        
 
     }
 
